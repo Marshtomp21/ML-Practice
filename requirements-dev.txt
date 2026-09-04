@@ -1,0 +1,9 @@
+-r requirements.txt
+
+# 可选：仅用于 tests/ 中的正确性交叉验证，不参与任何报告数字的生成
+shap==0.45.1
+captum==0.7.0
+
+# 代码质量
+ruff==0.4.9
+black==24.4.2

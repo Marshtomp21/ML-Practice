@@ -1,0 +1,35 @@
+# XAI01-02 依赖清单
+# 安装：pip install -r requirements.txt
+# CUDA 版本的 torch 请先按 https://pytorch.org 的官方指令安装，再执行本文件。
+
+# --- 深度学习 ---
+torch==2.3.1
+torchvision==0.18.1
+
+# --- 数值与图像 ---
+numpy==1.26.4
+scipy==1.13.1
+scikit-image==0.23.2          # SLIC / Felzenszwalb 超像素分割
+scikit-learn==1.5.0           # 岭回归（LIME 代理模型）、加权最小二乘、决策树（RQ5）
+opencv-python-headless==4.10.0.84
+Pillow==10.3.0
+
+# --- 数据与统计 ---
+pandas==2.2.2
+statsmodels==0.14.2           # Wilcoxon / Holm 校正 / 逻辑回归
+
+# --- 配置与实验管理 ---
+PyYAML==6.0.1
+tqdm==4.66.4
+
+# --- 可视化 ---
+matplotlib==3.9.0
+seaborn==0.13.2
+
+# --- 测试 ---
+pytest==8.2.2
+
+# 说明：本项目不引入 captum / shap / lime 等现成归因库作为主实现。
+# 理由有二：(1) 各库的值函数、遮蔽语义、计时边界互不一致，直接混用会使
+#   RQ1 的效率比较失去共同基准；(2) 课程要求体现方法实现与设计能力。
+# 但会在 tests/ 中以 shap 与 captum 作为**正确性交叉验证**的参考实现（可选依赖）。

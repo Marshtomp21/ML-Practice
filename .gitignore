@@ -1,0 +1,51 @@
+# ---- 数据：原始影像一律不入库（体积 + 许可限制）----
+data/raw/**
+data/processed/**
+data/external/**
+!data/**/.gitkeep
+
+# 划分清单必须入库：它是可复现性的核心，且体积很小
+!data/splits/**
+
+# ---- 模型权重 ----
+models/checkpoints/
+*.pt
+*.pth
+
+# ---- 结果：大文件不入库，结构化指标与图表入库 ----
+results/attributions/**
+results/.cache/**
+results/logs/**
+!results/**/.gitkeep
+# 指标 / 表格 / 图表入库，供报告与答辩直接引用
+!results/metrics/**
+!results/tables/**
+!results/figures/**
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+
+# ---- LaTeX ----
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+reports/**/*.pdf
+!reports/**/figures/*.pdf
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
