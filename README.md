@@ -107,9 +107,6 @@ pip install -r requirements.txt
 数据由课程统一提供；CHNCXR 亦可从 NLM 官方源获取：
 <https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/Shenzhen-Hospital-CXR-Set/>
 
-**许可**：ILSVRC2012 限非商业研究与教育用途；CHNCXR 为公开研究用途，
-使用需引用 Jaeger et al. (2014)。两者均不得二次分发原始图像。
-
 ---
 
 ## 5. 运行方式
@@ -144,11 +141,11 @@ cd reports/requirements_modeling && latexmk -xelatex main.tex
 
 | 姓名 | 角色 | 主要职责 | 主要目录 | 互审 |
 |---|---|---|---|---|
-| 陈纪仰 | R1 数据 | 数据获取与合规、划分清单、预处理、超像素与掩码模块、EDA | `data/` `preprocessing/` | 审 R2 |
-| 邹研泽 | R2 模型 | 模型加载与指纹、值函数与前向计数、缓存与批处理 | `models/` | 审 R3 |
-| 朱炳政 | R3 方法 | LIME / RISE / Ablation / KernelSHAP / 交互分解 / 梯度基线 | `attribution/` | 审 R4 |
-| 张泰瑜 | R4 实验 | 评价指标、实验驱动、预算对齐、断点续跑、结果落盘 | `evaluation/` `experiments/` | 审 R5 |
-| 杜孟泽 | R5 分析与文档 | 统计推断、图表生成、报告与 PPT | `results/` `reports/` | 审 R1 |
+| 杜孟泽 | R1 数据 | 数据获取与合规、划分清单、预处理、超像素与掩码模块、EDA | `data/` `preprocessing/` | 审 R2 |
+| 张泰瑜 | R2 模型 | 模型加载与指纹、值函数与前向计数、缓存与批处理 | `models/` | 审 R3 |
+| 邹研泽 | R3 方法 | LIME / RISE / Ablation / KernelSHAP / 交互分解 / 梯度基线 | `attribution/` | 审 R4 |
+| 陈纪仰(组长) | R4 实验 | 评价指标、实验驱动、预算对齐、断点续跑、结果落盘 | `evaluation/` `experiments/` | 审 R5 |
+| 朱炳政 | R5 分析与文档 | 统计推断、图表生成、报告与 PPT | `results/` `reports/` | 审 R1 |
 
 组长兼任进度管理与对外沟通。
 
@@ -162,11 +159,9 @@ feat(attribution): 实现 KernelSHAP 的成对联盟采样，方差较独立采�
 fix(evaluation): Insertion 起点改为模糊图，修正全零起点导致的曲线前段噪声
 ```
 
-**评审**：合入 `main` 需至少一名交叉互审人 approve；
-值函数、评价指标、预算对齐三处的改动需两人 approve。
+**评审**：合入 `main` 需至少一名交叉互审人 approve。
 
-**在线协作文档**：维护分工表、会议纪要与进度追踪；
-每次正式实验留痕 run_id、目的、配置、预算估计与结论。
+**在线协作文档**：维护分工表、会议纪要与进度追踪。
 
 ---
 
