@@ -43,6 +43,9 @@ venv/
 *.fls
 reports/**/*.pdf
 !reports/**/figures/*.pdf
+# 例外：该图内嵌 ILSVRC2012 与 CHNCXR 原图，入库等同再分发，
+# 故只提交生成脚本 scripts/m1/fig2_slic_overlay.py，图本身各人本地生成
+reports/**/figures/m1_slic_overlay.png
 
 # ---- 编辑器 / 系统 ----
 .vscode/
