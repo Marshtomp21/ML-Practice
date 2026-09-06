@@ -56,6 +56,7 @@
     "CHNCXR_0656_1"
   ],
   "prediction_split": {
+    "note": "correct/incorrect 仅记录前届资料中对相应模型明确给出预测归类的样例；unscored 表示该模型没有对应归类记录，不代表预测正确、错误或推理失败，按预测正确性分组统计时必须排除。",
     "correct": {
       "resnet50": [
         "CHNCXR_0358_1",
@@ -137,6 +138,43 @@
         "CHNCXR_0615_1",
         "CHNCXR_0616_1",
         "CHNCXR_0649_1"
+      ]
+    },
+    "unscored": {
+      "resnet50": [
+        "CHNCXR_0329_1",
+        "CHNCXR_0373_1",
+        "CHNCXR_0386_1",
+        "CHNCXR_0391_1",
+        "CHNCXR_0409_1",
+        "CHNCXR_0410_1",
+        "CHNCXR_0414_1",
+        "CHNCXR_0418_1",
+        "CHNCXR_0461_1",
+        "CHNCXR_0484_1",
+        "CHNCXR_0485_1",
+        "CHNCXR_0507_1",
+        "CHNCXR_0598_1",
+        "CHNCXR_0604_1",
+        "CHNCXR_0615_1",
+        "CHNCXR_0629_1",
+        "CHNCXR_0649_1",
+        "CHNCXR_0656_1"
+      ],
+      "vgg13": [
+        "CHNCXR_0349_1",
+        "CHNCXR_0354_1",
+        "CHNCXR_0378_1",
+        "CHNCXR_0404_1",
+        "CHNCXR_0412_1",
+        "CHNCXR_0446_1",
+        "CHNCXR_0478_1",
+        "CHNCXR_0542_1",
+        "CHNCXR_0544_1",
+        "CHNCXR_0575_1",
+        "CHNCXR_0611_1",
+        "CHNCXR_0618_1",
+        "CHNCXR_0640_1"
       ]
     }
   },
