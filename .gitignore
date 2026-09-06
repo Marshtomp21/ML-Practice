@@ -7,6 +7,9 @@ data/external/**
 # 划分清单必须入库：它是可复现性的核心，且体积很小
 !data/splits/**
 
+# 课程数据归档仅用于本地解压，禁止误提交大文件
+/ML-models_datasets.7z
+
 # ---- 模型权重 ----
 models/checkpoints/
 *.pt
@@ -41,6 +44,8 @@ venv/
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+*.thm
+*.xdv
 reports/**/*.pdf
 !reports/**/figures/*.pdf
 # 例外：该图内嵌 ILSVRC2012 与 CHNCXR 原图，入库等同再分发，
