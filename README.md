@@ -35,8 +35,8 @@
 Faith-Shap 二阶交互（博弈论类）；Saliency、Integrated Gradients、Expected Gradients、
 Grad-CAM、Grad-CAM++（梯度类对照）。
 
-**数据与模型**：ResNet-50 + ImageNet 验证集子集（自然图像）；
-ResNet-50 + CHNCXR 胸片（医学影像）。
+**数据与模型**：ImageNet 验证集子集（自然图像）与 CHNCXR 胸片（医学影像）
+均使用 ResNet-50、VGG13，形成 2 数据域 $\times$ 2 模型的对照设计。
 
 ---
 
@@ -106,6 +106,15 @@ pip install -r requirements.txt
 
 数据由课程统一提供；CHNCXR 亦可从 NLM 官方源获取：
 <https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/Shenzhen-Hospital-CXR-Set/>
+
+M1 固化的数据使用口径如下：
+
+- ImageNet 以当前 500 张图像为候选池，CHNCXR 以全部 662 张胸片为候选池；
+- 各数据域的主实验集取 ResNet-50 与 VGG13 均分类正确的样本交集，并将样本 ID 固化到 `data/splits/`；
+- 解释目标统一为正确类别的预 Softmax logit；在主实验集中，正确类别同时也是两个模型的预测类别；
+- CHNCXR 定位性评价仅使用具有病灶掩码的阳性样本，负样本仍参与忠实性、稳定性和效率评价；
+- 前届提供的 51 张全阳性预测样例仅作为独立参考队列，不替代从 662 张候选池筛选的主实验集；
+- 课程资源中的 VOC 数据不属于当前 M1 与后续主实验范围。
 
 ---
 
