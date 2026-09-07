@@ -224,7 +224,9 @@
 \def\csubject#1{\def\@csubject{#1}}\def\@csubject{}
 \def\cgrade#1{\def\@cgrade{#1}}\def\@cgrade{}
 \def\cauthor#1{\def\@cauthor{#1}}\def\@cauthor{}
+\def\cauthorsecond#1{\def\@cauthorsecond{#1}}\def\@cauthorsecond{}
 \def\cnumber#1{\def\@cnumber{#1}}\def\@cnumber{}
+\def\cnumbersecond#1{\def\@cnumbersecond{#1}}\def\@cnumbersecond{}
 \def\csupervisor#1{\def\@csupervisor{#1}}\def\@csupervisor{}
 \def\crank#1{\def\@crank{#1}}\def\@crank{}
 \def\cdate#1{\def\@cdate{#1}}\def\@cdate{}
@@ -265,21 +267,22 @@
 
                 \vspace*{20pt}
                 \hei\sanhao{\textbf{\@ctitle}}
-                \vspace*{16pt}
-        
-  			\vspace*{16pt}
-                \renewcommand\arraystretch{1.5}
-  			\setlength{\@title@width}{6cm}{\song\sanhao{\textbf{
+                \vspace*{24pt}
+
+                % 所有信息行采用相同字号和行距；姓名/学号的标签与各自首行共用基线。
+                \renewcommand\arraystretch{1.2}
+			\setlength{\@title@width}{6cm}{\song\sanhao
     \begin{tabular}{lc}
         学\qquad 院 & \underline{\makebox[9cm][c]{\@caffil}}   \\
         专\qquad 业 & \underline{\makebox[9cm][c]{\@csubject}} \\
         年\qquad 级 & \underline{\makebox[9cm][c]{\@cgrade}}   \\
-        姓\qquad 名 & \underline{\makebox[9cm][c]{\@cauthor}}   \\
-        学\qquad 号 & \underline{\makebox[9cm][c]{\@cnumber}}   \\
+        姓\qquad 名 & \underline{\makebox[9cm][c]{\@cauthor}} \\
+                     & \underline{\makebox[9cm][c]{\@cauthorsecond}} \\
+        学\qquad 号 & \underline{\makebox[9cm][c]{\@cnumber}} \\
+                     & \underline{\makebox[9cm][c]{\@cnumbersecond}} \\
     \end{tabular}
-}}}
-  			\vspace*{16pt}
-            \vspace*{16pt}
+}
+            \par\vspace*{24pt}
         \makebox[\@title@width][c]{\@cdate}
 		\end{center}
 	\end{titlepage}
