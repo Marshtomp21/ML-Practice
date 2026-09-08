@@ -71,7 +71,7 @@ def main() -> None:
         ax.text(frac, 0.015, f" n={n}", rotation=90, ha="center", va="bottom",
                 fontsize=7.5, color=C_AUX)
     ax.text(0.5, 1.01, "竖线：暂定 224$\\times$224 直接缩放下的名义平均区域面积 1/$n$"
-                       "（仅作风险参照；实得区域数见后续汇总）",
+                       "（仅作风险参照，不代表最优粒度）",
             transform=ax.transAxes, ha="center", va="bottom",
             fontsize=8, color=C_AUX)
 

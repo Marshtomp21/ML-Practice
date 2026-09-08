@@ -1,7 +1,6 @@
 """M1 报告插图的公共设置：路径、字体、配色与保存。
 
-三个绘图脚本共用本模块。原始影像不入库，因此插图也由各人本地重跑生成，
-脚本本身是唯一入库的产物。
+绘图脚本共用本模块。原始影像不入库，汇总图表由脚本从本地数据重建。
 """
 from __future__ import annotations
 
@@ -91,25 +90,6 @@ def chncxr_lesion_masks() -> dict:
     return out
 
 
-def chncxr_intensity_sample(n_per_class: int = 60, seed: int = 42) -> list:
-    """按类别分层抽样影像文件名。与 M1 报告正文所引统计使用同一抽样口径。"""
-    files = sorted(f for f in os.listdir(os.path.join(CHNCXR, "CXR_png"))
-                   if f.endswith(".png"))
-    rng = np.random.default_rng(seed)
-    pos = [f for f in files if f.endswith("_1.png")]
-    neg = [f for f in files if f.endswith("_0.png")]
-    return (list(rng.choice(pos, n_per_class, replace=False))
-            + list(rng.choice(neg, n_per_class, replace=False)))
-
-
-def gray01(path: str, size: tuple | None = None) -> np.ndarray:
-    """读为 [0,1] 灰度数组，可选先缩放到指定尺寸。"""
-    img = Image.open(path).convert("L")
-    if size is not None:
-        img = img.resize(size, Image.BILINEAR)
-    return np.asarray(img, dtype=np.float32) / 255.0
-
-
 def ecdf(values) -> tuple:
     x = np.sort(np.asarray(values, dtype=float))
     return x, np.arange(1, x.size + 1) / x.size
@@ -117,5 +97,4 @@ def ecdf(values) -> tuple:
 
 __all__ = ["ROOT", "CHNCXR", "IMAGENET", "FIGDIR", "C_NAT", "C_MED", "C_AUX",
            "plt", "np", "io", "os", "Image", "save", "mask_area_fraction",
-           "imagenet_bboxes", "chncxr_lesion_masks", "chncxr_intensity_sample",
-           "gray01", "ecdf"]
+           "imagenet_bboxes", "chncxr_lesion_masks", "ecdf"]

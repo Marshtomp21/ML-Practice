@@ -1,0 +1,6533 @@
+{
+  "summary": {
+    "imagenet_n": 500,
+    "imagenet_classes": 284,
+    "class_size_frequency": {
+      "1": 165,
+      "2": 68,
+      "3": 22,
+      "4": 17,
+      "5": 9,
+      "6": 1,
+      "7": 2
+    },
+    "classes_singleton": 165,
+    "images_in_classes_le2": 301,
+    "max_class_size": 7,
+    "chncxr_n": 662,
+    "positive_n": 336,
+    "negative_n": 326,
+    "localization_n": 330,
+    "unannotated_positive_ids": [
+      "CHNCXR_0467_1",
+      "CHNCXR_0484_1",
+      "CHNCXR_0606_1",
+      "CHNCXR_0609_1",
+      "CHNCXR_0612_1",
+      "CHNCXR_0624_1"
+    ],
+    "prior_n": 51,
+    "prior_positive_n": 51,
+    "prior_localization_n": 50,
+    "lesion_annotation_n": 1153,
+    "single_annotation_n": 55,
+    "multi_annotation_n": 275,
+    "lesion_count_median": 3.0,
+    "lesion_count_q25": 2.0,
+    "lesion_count_q75": 4.0,
+    "lesion_count_max": 14,
+    "lesion_count_frequency": {
+      "1": 55,
+      "2": 87,
+      "3": 62,
+      "4": 44,
+      "5": 36,
+      "6": 12,
+      "7": 8,
+      "8": 9,
+      "9": 5,
+      "10": 3,
+      "11": 4,
+      "12": 3,
+      "13": 1,
+      "14": 1
+    },
+    "metadata_sha256": "83e57faf75942f152eac29d3593f52702f66ad40292832ac9adb2b162aca8350"
+  },
+  "imagenet": [
+    {
+      "id": "ILSVRC2012_val_00000025",
+      "class": "n01616318",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000060",
+      "class": "n03482405",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000091",
+      "class": "n02114548",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000133",
+      "class": "n02117135",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000140",
+      "class": "n03372029",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000177",
+      "class": "n02027492",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000242",
+      "class": "n02480855",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000306",
+      "class": "n02408429",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000319",
+      "class": "n01872401",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000327",
+      "class": "n02089078",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000355",
+      "class": "n02112137",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000391",
+      "class": "n02094114",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000451",
+      "class": "n03584829",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000502",
+      "class": "n02356798",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000518",
+      "class": "n02137549",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000603",
+      "class": "n02105412",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000604",
+      "class": "n02115641",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000744",
+      "class": "n01847000",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000758",
+      "class": "n02107908",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00000837",
+      "class": "n01592084",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00001067",
+      "class": "n02009912",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00001069",
+      "class": "n02086079",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00001218",
+      "class": "n01608432",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00002263",
+      "class": "n01824575",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00002277",
+      "class": "n02108000",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00002357",
+      "class": "n01532829",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00002468",
+      "class": "n02116738",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00002769",
+      "class": "n02086240",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00002794",
+      "class": "n02107574",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00002953",
+      "class": "n02006656",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00003259",
+      "class": "n01833805",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00003732",
+      "class": "n03127747",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00003924",
+      "class": "n03670208",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004210",
+      "class": "n02233338",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004258",
+      "class": "n01985128",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004300",
+      "class": "n02325366",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004344",
+      "class": "n01580077",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004437",
+      "class": "n12985857",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004451",
+      "class": "n02028035",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004482",
+      "class": "n04033995",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004559",
+      "class": "n01582220",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004563",
+      "class": "n02106662",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004572",
+      "class": "n02011460",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004582",
+      "class": "n01734418",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004584",
+      "class": "n02444819",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004674",
+      "class": "n02096585",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004684",
+      "class": "n02091635",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004747",
+      "class": "n01532829",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004986",
+      "class": "n02346627",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00004996",
+      "class": "n02091467",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005238",
+      "class": "n02113799",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005291",
+      "class": "n02088364",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005363",
+      "class": "n02051845",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005454",
+      "class": "n02408429",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005567",
+      "class": "n01531178",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005575",
+      "class": "n02110063",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005634",
+      "class": "n01828970",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005746",
+      "class": "n02113023",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005767",
+      "class": "n02099429",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005786",
+      "class": "n02277742",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005844",
+      "class": "n13040303",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005852",
+      "class": "n02346627",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005867",
+      "class": "n02093991",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005873",
+      "class": "n01833805",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005904",
+      "class": "n02281406",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00005986",
+      "class": "n03272010",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006024",
+      "class": "n01797886",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006035",
+      "class": "n02094114",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006048",
+      "class": "n03530642",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006049",
+      "class": "n01860187",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006125",
+      "class": "n02364673",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006187",
+      "class": "n04370456",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006192",
+      "class": "n02017213",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006200",
+      "class": "n02437312",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006231",
+      "class": "n02018207",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006283",
+      "class": "n02445715",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006321",
+      "class": "n01560419",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006350",
+      "class": "n02133161",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006382",
+      "class": "n02090721",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006396",
+      "class": "n02090379",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006427",
+      "class": "n02408429",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006457",
+      "class": "n01829413",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006480",
+      "class": "n01756291",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006484",
+      "class": "n02113023",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006487",
+      "class": "n02002724",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006544",
+      "class": "n02087046",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006551",
+      "class": "n04554684",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006565",
+      "class": "n07880968",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006617",
+      "class": "n02747177",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006630",
+      "class": "n02102177",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006663",
+      "class": "n02783161",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006690",
+      "class": "n01756291",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006749",
+      "class": "n07614500",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006756",
+      "class": "n07747607",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006793",
+      "class": "n02133161",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006817",
+      "class": "n01751748",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006861",
+      "class": "n02807133",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006864",
+      "class": "n04009552",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006866",
+      "class": "n02112350",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006920",
+      "class": "n02108000",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006935",
+      "class": "n02091831",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00006981",
+      "class": "n02099601",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007002",
+      "class": "n02091831",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007011",
+      "class": "n02027492",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007056",
+      "class": "n02106382",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007064",
+      "class": "n03594945",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007082",
+      "class": "n02190166",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007172",
+      "class": "n02033041",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007178",
+      "class": "n02088466",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007216",
+      "class": "n02110063",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007231",
+      "class": "n01582220",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007247",
+      "class": "n07718747",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007254",
+      "class": "n02747177",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007275",
+      "class": "n04273569",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007283",
+      "class": "n01910747",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007312",
+      "class": "n01795545",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007334",
+      "class": "n02018795",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007345",
+      "class": "n01917289",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007356",
+      "class": "n02095570",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007404",
+      "class": "n02071294",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007406",
+      "class": "n02119789",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007524",
+      "class": "n02027492",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007535",
+      "class": "n02107683",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007651",
+      "class": "n02028035",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007782",
+      "class": "n02115641",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007806",
+      "class": "n04033901",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007808",
+      "class": "n02123394",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007837",
+      "class": "n02106166",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007854",
+      "class": "n04613696",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007858",
+      "class": "n02115641",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007916",
+      "class": "n02259212",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007930",
+      "class": "n01924916",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007971",
+      "class": "n02102480",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00007980",
+      "class": "n02342885",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008035",
+      "class": "n02009912",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008135",
+      "class": "n02011460",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008137",
+      "class": "n02113978",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008209",
+      "class": "n01622779",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008217",
+      "class": "n02105505",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008228",
+      "class": "n02493793",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008236",
+      "class": "n01828970",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008302",
+      "class": "n02011460",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008375",
+      "class": "n02088466",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008502",
+      "class": "n02093859",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008566",
+      "class": "n01817953",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008588",
+      "class": "n01873310",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008636",
+      "class": "n02441942",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008737",
+      "class": "n02037110",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008842",
+      "class": "n02018207",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008860",
+      "class": "n02104365",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008880",
+      "class": "n02112350",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008885",
+      "class": "n02105641",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008938",
+      "class": "n02119022",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00008997",
+      "class": "n02091032",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009067",
+      "class": "n02445715",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009092",
+      "class": "n01558993",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009093",
+      "class": "n02110806",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009100",
+      "class": "n01616318",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009239",
+      "class": "n01532829",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009314",
+      "class": "n02115913",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009324",
+      "class": "n02112350",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009336",
+      "class": "n02119789",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009471",
+      "class": "n02692877",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009485",
+      "class": "n01986214",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009624",
+      "class": "n02091831",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009660",
+      "class": "n02105855",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009781",
+      "class": "n01824575",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009848",
+      "class": "n02097658",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009991",
+      "class": "n02037110",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00009998",
+      "class": "n01860187",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010020",
+      "class": "n02500267",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010023",
+      "class": "n02484975",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010037",
+      "class": "n02028035",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010038",
+      "class": "n02087394",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010107",
+      "class": "n02099429",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010132",
+      "class": "n02422699",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010158",
+      "class": "n02823750",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010176",
+      "class": "n02027492",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010183",
+      "class": "n02109525",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010220",
+      "class": "n07920052",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010245",
+      "class": "n02109525",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010310",
+      "class": "n01532829",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010352",
+      "class": "n01537544",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010424",
+      "class": "n02172182",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010768",
+      "class": "n02105412",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010825",
+      "class": "n02526121",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010845",
+      "class": "n02037110",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010917",
+      "class": "n01795545",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010950",
+      "class": "n02089867",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00010994",
+      "class": "n02102040",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011006",
+      "class": "n03218198",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011024",
+      "class": "n02100735",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011077",
+      "class": "n02101556",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011086",
+      "class": "n13054560",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011150",
+      "class": "n01667778",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011175",
+      "class": "n02280649",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011178",
+      "class": "n01534433",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011205",
+      "class": "n02106166",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011216",
+      "class": "n02444819",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011229",
+      "class": "n02111277",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011253",
+      "class": "n02454379",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011296",
+      "class": "n02112137",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011357",
+      "class": "n02002556",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011375",
+      "class": "n01843383",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011385",
+      "class": "n02093754",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011414",
+      "class": "n01622779",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011421",
+      "class": "n03197337",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011436",
+      "class": "n09332890",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011468",
+      "class": "n02066245",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011498",
+      "class": "n02105641",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011510",
+      "class": "n02687172",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011528",
+      "class": "n02123597",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011535",
+      "class": "n02259212",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011584",
+      "class": "n01847000",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011633",
+      "class": "n02606052",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011642",
+      "class": "n02051845",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011772",
+      "class": "n02276258",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011792",
+      "class": "n02089867",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011805",
+      "class": "n02085936",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011818",
+      "class": "n13037406",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011870",
+      "class": "n04146614",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011915",
+      "class": "n01534433",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00011996",
+      "class": "n01665541",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012042",
+      "class": "n02894605",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012043",
+      "class": "n02088632",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012049",
+      "class": "n13040303",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012132",
+      "class": "n01580077",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012161",
+      "class": "n02086910",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012165",
+      "class": "n02346627",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012267",
+      "class": "n01675722",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012313",
+      "class": "n07734744",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012331",
+      "class": "n01728572",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012365",
+      "class": "n01687978",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012372",
+      "class": "n01883070",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012394",
+      "class": "n02086240",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012404",
+      "class": "n02128757",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012418",
+      "class": "n01944390",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012435",
+      "class": "n02018207",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012484",
+      "class": "n01514668",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012511",
+      "class": "n02066245",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00012944",
+      "class": "n02692877",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013111",
+      "class": "n01807496",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013120",
+      "class": "n02415577",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013201",
+      "class": "n01644373",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013248",
+      "class": "n02105162",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013407",
+      "class": "n01531178",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013432",
+      "class": "n01608432",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013515",
+      "class": "n02037110",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013583",
+      "class": "n02106166",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013600",
+      "class": "n01776313",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013689",
+      "class": "n01873310",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013784",
+      "class": "n03803284",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013800",
+      "class": "n02088094",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013808",
+      "class": "n02028035",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013911",
+      "class": "n02114548",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00013993",
+      "class": "n03594945",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014005",
+      "class": "n02012849",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014108",
+      "class": "n01534433",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014374",
+      "class": "n02110627",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014391",
+      "class": "n02445715",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014403",
+      "class": "n02112137",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014450",
+      "class": "n02037110",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014505",
+      "class": "n02483708",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014730",
+      "class": "n02093754",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014779",
+      "class": "n02101388",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014806",
+      "class": "n02500267",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014909",
+      "class": "n02280649",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00014940",
+      "class": "n02486261",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015124",
+      "class": "n02391049",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015128",
+      "class": "n02120079",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015135",
+      "class": "n02098105",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015139",
+      "class": "n01494475",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015141",
+      "class": "n01773157",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015152",
+      "class": "n02096177",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015160",
+      "class": "n02106550",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015181",
+      "class": "n02342885",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015195",
+      "class": "n01580077",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015223",
+      "class": "n01530575",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015307",
+      "class": "n02101006",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015324",
+      "class": "n01817953",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015358",
+      "class": "n02093859",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015605",
+      "class": "n02115913",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015607",
+      "class": "n02096177",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015653",
+      "class": "n07920052",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015674",
+      "class": "n02782093",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015690",
+      "class": "n01824575",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015739",
+      "class": "n01824575",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015802",
+      "class": "n02169497",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015821",
+      "class": "n02115641",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015824",
+      "class": "n03201208",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015888",
+      "class": "n02115913",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015908",
+      "class": "n02027492",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015926",
+      "class": "n02487347",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015975",
+      "class": "n02165456",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00015981",
+      "class": "n01688243",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016006",
+      "class": "n03976467",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016067",
+      "class": "n02443114",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016076",
+      "class": "n02097474",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016092",
+      "class": "n02105056",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016104",
+      "class": "n02114548",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016148",
+      "class": "n02099712",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016157",
+      "class": "n02107312",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016245",
+      "class": "n02085936",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016254",
+      "class": "n02119789",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016277",
+      "class": "n02443114",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016552",
+      "class": "n02098286",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016631",
+      "class": "n01847000",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016684",
+      "class": "n02009229",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016929",
+      "class": "n02025239",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00016973",
+      "class": "n02094433",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00017104",
+      "class": "n02102318",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00017222",
+      "class": "n01669191",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00017313",
+      "class": "n02115641",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00017495",
+      "class": "n02111277",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00017759",
+      "class": "n01795545",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00017964",
+      "class": "n02094433",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00018131",
+      "class": "n02488702",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00018145",
+      "class": "n01560419",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00018183",
+      "class": "n01582220",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00018480",
+      "class": "n02088364",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00018890",
+      "class": "n02094114",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00018991",
+      "class": "n02002556",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00019024",
+      "class": "n01843065",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00019041",
+      "class": "n02093859",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00019153",
+      "class": "n02107683",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00019344",
+      "class": "n02415577",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00019744",
+      "class": "n01531178",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00019821",
+      "class": "n02101006",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020015",
+      "class": "n02110341",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020132",
+      "class": "n02104029",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020173",
+      "class": "n02100735",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020205",
+      "class": "n02033041",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020225",
+      "class": "n02119022",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020375",
+      "class": "n02090721",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020460",
+      "class": "n02088238",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020610",
+      "class": "n01558993",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020786",
+      "class": "n02110063",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00020916",
+      "class": "n01641577",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00021281",
+      "class": "n01833805",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00021340",
+      "class": "n02808304",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00021365",
+      "class": "n02087394",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00021599",
+      "class": "n02097130",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00021624",
+      "class": "n02408429",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00021744",
+      "class": "n02109961",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00022142",
+      "class": "n02106662",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00022283",
+      "class": "n02120505",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00022367",
+      "class": "n02100236",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00022503",
+      "class": "n02814860",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00022505",
+      "class": "n01580077",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00022725",
+      "class": "n02112137",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00022843",
+      "class": "n02106382",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00022856",
+      "class": "n02097209",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00023164",
+      "class": "n02096177",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00023218",
+      "class": "n02097047",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00023289",
+      "class": "n02105162",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00023347",
+      "class": "n01819313",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00023528",
+      "class": "n02093428",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00023543",
+      "class": "n02110958",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00023546",
+      "class": "n02113023",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00023634",
+      "class": "n02099429",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00023695",
+      "class": "n02017213",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024012",
+      "class": "n01592084",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024040",
+      "class": "n01806143",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024090",
+      "class": "n02088466",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024178",
+      "class": "n02097047",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024185",
+      "class": "n02120079",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024239",
+      "class": "n02441942",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024635",
+      "class": "n02018795",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024637",
+      "class": "n02098286",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024740",
+      "class": "n02018207",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00024846",
+      "class": "n03967562",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00025151",
+      "class": "n01531178",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00025180",
+      "class": "n02108422",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00025539",
+      "class": "n02088238",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00025549",
+      "class": "n02101556",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00025660",
+      "class": "n02102973",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00025665",
+      "class": "n02114548",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00025928",
+      "class": "n01833805",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00026173",
+      "class": "n02437616",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00026202",
+      "class": "n01667114",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00026228",
+      "class": "n02114855",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00026958",
+      "class": "n02328150",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00026967",
+      "class": "n01855032",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00027064",
+      "class": "n02105641",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00027810",
+      "class": "n02091831",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00027996",
+      "class": "n02018207",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00028429",
+      "class": "n02086910",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00028521",
+      "class": "n01608432",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00028600",
+      "class": "n01795545",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00028766",
+      "class": "n02097298",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00028801",
+      "class": "n01833805",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00028892",
+      "class": "n02098286",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00028920",
+      "class": "n02011460",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00028945",
+      "class": "n02098286",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00029024",
+      "class": "n02098105",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00029223",
+      "class": "n02058221",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00029262",
+      "class": "n02085782",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00029861",
+      "class": "n02088094",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00029875",
+      "class": "n02037110",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00029916",
+      "class": "n02321529",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00029970",
+      "class": "n02108089",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030035",
+      "class": "n01694178",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030049",
+      "class": "n02002556",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030087",
+      "class": "n02101006",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030196",
+      "class": "n02100877",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030199",
+      "class": "n02096051",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030200",
+      "class": "n02105641",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030213",
+      "class": "n02097209",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030377",
+      "class": "n02095889",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030527",
+      "class": "n02102973",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030571",
+      "class": "n02025239",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030734",
+      "class": "n01819313",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00030940",
+      "class": "n02009229",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00031006",
+      "class": "n02113624",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00031145",
+      "class": "n02113023",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00031295",
+      "class": "n02107312",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00031395",
+      "class": "n02097298",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00031718",
+      "class": "n02106662",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00032985",
+      "class": "n01833805",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00032995",
+      "class": "n02106662",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00033200",
+      "class": "n02085782",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00033235",
+      "class": "n02504458",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00033343",
+      "class": "n09332890",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00033437",
+      "class": "n01631663",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00033479",
+      "class": "n01819313",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00033530",
+      "class": "n02087046",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00033553",
+      "class": "n02108000",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00033911",
+      "class": "n02114712",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00034040",
+      "class": "n02085782",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00034049",
+      "class": "n02096177",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00034141",
+      "class": "n03733805",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00034515",
+      "class": "n01796340",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00034676",
+      "class": "n02123045",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00035473",
+      "class": "n02096177",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00035844",
+      "class": "n02096437",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00036284",
+      "class": "n01532829",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00036563",
+      "class": "n02094258",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00036664",
+      "class": "n02102177",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00037075",
+      "class": "n02106030",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00037116",
+      "class": "n01530575",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00037328",
+      "class": "n01592084",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00038443",
+      "class": "n01833805",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00038615",
+      "class": "n02002724",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00038697",
+      "class": "n02165456",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00038794",
+      "class": "n01534433",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00038814",
+      "class": "n02105505",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00038926",
+      "class": "n02095314",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00038981",
+      "class": "n02051845",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00039247",
+      "class": "n02089867",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00039743",
+      "class": "n02093256",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00039761",
+      "class": "n02106030",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00040286",
+      "class": "n02105056",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00040524",
+      "class": "n01807496",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00040618",
+      "class": "n02105251",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00040903",
+      "class": "n01601694",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00040937",
+      "class": "n02100583",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00041152",
+      "class": "n01558993",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00041288",
+      "class": "n01796340",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00041836",
+      "class": "n01531178",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043201",
+      "class": "n02085782",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043307",
+      "class": "n02002724",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043388",
+      "class": "n02090379",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043520",
+      "class": "n04252225",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043534",
+      "class": "n02107142",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043538",
+      "class": "n02105505",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043633",
+      "class": "n01806567",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043727",
+      "class": "n02104029",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043779",
+      "class": "n01614925",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00043823",
+      "class": "n01798484",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00044238",
+      "class": "n01855032",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00044387",
+      "class": "n02102973",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00044453",
+      "class": "n02097658",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00044507",
+      "class": "n01582220",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00044513",
+      "class": "n02089867",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00044646",
+      "class": "n02346627",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00044836",
+      "class": "n01978455",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00045151",
+      "class": "n02099712",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00045743",
+      "class": "n01795545",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00045961",
+      "class": "n02114548",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00046420",
+      "class": "n02090622",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00046462",
+      "class": "n02037110",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00046768",
+      "class": "n02110063",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00047153",
+      "class": "n02011460",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00047333",
+      "class": "n01534433",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00047509",
+      "class": "n02013706",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00048436",
+      "class": "n02112706",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00048575",
+      "class": "n02018795",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00048627",
+      "class": "n02104029",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00048640",
+      "class": "n02012849",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00048710",
+      "class": "n01531178",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00048894",
+      "class": "n02169497",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00048908",
+      "class": "n02002724",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00048940",
+      "class": "n02134084",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00049021",
+      "class": "n03887697",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00049131",
+      "class": "n03126707",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00049217",
+      "class": "n01882714",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00049721",
+      "class": "n02814860",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00049822",
+      "class": "n02132136",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00049886",
+      "class": "n02119022",
+      "bbox_count": 1
+    },
+    {
+      "id": "ILSVRC2012_val_00049942",
+      "class": "n02106166",
+      "bbox_count": 1
+    }
+  ],
+  "chncxr": [
+    {
+      "id": "CHNCXR_0001_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0002_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0003_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0004_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0005_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0006_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0007_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0008_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0009_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0010_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0011_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0012_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0013_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0014_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0015_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0016_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0017_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0018_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0019_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0020_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0021_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0022_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0023_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0024_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0025_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0026_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0027_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0028_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0029_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0030_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0031_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0032_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0033_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0034_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0035_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0036_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0037_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0038_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0039_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0040_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0041_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0042_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0043_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0044_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0045_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0046_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0047_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0048_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0049_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0050_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0051_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0052_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0053_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0054_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0055_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0056_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0057_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0058_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0059_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0060_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0061_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0062_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0063_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0064_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0065_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0066_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0067_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0068_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0069_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0070_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0071_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0072_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0073_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0074_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0075_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0076_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0077_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0078_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0079_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0080_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0081_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0082_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0083_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0084_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0085_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0086_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0087_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0088_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0089_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0090_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0091_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0092_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0093_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0094_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0095_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0096_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0097_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0098_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0099_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0100_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0101_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0102_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0103_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0104_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0105_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0106_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0107_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0108_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0109_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0110_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0111_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0112_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0113_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0114_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0115_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0116_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0117_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0118_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0119_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0120_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0121_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0122_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0123_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0124_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0125_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0126_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0127_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0128_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0129_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0130_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0131_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0132_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0133_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0134_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0135_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0136_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0137_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0138_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0139_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0140_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0141_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0142_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0143_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0144_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0145_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0146_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0147_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0148_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0149_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0150_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0151_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0152_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0153_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0154_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0155_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0156_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0157_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0158_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0159_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0160_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0161_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0162_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0163_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0164_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0165_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0166_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0167_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0168_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0169_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0170_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0171_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0172_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0173_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0174_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0175_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0176_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0177_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0178_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0179_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0180_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0181_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0182_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0183_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0184_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0185_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0186_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0187_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0188_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0189_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0190_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0191_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0192_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0193_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0194_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0195_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0196_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0197_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0198_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0199_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0200_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0201_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0202_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0203_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0204_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0205_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0206_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0207_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0208_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0209_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0210_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0211_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0212_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0213_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0214_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0215_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0216_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0217_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0218_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0219_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0220_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0221_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0222_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0223_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0224_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0225_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0226_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0227_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0228_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0229_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0230_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0231_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0232_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0233_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0234_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0235_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0236_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0237_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0238_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0239_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0240_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0241_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0242_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0243_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0244_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0245_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0246_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0247_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0248_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0249_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0250_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0251_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0252_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0253_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0254_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0255_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0256_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0257_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0258_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0259_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0260_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0261_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0262_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0263_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0264_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0265_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0266_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0267_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0268_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0269_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0270_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0271_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0272_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0273_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0274_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0275_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0276_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0277_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0278_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0279_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0280_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0281_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0282_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0283_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0284_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0285_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0286_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0287_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0288_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0289_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0290_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0291_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0292_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0293_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0294_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0295_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0296_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0297_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0298_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0299_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0300_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0301_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0302_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0303_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0304_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0305_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0306_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0307_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0308_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0309_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0310_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0311_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0312_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0313_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0314_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0315_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0316_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0317_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0318_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0319_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0320_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0321_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0322_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0323_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0324_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0325_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0326_0",
+      "positive": false,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0327_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0328_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0329_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0330_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0331_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0332_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0333_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0334_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0335_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0336_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0337_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0338_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0339_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0340_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0341_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0342_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0343_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0344_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0345_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0346_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0347_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0348_1",
+      "positive": true,
+      "lesion_annotation_count": 10,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0349_1",
+      "positive": true,
+      "lesion_annotation_count": 13,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0350_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0351_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0352_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0353_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0354_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0355_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0356_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0357_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0358_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0359_1",
+      "positive": true,
+      "lesion_annotation_count": 9,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0360_1",
+      "positive": true,
+      "lesion_annotation_count": 8,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0361_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0362_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0363_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0364_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0365_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0366_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0367_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0368_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0369_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0370_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0371_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0372_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0373_1",
+      "positive": true,
+      "lesion_annotation_count": 8,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0374_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0375_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0376_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0377_1",
+      "positive": true,
+      "lesion_annotation_count": 7,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0378_1",
+      "positive": true,
+      "lesion_annotation_count": 14,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0379_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0380_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0381_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0382_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0383_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0384_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0385_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0386_1",
+      "positive": true,
+      "lesion_annotation_count": 7,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0387_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0388_1",
+      "positive": true,
+      "lesion_annotation_count": 7,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0389_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0390_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0391_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0392_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0393_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0394_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0395_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0396_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0397_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0398_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0399_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0400_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0401_1",
+      "positive": true,
+      "lesion_annotation_count": 12,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0402_1",
+      "positive": true,
+      "lesion_annotation_count": 10,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0403_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0404_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0405_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0406_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0407_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0408_1",
+      "positive": true,
+      "lesion_annotation_count": 9,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0409_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0410_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0411_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0412_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0413_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0414_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0415_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0416_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0417_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0418_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0419_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0420_1",
+      "positive": true,
+      "lesion_annotation_count": 12,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0421_1",
+      "positive": true,
+      "lesion_annotation_count": 8,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0422_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0423_1",
+      "positive": true,
+      "lesion_annotation_count": 10,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0424_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0425_1",
+      "positive": true,
+      "lesion_annotation_count": 8,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0426_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0427_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0428_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0429_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0430_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0431_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0432_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0433_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0434_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0435_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0436_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0437_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0438_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0439_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0440_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0441_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0442_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0443_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0444_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0445_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0446_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0447_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0448_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0449_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0450_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0451_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0452_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0453_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0454_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0455_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0456_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0457_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0458_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0459_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0460_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0461_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0462_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0463_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0464_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0465_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0466_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0467_1",
+      "positive": true,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0468_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0469_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0470_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0471_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0472_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0473_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0474_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0475_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0476_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0477_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0478_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0479_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0480_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0481_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0482_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0483_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0484_1",
+      "positive": true,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0485_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0486_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0487_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0488_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0489_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0490_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0491_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0492_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0493_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0494_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0495_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0496_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0497_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0498_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0499_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0500_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0501_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0502_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0503_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0504_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0505_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0506_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0507_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0508_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0509_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0510_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0511_1",
+      "positive": true,
+      "lesion_annotation_count": 7,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0512_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0513_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0514_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0515_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0516_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0517_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0518_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0519_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0520_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0521_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0522_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0523_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0524_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0525_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0526_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0527_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0528_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0529_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0530_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0531_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0532_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0533_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0534_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0535_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0536_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0537_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0538_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0539_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0540_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0541_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0542_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0543_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0544_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0545_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0546_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0547_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0548_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0549_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0550_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0551_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0552_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0553_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0554_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0555_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0556_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0557_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0558_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0559_1",
+      "positive": true,
+      "lesion_annotation_count": 8,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0560_1",
+      "positive": true,
+      "lesion_annotation_count": 11,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0561_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0562_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0563_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0564_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0565_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0566_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0567_1",
+      "positive": true,
+      "lesion_annotation_count": 7,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0568_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0569_1",
+      "positive": true,
+      "lesion_annotation_count": 11,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0570_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0571_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0572_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0573_1",
+      "positive": true,
+      "lesion_annotation_count": 8,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0574_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0575_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0576_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0577_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0578_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0579_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0580_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0581_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0582_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0583_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0584_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0585_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0586_1",
+      "positive": true,
+      "lesion_annotation_count": 11,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0587_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0588_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0589_1",
+      "positive": true,
+      "lesion_annotation_count": 11,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0590_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0591_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0592_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0593_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0594_1",
+      "positive": true,
+      "lesion_annotation_count": 12,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0595_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0596_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0597_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0598_1",
+      "positive": true,
+      "lesion_annotation_count": 7,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0599_1",
+      "positive": true,
+      "lesion_annotation_count": 9,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0600_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0601_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0602_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0603_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0604_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0605_1",
+      "positive": true,
+      "lesion_annotation_count": 8,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0606_1",
+      "positive": true,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0607_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0608_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0609_1",
+      "positive": true,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0610_1",
+      "positive": true,
+      "lesion_annotation_count": 9,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0611_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0612_1",
+      "positive": true,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0613_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0614_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0615_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0616_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0617_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0618_1",
+      "positive": true,
+      "lesion_annotation_count": 8,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0619_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0620_1",
+      "positive": true,
+      "lesion_annotation_count": 8,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0621_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0622_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0623_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0624_1",
+      "positive": true,
+      "lesion_annotation_count": 0,
+      "localization_eligible_before_model_filter": false
+    },
+    {
+      "id": "CHNCXR_0625_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0626_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0627_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0628_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0629_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0630_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0631_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0632_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0633_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0634_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0635_1",
+      "positive": true,
+      "lesion_annotation_count": 9,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0636_1",
+      "positive": true,
+      "lesion_annotation_count": 7,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0637_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0638_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0639_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0640_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0641_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0642_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0643_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0644_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0645_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0646_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0647_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0648_1",
+      "positive": true,
+      "lesion_annotation_count": 7,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0649_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0650_1",
+      "positive": true,
+      "lesion_annotation_count": 3,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0651_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0652_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0653_1",
+      "positive": true,
+      "lesion_annotation_count": 5,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0654_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0655_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0656_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0657_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0658_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0659_1",
+      "positive": true,
+      "lesion_annotation_count": 2,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0660_1",
+      "positive": true,
+      "lesion_annotation_count": 6,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0661_1",
+      "positive": true,
+      "lesion_annotation_count": 4,
+      "localization_eligible_before_model_filter": true
+    },
+    {
+      "id": "CHNCXR_0662_1",
+      "positive": true,
+      "lesion_annotation_count": 1,
+      "localization_eligible_before_model_filter": true
+    }
+  ]
+}
