@@ -8,12 +8,12 @@
 
 ## 当前进度
 
-仓库骨架已建立，LIME 基线算法及合成数值测试已实现；尚未运行真实数据归因实验。
+仓库骨架已建立，LIME 与 RISE 基线算法及合成数值测试已实现；尚未运行真实数据归因实验。
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 问题分析 | 需求分析与任务建模、方法选择、实验设计 | 进行中 |
-| M2 初步结果 | 冻结数据与模型输入，完成值函数、预算计数、Ablation、LIME 及小规模端到端验证 | 进行中：LIME 核心已实现，其余待完成 |
+| M2 初步结果 | 冻结数据与模型输入，完成值函数、预算计数、Ablation、LIME 及小规模端到端验证 | 进行中：LIME、RISE 核心已实现，其余待完成 |
 | M3 中期结果 | 完成 KernelSHAP、统一评价指标及默认设置下的核心方法初步比较 | 未开始 |
 | M4 完整实验 | 完成核心全量实验、参数敏感性、梯度对照、扩展探索与配对统计 | 未开始 |
 | M5 最终成果 | 冻结实验结果，完成可追溯的统计图表、完整报告与答辩 PPT | 未开始 |
@@ -31,9 +31,9 @@
 | **RQ2** | 超像素大小、遮蔽率、模型前向预算如何影响归因质量？什么粒度最优？ |
 | **RQ3** | SHAP 的公理保证是否转化为更优的归因质量？与梯度类、扰动类相比如何？ |
 
-**方法范围**：核心方法包括 Ablation、LIME、KernelSHAP、Integrated Gradients 和
-Grad-CAM，用于形成主要实验结论；RISE、Shapley 置换采样、Faith-Shap 二阶交互、
-Saliency、Expected Gradients 和 Grad-CAM++ 作为扩展方法，只报告探索性结果。
+**方法范围**：核心方法包括 Ablation、LIME、RISE 和 KernelSHAP，用于形成主要实验结论；
+Integrated Gradients、Grad-CAM 等梯度方法作为外部对照，Shapley 置换采样、
+Faith-Shap 二阶交互、Saliency、Expected Gradients 和 Grad-CAM++ 作为扩展方法。
 
 **数据与模型**：ImageNet 验证集子集（自然图像）与 CHNCXR 胸片（医学影像）
 均使用 ResNet-50、VGG13，形成 2 数据域 $\times$ 2 模型的对照设计。
@@ -129,13 +129,14 @@ M1 固化的数据使用口径如下：
 
 ## 5. 运行方式
 
-### 已实现：LIME 基线代码（暂不执行真实数据归因与可视化）
+### 已实现：LIME 与 RISE 基线代码（暂不执行真实数据归因与可视化）
 
 从 `code/` 目录运行以下命令，仅检查默认参数与单图计算预算：
 
 ```bash
 python -m experiments.lime_baseline --config configs/method/lime.yaml --dry-run
-python -m pytest tests/test_lime.py -q -p no:cacheprovider
+python -m experiments.rise_baseline --config configs/method/rise.yaml --dry-run
+python -m pytest tests/test_lime.py tests/test_rise.py -q -p no:cacheprovider
 ```
 
 配置入口不会加载权重、读取影像或保存归因结果。数值测试仅使用合成输入和
@@ -145,9 +146,13 @@ python -m pytest tests/test_lime.py -q -p no:cacheprovider
 实现位置：
 
 - `attribution/perturbation/lime.py`：独立随机采样、余弦距离核、加权岭回归、区域系数及拟合诊断；
+- `attribution/perturbation/rise.py`：原生随机网格、双线性上采样与随机平移、流式批处理、像素热图及区域汇总；
 - `preprocessing/superpixels.py`：统一 SLIC 分割，默认名义区域数 100、compactness=10、sigma=1；
 - `configs/method/lime.yaml`：1024 次前向总预算、批大小 32、遮蔽率 0.5、核宽 0.25、岭惩罚 1.0、种子 0；
-- `tests/test_lime.py`：数值正确性、预算、可复现性与接口检查。
+- `configs/method/rise.yaml`：1024 次前向总预算、批大小 32、`7×7` 网格、遮蔽率 0.5、种子 0；
+- `tests/test_lime.py`、`tests/test_rise.py`：数值正确性、预算、可复现性与接口检查。
+
+#### LIME 接口
 
 后续模型模块通过 `fit_lime(image, segments, predict_logits, target, config)` 接入：
 
@@ -173,6 +178,24 @@ SLIC、logit 和归一化零遮蔽，不保证与原库默认配置或随机数�
 加权 R² 仅诊断局部拟合，不替代忠实性评价；区域系数未投影为像素归因图，
 未归一化或截断正负值。采样预算小或区域缺少变化时，岭回归仍可拟合，但不能据此
 认定局部效应可靠。耗时、Insertion/Deletion、稳定性评价与真实模型验证留待实验阶段。
+
+#### RISE 接口
+
+后续模型模块通过 `explain_rise(image, predict_logits, target, config)` 接入。`image`、
+`predict_logits` 和 `target` 的契约与 LIME 相同；RISE 不需要 SLIC 作为算法输入，而是先生成
+低分辨率 Bernoulli 网格，经双线性上采样和随机平移裁剪得到软掩码。默认保留概率为
+`p_keep = 1 - mask_rate = 0.5`，目标 logit 加权掩码之和按
+`num_masks * p_keep` 归一化。实现参考 [RISE 论文](https://bmvc2018.org/contents/papers/1064.pdf)
+和[作者代码](https://github.com/eclique/RISE/blob/master/explanations.py)，但遵循本项目统一的
+pre-Softmax logit 与归一化零基线口径。
+
+`num_masks` 就是完整前向预算；采样中不会额外强制加入原图或为了选类别增加一次前向。
+掩码参数由局部随机数生成器一次性确定，因此相同种子在不同批大小下得到相同热图，且可在
+输入扰动稳定性实验中复用。主入口仅逐批渲染掩码，避免默认设置下常驻完整的
+`1024×224×224` 掩码数组。返回值包含有符号像素热图、实际前向样本数/批次数、名义及实际
+保留率、不同低分辨率掩码数和被遮蔽样本的平均目标 logit。评价模块可调用
+`region_scores_from_saliency(saliency, segments)` 在统一 SLIC 区域内求和；该函数不取绝对值、
+不截断负值，也不做展示归一化。
 
 ### 后续实验入口约定
 
