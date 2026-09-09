@@ -8,12 +8,12 @@
 
 ## 当前进度
 
-仓库骨架已建立，LIME 与 RISE 基线算法及合成数值测试已实现；尚未运行真实数据归因实验。
+仓库骨架已建立，LIME、RISE 与 Ablation 基线算法及合成数值测试已实现；尚未运行真实数据归因实验。
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 问题分析 | 需求分析与任务建模、方法选择、实验设计 | 进行中 |
-| M2 初步结果 | 冻结数据与模型输入，完成值函数、预算计数、Ablation、LIME 及小规模端到端验证 | 进行中：LIME、RISE 核心已实现，其余待完成 |
+| M2 初步结果 | 冻结数据与模型输入，完成值函数、预算计数、Ablation、LIME 及小规模端到端验证 | 进行中：LIME、RISE、Ablation 核心已实现，公共模型接入与端到端验证待完成 |
 | M3 中期结果 | 完成 KernelSHAP、统一评价指标及默认设置下的核心方法初步比较 | 未开始 |
 | M4 完整实验 | 完成核心全量实验、参数敏感性、梯度对照、扩展探索与配对统计 | 未开始 |
 | M5 最终成果 | 冻结实验结果，完成可追溯的统计图表、完整报告与答辩 PPT | 未开始 |
@@ -196,6 +196,47 @@ pre-Softmax logit 与归一化零基线口径。
 保留率、不同低分辨率掩码数和被遮蔽样本的平均目标 logit。评价模块可调用
 `region_scores_from_saliency(saliency, segments)` 在统一 SLIC 区域内求和；该函数不取绝对值、
 不截断负值，也不做展示归一化。
+
+### 已实现：Ablation 基线代码
+
+在仓库根目录（`ML-Practice/`）运行预算预览和合成数值测试：
+
+```bash
+python -m experiments.ablation_baseline --config configs/method/ablation.yaml --dry-run --num-regions 100
+python -m pytest tests/test_ablation.py tests/test_lime.py -q -p no:cacheprovider
+```
+
+`--num-regions` 是本次预览假定的**实际**区域数，不是 SLIC 的名义参数；100 个实际区域
+默认消耗 101 张前向输入、4 个批次（批大小 32）。加 `--cached-original` 可预览复用
+公共原图分数时的预算：100 张输入、4 个批次。入口仅校验配置与预览，不读取图像或加载模型。
+
+实现位于 `attribution/perturbation/ablation.py`，输入约定与 LIME 一致：
+
+```python
+from attribution.perturbation.ablation import AblationConfig, fit_ablation
+
+result = fit_ablation(image, segments, predict_logits, target,
+                      AblationConfig(batch_size=32))
+region_ids = result.region_ids
+scores = result.coefficients
+```
+
+每次从完整原图出发，仅将一个超像素的全部通道置为归一化空间的零；区域贡献为
+`原图目标 logit - 遮蔽该区域后的目标 logit`。保留负贡献，不取绝对值或做归一化。
+算法确定性运行，不需要随机种子、随机遮蔽率或固定采样预算；所有区域均计算一次，
+批处理只影响内存和调用批次数。含交互效应时，区域贡献之和不一定等于全图相对基线的分数差。
+
+结果与 LIME 共用 `region_ids`、`coefficients`、`target`、`original_logit`、
+`forward_samples`、`forward_batches` 字段；额外提供按同一顺序排列的 `ablated_logits`
+和 `used_cached_original`。这些是直接消融贡献，不是回归系数；不提供 LIME 专用的截距或 R²。
+
+默认自行计算原图分数，实际 `C` 个区域共消耗 `C+1` 张前向输入。可通过关键字参数
+`original_logit=cached_score` 复用公共缓存，归因阶段只消耗 `C` 张输入；调用方负责确认
+缓存对应完全相同的图像、预处理、模型和目标类别。批次数按实际调用另行记录，不重复计入缓存成本。
+
+与当前 LIME 相同，此模块仅返回区域分数，不生成像素热图、不计时或计算评价指标。
+后续公共模块生成热图时应将区域贡献除以区域像素数再分配，使像素求和还原区域贡献。
+真实模型接入、统一结果保存及完整实验仍待公共模块完成。
 
 ### 后续实验入口约定
 
