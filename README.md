@@ -8,12 +8,12 @@
 
 ## 当前进度
 
-仓库骨架已建立，各模块的实现将按里程碑逐步填充。
+仓库骨架已建立，LIME 基线算法及合成数值测试已实现；尚未运行真实数据归因实验。
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 问题分析 | 需求分析与任务建模、方法选择、实验设计 | 进行中 |
-| M2 初步结果 | 冻结数据与模型输入，完成值函数、预算计数、Ablation、LIME 及小规模端到端验证 | 未开始 |
+| M2 初步结果 | 冻结数据与模型输入，完成值函数、预算计数、Ablation、LIME 及小规模端到端验证 | 进行中：LIME 核心已实现，其余待完成 |
 | M3 中期结果 | 完成 KernelSHAP、统一评价指标及默认设置下的核心方法初步比较 | 未开始 |
 | M4 完整实验 | 完成核心全量实验、参数敏感性、梯度对照、扩展探索与配对统计 | 未开始 |
 | M5 最终成果 | 冻结实验结果，完成可追溯的统计图表、完整报告与答辩 PPT | 未开始 |
@@ -129,7 +129,54 @@ M1 固化的数据使用口径如下：
 
 ## 5. 运行方式
 
-实验统一通过命令行入口执行：
+### 已实现：LIME 基线代码（暂不执行真实数据归因与可视化）
+
+从 `code/` 目录运行以下命令，仅检查默认参数与单图计算预算：
+
+```bash
+python -m experiments.lime_baseline --config configs/method/lime.yaml --dry-run
+python -m pytest tests/test_lime.py -q -p no:cacheprovider
+```
+
+配置入口不会加载权重、读取影像或保存归因结果。数值测试仅使用合成输入和
+可解析的预测函数。该部分依赖 NumPy、scikit-learn、scikit-image、PyYAML
+和 pytest；无需 PyTorch。模型加载与真实数据实验尚待接入。
+
+实现位置：
+
+- `attribution/perturbation/lime.py`：独立随机采样、余弦距离核、加权岭回归、区域系数及拟合诊断；
+- `preprocessing/superpixels.py`：统一 SLIC 分割，默认名义区域数 100、compactness=10、sigma=1；
+- `configs/method/lime.yaml`：1024 次前向总预算、批大小 32、遮蔽率 0.5、核宽 0.25、岭惩罚 1.0、种子 0；
+- `tests/test_lime.py`：数值正确性、预算、可复现性与接口检查。
+
+后续模型模块通过 `fit_lime(image, segments, predict_logits, target, config)` 接入：
+
+- `image` 为已按权重规范裁剪/缩放并归一化的浮点 `H×W×C` 数组；
+- `segments` 为与输入严格对齐的整数 `H×W` 标签，可使用非连续标签；
+- SLIC 在归一化之前的 `[0, 1]` RGB 图像上执行，使用实际产生的区域数；
+- `predict_logits` 接收归一化后的 NumPy `N×H×W×C` 批次，返回 `N×K` 原始 logit；PyTorch 接入方负责转为 NCHW、设备转换、`eval()` 和关闭梯度；
+- `target` 显式传入正确类别的零起始索引，函数不会额外推理选择类别。
+
+每个遮蔽区域在归一化输入空间置零。预算包含首行完整输入；其余行独立按
+Bernoulli 分布采样，因此遮蔽率是期望的区域比例，不保证每行恰好遮蔽同样数量，
+也不是像素面积比例。重复掩码仍计入预算，不做缓存或额外端点推理。
+
+算法采用全部区域拟合（`feature_selection='none'`），截距不正则化，目标函数为
+`sum(w * (y - intercept - Z @ coefficients)^2) + alpha * ||coefficients||²`。
+核权重为 `exp(-0.5 * (cosine_distance / kernel_width)^2)`。这些数学约定参考
+[LIME 官方图像实现](https://github.com/marcotcr/lime/blob/master/lime/lime_image.py)及
+[局部回归实现](https://github.com/marcotcr/lime/blob/master/lime/lime_base.py)；本项目改用共享
+SLIC、logit 和归一化零遮蔽，不保证与原库默认配置或随机数序列逐位一致。
+
+返回值包含按 `region_ids` 对齐的有符号系数、截距、原图 logit、代理模型在原图的
+预测、训练邻域加权 R²、实际前向样本数/批次数、实际遮蔽率和不同掩码数。
+加权 R² 仅诊断局部拟合，不替代忠实性评价；区域系数未投影为像素归因图，
+未归一化或截断正负值。采样预算小或区域缺少变化时，岭回归仍可拟合，但不能据此
+认定局部效应可靠。耗时、Insertion/Deletion、稳定性评价与真实模型验证留待实验阶段。
+
+### 后续实验入口约定
+
+以下为后续模块的入口规范，尚未全部实现：
 
 ```bash
 python -m experiments.<name> --config configs/experiment/<name>.yaml [--dry-run]

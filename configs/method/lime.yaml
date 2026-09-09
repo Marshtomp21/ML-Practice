@@ -1,0 +1,7 @@
+# M1 defaults; num_samples includes the original image, not an extra forward.
+num_samples: 1024
+batch_size: 32
+mask_rate: 0.50
+kernel_width: 0.25
+ridge_alpha: 1.0
+seed: 0
