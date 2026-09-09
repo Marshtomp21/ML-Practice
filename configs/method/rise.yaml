@@ -1,0 +1,6 @@
+# M1 defaults; num_masks is the complete per-image forward budget.
+num_masks: 1024
+batch_size: 32
+grid_size: 7
+mask_rate: 0.50
+seed: 0
