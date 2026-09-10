@@ -1,0 +1,2 @@
+# Deterministic single-region deletion; no random seed or sampling budget.
+batch_size: 32
