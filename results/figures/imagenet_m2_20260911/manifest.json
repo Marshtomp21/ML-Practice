@@ -1,0 +1,14 @@
+{
+  "run": "imagenet_m2_20260911",
+  "seed": 0,
+  "figures": [
+    "results/figures/imagenet_m2_20260911/resnet50_ILSVRC2012_val_00000319.png",
+    "results/figures/imagenet_m2_20260911/resnet50_ILSVRC2012_val_00001218.png",
+    "results/figures/imagenet_m2_20260911/resnet50_ILSVRC2012_val_00004344.png",
+    "results/figures/imagenet_m2_20260911/resnet50_ILSVRC2012_val_00006565.png",
+    "results/figures/imagenet_m2_20260911/vgg13_ILSVRC2012_val_00000319.png",
+    "results/figures/imagenet_m2_20260911/vgg13_ILSVRC2012_val_00001218.png",
+    "results/figures/imagenet_m2_20260911/vgg13_ILSVRC2012_val_00004344.png",
+    "results/figures/imagenet_m2_20260911/vgg13_ILSVRC2012_val_00006565.png"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "run": "chncxr_full_main",
+  "seed": 0,
+  "figures": [
+    "results/figures/chncxr_full_main/resnet50_CHNCXR_0001_0.png",
+    "results/figures/chncxr_full_main/resnet50_CHNCXR_0003_0.png",
+    "results/figures/chncxr_full_main/resnet50_CHNCXR_0006_0.png",
+    "results/figures/chncxr_full_main/resnet50_CHNCXR_0009_0.png",
+    "results/figures/chncxr_full_main/vgg13_CHNCXR_0001_0.png",
+    "results/figures/chncxr_full_main/vgg13_CHNCXR_0003_0.png",
+    "results/figures/chncxr_full_main/vgg13_CHNCXR_0006_0.png",
+    "results/figures/chncxr_full_main/vgg13_CHNCXR_0009_0.png"
+  ]
+}

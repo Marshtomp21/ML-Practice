@@ -6,6 +6,9 @@ data/external/**
 
 # 划分清单必须入库：它是可复现性的核心，且体积很小
 !data/splits/**
+# 本机同步前备份与已被全量运行取代的首轮试跑不入库
+data/splits/*.local-*
+data/splits/chncxr_pilot_20260910/
 
 # 课程数据归档仅用于本地解压，禁止误提交大文件
 /ML-models_datasets.7z
@@ -24,6 +27,7 @@ results/logs/**
 !results/metrics/**
 !results/tables/**
 !results/figures/**
+results/metrics/chncxr_pilot_20260910/
 
 # ---- Python ----
 __pycache__/
@@ -32,6 +36,7 @@ __pycache__/
 .ruff_cache/
 *.egg-info/
 .venv/
+.venv-experiments/
 venv/
 
 # ---- LaTeX ----

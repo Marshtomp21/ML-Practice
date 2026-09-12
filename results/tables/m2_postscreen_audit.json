@@ -1,0 +1,1633 @@
+{
+  "protocol": {
+    "image_size": [
+      224,
+      224
+    ],
+    "slic_nominal_regions": [
+      50,
+      100,
+      200,
+      300
+    ],
+    "slic": {
+      "compactness": 10.0,
+      "sigma": 1.0,
+      "start_label": 0,
+      "enforce_connectivity": true,
+      "convert2lab": true,
+      "channel_axis": -1
+    },
+    "target_area_scope": "localization-eligible samples"
+  },
+  "domains": {
+    "ImageNet": {
+      "selection_fingerprint": "be5f6bea4d1eaaf3ea32b3904132f2ff40c2244504547735e7a4a1277684507a",
+      "candidate_count": 500,
+      "joint_correct_count": 374,
+      "sample_retention_rate": 0.748,
+      "class_retention": {
+        "classes_before": 284,
+        "classes_after": 224,
+        "class_coverage_retention_rate": 0.7887323943661971,
+        "by_class": {
+          "n01494475": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01514668": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01530575": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01531178": {
+            "before": 6,
+            "after": 6,
+            "retention_rate": 1.0
+          },
+          "n01532829": {
+            "before": 5,
+            "after": 5,
+            "retention_rate": 1.0
+          },
+          "n01534433": {
+            "before": 5,
+            "after": 5,
+            "retention_rate": 1.0
+          },
+          "n01537544": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01558993": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n01560419": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n01580077": {
+            "before": 4,
+            "after": 3,
+            "retention_rate": 0.75
+          },
+          "n01582220": {
+            "before": 4,
+            "after": 4,
+            "retention_rate": 1.0
+          },
+          "n01592084": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n01601694": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01608432": {
+            "before": 3,
+            "after": 2,
+            "retention_rate": 0.6666666666666666
+          },
+          "n01614925": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01616318": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01622779": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01631663": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01641577": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01644373": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01665541": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01667114": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01667778": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01669191": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01675722": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01687978": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01688243": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01694178": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01728572": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01734418": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01751748": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01756291": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n01773157": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01776313": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01795545": {
+            "before": 5,
+            "after": 5,
+            "retention_rate": 1.0
+          },
+          "n01796340": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01797886": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01798484": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01806143": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01806567": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01807496": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01817953": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01819313": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n01824575": {
+            "before": 4,
+            "after": 4,
+            "retention_rate": 1.0
+          },
+          "n01828970": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01829413": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01833805": {
+            "before": 7,
+            "after": 6,
+            "retention_rate": 0.8571428571428571
+          },
+          "n01843065": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01843383": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01847000": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n01855032": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01860187": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01872401": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01873310": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n01882714": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01883070": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01910747": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01917289": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n01924916": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01944390": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01978455": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01985128": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n01986214": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02002556": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n02002724": {
+            "before": 4,
+            "after": 2,
+            "retention_rate": 0.5
+          },
+          "n02006656": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02009229": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02009912": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02011460": {
+            "before": 5,
+            "after": 3,
+            "retention_rate": 0.6
+          },
+          "n02012849": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02013706": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02017213": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02018207": {
+            "before": 5,
+            "after": 5,
+            "retention_rate": 1.0
+          },
+          "n02018795": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n02025239": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02027492": {
+            "before": 5,
+            "after": 5,
+            "retention_rate": 1.0
+          },
+          "n02028035": {
+            "before": 4,
+            "after": 3,
+            "retention_rate": 0.75
+          },
+          "n02033041": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02037110": {
+            "before": 7,
+            "after": 6,
+            "retention_rate": 0.8571428571428571
+          },
+          "n02051845": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n02058221": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02066245": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02071294": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02085782": {
+            "before": 4,
+            "after": 3,
+            "retention_rate": 0.75
+          },
+          "n02085936": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02086079": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02086240": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02086910": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02087046": {
+            "before": 2,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02087394": {
+            "before": 2,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02088094": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02088238": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02088364": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02088466": {
+            "before": 3,
+            "after": 1,
+            "retention_rate": 0.3333333333333333
+          },
+          "n02088632": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02089078": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02089867": {
+            "before": 4,
+            "after": 1,
+            "retention_rate": 0.25
+          },
+          "n02090379": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02090622": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02090721": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02091032": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02091467": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02091635": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02091831": {
+            "before": 4,
+            "after": 2,
+            "retention_rate": 0.5
+          },
+          "n02093256": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02093428": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02093754": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02093859": {
+            "before": 3,
+            "after": 2,
+            "retention_rate": 0.6666666666666666
+          },
+          "n02093991": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02094114": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n02094258": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02094433": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02095314": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02095570": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02095889": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02096051": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02096177": {
+            "before": 5,
+            "after": 3,
+            "retention_rate": 0.6
+          },
+          "n02096437": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02096585": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02097047": {
+            "before": 2,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02097130": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02097209": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02097298": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02097474": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02097658": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02098105": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02098286": {
+            "before": 4,
+            "after": 4,
+            "retention_rate": 1.0
+          },
+          "n02099429": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n02099601": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02099712": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02100236": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02100583": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02100735": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02100877": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02101006": {
+            "before": 3,
+            "after": 2,
+            "retention_rate": 0.6666666666666666
+          },
+          "n02101388": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02101556": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02102040": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02102177": {
+            "before": 2,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02102318": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02102480": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02102973": {
+            "before": 3,
+            "after": 1,
+            "retention_rate": 0.3333333333333333
+          },
+          "n02104029": {
+            "before": 3,
+            "after": 1,
+            "retention_rate": 0.3333333333333333
+          },
+          "n02104365": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02105056": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02105162": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02105251": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02105412": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02105505": {
+            "before": 3,
+            "after": 2,
+            "retention_rate": 0.6666666666666666
+          },
+          "n02105641": {
+            "before": 4,
+            "after": 4,
+            "retention_rate": 1.0
+          },
+          "n02105855": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02106030": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02106166": {
+            "before": 4,
+            "after": 3,
+            "retention_rate": 0.75
+          },
+          "n02106382": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02106550": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02106662": {
+            "before": 4,
+            "after": 4,
+            "retention_rate": 1.0
+          },
+          "n02107142": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02107312": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02107574": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02107683": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02107908": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02108000": {
+            "before": 3,
+            "after": 2,
+            "retention_rate": 0.6666666666666666
+          },
+          "n02108089": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02108422": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02109525": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02109961": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02110063": {
+            "before": 4,
+            "after": 2,
+            "retention_rate": 0.5
+          },
+          "n02110341": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02110627": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02110806": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02110958": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02111277": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02112137": {
+            "before": 4,
+            "after": 4,
+            "retention_rate": 1.0
+          },
+          "n02112350": {
+            "before": 3,
+            "after": 1,
+            "retention_rate": 0.3333333333333333
+          },
+          "n02112706": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02113023": {
+            "before": 4,
+            "after": 3,
+            "retention_rate": 0.75
+          },
+          "n02113624": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02113799": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02113978": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02114548": {
+            "before": 5,
+            "after": 5,
+            "retention_rate": 1.0
+          },
+          "n02114712": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02114855": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02115641": {
+            "before": 5,
+            "after": 1,
+            "retention_rate": 0.2
+          },
+          "n02115913": {
+            "before": 3,
+            "after": 2,
+            "retention_rate": 0.6666666666666666
+          },
+          "n02116738": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02117135": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02119022": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n02119789": {
+            "before": 3,
+            "after": 2,
+            "retention_rate": 0.6666666666666666
+          },
+          "n02120079": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02120505": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02123045": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02123394": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02123597": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02128757": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02132136": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02133161": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02134084": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02137549": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02165456": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02169497": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02172182": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02190166": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02233338": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02259212": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02276258": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02277742": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02280649": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02281406": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02321529": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02325366": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02328150": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02342885": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02346627": {
+            "before": 4,
+            "after": 3,
+            "retention_rate": 0.75
+          },
+          "n02356798": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02364673": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02391049": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02408429": {
+            "before": 4,
+            "after": 4,
+            "retention_rate": 1.0
+          },
+          "n02415577": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02422699": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02437312": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02437616": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02441942": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02443114": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02444819": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02445715": {
+            "before": 3,
+            "after": 3,
+            "retention_rate": 1.0
+          },
+          "n02454379": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02480855": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02483708": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02484975": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02486261": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02487347": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02488702": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02493793": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02500267": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02504458": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02526121": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02606052": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02687172": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02692877": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n02747177": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02782093": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02783161": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02807133": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02808304": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n02814860": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n02823750": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n02894605": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03126707": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03127747": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n03197337": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03201208": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n03218198": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03272010": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03372029": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n03482405": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03530642": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n03584829": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03594945": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n03670208": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03733805": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n03803284": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n03887697": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03967562": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n03976467": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n04009552": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n04033901": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n04033995": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n04146614": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n04252225": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n04273569": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n04370456": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n04554684": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n04613696": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n07614500": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n07718747": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n07734744": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n07747607": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n07880968": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n07920052": {
+            "before": 2,
+            "after": 1,
+            "retention_rate": 0.5
+          },
+          "n09332890": {
+            "before": 2,
+            "after": 0,
+            "retention_rate": 0.0
+          },
+          "n12985857": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n13037406": {
+            "before": 1,
+            "after": 1,
+            "retention_rate": 1.0
+          },
+          "n13040303": {
+            "before": 2,
+            "after": 2,
+            "retention_rate": 1.0
+          },
+          "n13054560": {
+            "before": 1,
+            "after": 0,
+            "retention_rate": 0.0
+          }
+        }
+      },
+      "localization_eligible_count": {
+        "before": 500,
+        "after": 374
+      },
+      "target_area_fraction": {
+        "before": {
+          "count": 500,
+          "median": 0.31825972576530615,
+          "q25": 0.2025569993622449,
+          "q75": 0.4233248963647959
+        },
+        "after": {
+          "count": 374,
+          "median": 0.32603236607142855,
+          "q25": 0.21120157047193877,
+          "q75": 0.4238331074617347
+        }
+      },
+      "actual_slic_regions": {
+        "50": {
+          "before": {
+            "count": 500,
+            "median": 40.0,
+            "q25": 37.0,
+            "q75": 43.0
+          },
+          "after": {
+            "count": 374,
+            "median": 40.0,
+            "q25": 37.0,
+            "q75": 43.0
+          }
+        },
+        "100": {
+          "before": {
+            "count": 500,
+            "median": 86.0,
+            "q25": 82.0,
+            "q75": 90.0
+          },
+          "after": {
+            "count": 374,
+            "median": 86.0,
+            "q25": 82.0,
+            "q75": 90.0
+          }
+        },
+        "200": {
+          "before": {
+            "count": 500,
+            "median": 174.5,
+            "q25": 167.0,
+            "q75": 181.0
+          },
+          "after": {
+            "count": 374,
+            "median": 174.0,
+            "q25": 166.0,
+            "q75": 180.0
+          }
+        },
+        "300": {
+          "before": {
+            "count": 500,
+            "median": 263.0,
+            "q25": 254.0,
+            "q75": 271.0
+          },
+          "after": {
+            "count": 374,
+            "median": 263.0,
+            "q25": 253.0,
+            "q75": 270.0
+          }
+        }
+      }
+    },
+    "CHNCXR": {
+      "selection_fingerprint": "06e4d0ce146f1d370258de43de672b11ed99f87f155998933280926cfac75b0a",
+      "candidate_count": 662,
+      "joint_correct_count": 434,
+      "sample_retention_rate": 0.6555891238670695,
+      "class_retention": {
+        "classes_before": 2,
+        "classes_after": 2,
+        "class_coverage_retention_rate": 1.0,
+        "by_class": {
+          "0": {
+            "before": 326,
+            "after": 177,
+            "retention_rate": 0.5429447852760736
+          },
+          "1": {
+            "before": 336,
+            "after": 257,
+            "retention_rate": 0.7648809523809523
+          }
+        }
+      },
+      "localization_eligible_count": {
+        "before": 330,
+        "after": 254
+      },
+      "target_area_fraction": {
+        "before": {
+          "count": 330,
+          "median": 0.015545280612244899,
+          "q25": 0.007030253507653061,
+          "q75": 0.0336067044005102
+        },
+        "after": {
+          "count": 254,
+          "median": 0.016103316326530615,
+          "q25": 0.007204639668367346,
+          "q75": 0.034383968431122444
+        }
+      },
+      "actual_slic_regions": {
+        "50": {
+          "before": {
+            "count": 330,
+            "median": 42.0,
+            "q25": 40.0,
+            "q75": 44.0
+          },
+          "after": {
+            "count": 254,
+            "median": 42.0,
+            "q25": 40.0,
+            "q75": 44.0
+          }
+        },
+        "100": {
+          "before": {
+            "count": 330,
+            "median": 90.0,
+            "q25": 88.0,
+            "q75": 93.0
+          },
+          "after": {
+            "count": 254,
+            "median": 90.0,
+            "q25": 88.0,
+            "q75": 92.0
+          }
+        },
+        "200": {
+          "before": {
+            "count": 330,
+            "median": 183.0,
+            "q25": 180.0,
+            "q75": 187.0
+          },
+          "after": {
+            "count": 254,
+            "median": 183.0,
+            "q25": 180.0,
+            "q75": 186.0
+          }
+        },
+        "300": {
+          "before": {
+            "count": 330,
+            "median": 275.0,
+            "q25": 271.0,
+            "q75": 278.0
+          },
+          "after": {
+            "count": 254,
+            "median": 275.0,
+            "q25": 271.0,
+            "q75": 278.0
+          }
+        }
+      }
+    }
+  }
+}

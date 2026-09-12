@@ -15,6 +15,7 @@
 from __future__ import annotations
 
 import os
+import json
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -26,13 +27,14 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from PIL import Image
 from skimage.segmentation import slic
 
-from _common import (CHNCXR, IMAGENET, C_AUX, C_MED, C_NAT,
+from _common import (ROOT, CHNCXR, IMAGENET, C_AUX, C_MED, C_NAT,
                      chncxr_lesion_masks, imagenet_bboxes, np, os, plt, save)
 
 SIZE = 224
 N_GRID = [50, 100, 200, 300]          # SLIC 名义区域数
 G_GRID = [4, 7, 10, 14]               # RISE 掩码网格边长
 B_GRID = [256, 512, 1024, 2048]       # 模型前向预算
+AUDIT_OUT = os.path.join(ROOT, "results", "tables", "m2_postscreen_audit.json")
 SLIC_KW = dict(compactness=10.0, sigma=1.0, start_label=0,
                enforce_connectivity=True, convert2lab=True, channel_axis=-1)
 
@@ -65,7 +67,7 @@ def _chncxr_target(paths: list) -> float:
 
 def _one(task: dict) -> dict:
     image = _rgb224(task["path"])
-    return {"domain": task["domain"],
+    return {"domain": task["domain"], "id": task["id"],
             "frac": task["frac"],
             "actual": [int(np.unique(slic(image, n_segments=n, **SLIC_KW)).size)
                        for n in N_GRID]}
@@ -74,12 +76,14 @@ def _one(task: dict) -> dict:
 def collect() -> dict:
     boxes = imagenet_bboxes()
     tasks = [{"domain": "ImageNet",
+              "id": sid,
               "path": os.path.join(IMAGENET, "subsetEBPG", f"{sid}.JPEG"),
               "frac": _imagenet_target(boxes[sid])}
              for sid in sorted(boxes)]
 
     lesions = chncxr_lesion_masks()
     tasks += [{"domain": "CHNCXR",
+               "id": sid,
                "path": os.path.join(CHNCXR, "CXR_png", f"{sid}.png"),
                "frac": _chncxr_target(lesions[sid])}
               for sid in sorted(lesions)]
@@ -90,9 +94,88 @@ def collect() -> dict:
     out = {}
     for dom in ("ImageNet", "CHNCXR"):
         sel = [r for r in rows if r["domain"] == dom]
-        out[dom] = {"frac": np.array([r["frac"] for r in sel]),
+        out[dom] = {"ids": [r["id"] for r in sel],
+                    "frac": np.array([r["frac"] for r in sel]),
                     "actual": np.array([r["actual"] for r in sel])}  # (N, 4)
     return out
+
+
+def _describe(values: np.ndarray) -> dict:
+    values = np.asarray(values, dtype=float)
+    return {"count": int(values.size), "median": float(np.median(values)),
+            "q25": float(np.percentile(values, 25)),
+            "q75": float(np.percentile(values, 75))}
+
+
+def _selection(path: str) -> dict:
+    with open(path, encoding="utf-8") as stream:
+        return json.load(stream)
+
+
+def _class_audit(labels: dict, selected_ids: set) -> dict:
+    before, after = Counter(labels.values()), Counter(
+        labels[sid] for sid in selected_ids if sid in labels)
+    by_class = {}
+    for label in sorted(before, key=str):
+        by_class[str(label)] = {"before": before[label], "after": after[label],
+                                "retention_rate": after[label] / before[label]}
+    return {"classes_before": len(before), "classes_after": len(after),
+            "class_coverage_retention_rate": len(after) / len(before),
+            "by_class": by_class}
+
+
+def postscreen_audit(data: dict) -> dict:
+    """M2 recheck required by M1: compare candidate and joint-correct pools."""
+    selections = {
+        "ImageNet": _selection(os.path.join(ROOT, "data", "splits",
+                                             "imagenet_m2_20260911", "imagenet_selection.json")),
+        "CHNCXR": _selection(os.path.join(ROOT, "data", "splits",
+                                           "chncxr_full_main", "chncxr_selection.json")),
+    }
+    boxes = imagenet_bboxes()
+    imagenet_labels = {}
+    for sid in boxes:
+        xml_path = os.path.join(IMAGENET, "val_bbox", f"{sid}.xml")
+        imagenet_labels[sid] = ET.parse(xml_path).getroot().findtext("object/name")
+    chncxr_ids = [os.path.splitext(name)[0] for name in
+                  os.listdir(os.path.join(CHNCXR, "CXR_png")) if name.endswith(".png")]
+    chncxr_labels = {sid: int(sid.rsplit("_", 1)[1]) for sid in chncxr_ids}
+    label_maps = {"ImageNet": imagenet_labels, "CHNCXR": chncxr_labels}
+
+    result = {"protocol": {"image_size": [SIZE, SIZE], "slic_nominal_regions": N_GRID,
+                            "slic": SLIC_KW,
+                            "target_area_scope": "localization-eligible samples"},
+              "domains": {}}
+    for domain in ("ImageNet", "CHNCXR"):
+        selection = selections[domain]
+        joint_ids = {row["id"] for row in selection["joint_correct"]}
+        domain_data = data[domain]
+        eligible_ids = domain_data["ids"]
+        keep = np.array([sid in joint_ids for sid in eligible_ids])
+        if not keep.any():
+            raise RuntimeError(f"No localization-eligible jointly correct samples for {domain}")
+        actual = {}
+        for index, nominal in enumerate(N_GRID):
+            actual[str(nominal)] = {"before": _describe(domain_data["actual"][:, index]),
+                                    "after": _describe(domain_data["actual"][keep, index])}
+        result["domains"][domain] = {
+            "selection_fingerprint": selection["run_fingerprint"],
+            "candidate_count": selection["candidate_count"],
+            "joint_correct_count": selection["joint_correct_count"],
+            "sample_retention_rate": selection["joint_correct_count"] / selection["candidate_count"],
+            "class_retention": _class_audit(label_maps[domain], joint_ids),
+            "localization_eligible_count": {"before": len(eligible_ids),
+                                            "after": int(keep.sum())},
+            "target_area_fraction": {"before": _describe(domain_data["frac"]),
+                                     "after": _describe(domain_data["frac"][keep])},
+            "actual_slic_regions": actual,
+        }
+    os.makedirs(os.path.dirname(AUDIT_OUT), exist_ok=True)
+    temporary = AUDIT_OUT + ".tmp"
+    with open(temporary, "w", encoding="utf-8") as stream:
+        json.dump(result, stream, ensure_ascii=False, indent=2)
+    os.replace(temporary, AUDIT_OUT)
+    return result
 
 
 def inventory() -> dict:
@@ -183,6 +266,15 @@ def fig_budget(data: dict) -> None:
 def main() -> None:
     print("样本构成：", inventory())
     data = collect()
+    audit = postscreen_audit(data)
+    print("\nM2 筛选后复核：")
+    for dom, record in audit["domains"].items():
+        before, after = record["target_area_fraction"]["before"], record["target_area_fraction"]["after"]
+        regions = record["actual_slic_regions"]["100"]
+        print(f"  {dom}: 样本保留 {record['joint_correct_count']}/{record['candidate_count']}；"
+              f"目标面积中位 {before['median']*100:.2f}% -> {after['median']*100:.2f}%；"
+              f"n=100 实际区域中位 {regions['before']['median']:.0f} -> {regions['after']['median']:.0f}")
+    print(f"  已写入 {os.path.relpath(AUDIT_OUT, ROOT)}")
     for dom in ("ImageNet", "CHNCXR"):
         f, actual = data[dom]["frac"], data[dom]["actual"]
         print(f"\n[{dom}] 图像 {f.size} 张")

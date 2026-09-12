@@ -1,0 +1,21 @@
+stage: full_main_setting
+selection: all_joint_correct
+data_root: data/raw/chncxr/CXR_png
+models:
+  resnet50: models/checkpoints/resnet50_chncxr_prior_9_228.pt
+  vgg13: models/checkpoints/vgg13_chncxr_prior_9_228.pt
+selection_seed: 0
+seeds: [0, 1, 2, 3, 4]
+num_samples: 1024
+batch_size: 32
+n_segments: 100
+compactness: 10.0
+sigma: 1.0
+mask_rate: 0.5
+kernel_width: 0.25
+ridge_alpha: 1.0
+grid_size: 7
+evaluation_steps: 20
+warmup_batches: 3
+threads: 4
+device: cuda
