@@ -8,13 +8,13 @@
 
 ## 当前进度
 
-仓库骨架已建立，LIME、RISE 与 Ablation 基线算法及合成数值测试已实现；尚未运行真实数据归因实验。
+仓库骨架已建立，LIME、RISE、Ablation 与 KernelSHAP 基线算法及合成数值测试已实现；尚未运行真实数据归因实验。
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 问题分析 | 需求分析与任务建模、方法选择、实验设计 | 进行中 |
 | M2 初步结果 | 冻结数据与模型输入，完成值函数、预算计数、Ablation、LIME 及小规模端到端验证 | 进行中：LIME、RISE、Ablation 核心已实现，公共模型接入与端到端验证待完成 |
-| M3 中期结果 | 完成 KernelSHAP、统一评价指标及默认设置下的核心方法初步比较 | 未开始 |
+| M3 中期结果 | 完成 KernelSHAP、统一评价指标及默认设置下的核心方法初步比较 | 进行中：KernelSHAP 核心已实现，统一评价与真实数据比较待完成 |
 | M4 完整实验 | 完成核心全量实验、参数敏感性、梯度对照、扩展探索与配对统计 | 未开始 |
 | M5 最终成果 | 冻结实验结果，完成可追溯的统计图表、完整报告与答辩 PPT | 未开始 |
 
@@ -237,6 +237,28 @@ scores = result.coefficients
 与当前 LIME 相同，此模块仅返回区域分数，不生成像素热图、不计时或计算评价指标。
 后续公共模块生成热图时应将区域贡献除以区域像素数再分配，使像素求和还原区域贡献。
 真实模型接入、统一结果保存及完整实验仍待公共模块完成。
+
+### 已实现：KernelSHAP 基线代码（暂不执行真实数据实验）
+
+在仓库根目录运行配置预览和合成数值测试：
+
+```bash
+python -m experiments.kernel_shap_baseline --config configs/method/kernel_shap.yaml --dry-run --num-regions 100
+python -m pytest tests/test_kernel_shap.py -q -p no:cacheprovider
+```
+
+实现位于 `attribution/game_theoretic/kernel_shap.py`，接口为
+`fit_kernel_shap(image, segments, predict_logits, target, config)`，输入契约与 LIME 相同。
+每个 coalition 保留选中的 SLIC 区域，其余像素在归一化输入空间置零，值函数为正确类别的
+pre-Softmax logit。默认 1024 次总前向预算包含空集与全集两个锚点；当 `2^C` 不超过预算时
+精确枚举，否则按 SHAP kernel 的子集大小分布随机采样，并默认成对加入互补 coalition。
+
+求解采用带精确效率约束的加权最小二乘：区域贡献之和强制等于
+`v(full)-v(empty)`；`ridge_alpha` 可在采样设计病态时提供正则化，默认值为 0。
+返回值包含按实际 `region_ids` 对齐的有符号贡献、基线与原图 logit、实际前向样本/批次数、
+不同 coalition 数、加权拟合 R²、设计矩阵秩、条件数和效率残差。区域数较多而预算不足时，
+维数可行不代表设计充分，因此实验阶段应一并记录秩、条件数及失败状态。当前只实现算法核心、
+预算预览与合成测试，尚未加载真实模型、生成归因图或计算比较指标。
 
 ### 后续实验入口约定
 

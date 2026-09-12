@@ -1,0 +1,6 @@
+# M1 defaults. The budget includes the empty and full coalition anchors.
+num_samples: 1024
+batch_size: 32
+ridge_alpha: 0.0
+paired_sampling: true
+seed: 0
