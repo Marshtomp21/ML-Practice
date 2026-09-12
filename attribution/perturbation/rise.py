@@ -152,7 +152,7 @@ def region_scores_from_saliency(
 
     region_ids, inverse = np.unique(segments, return_inverse=True)
     scores = np.bincount(
-        inverse, weights=saliency.ravel().astype(np.float64), minlength=len(region_ids)
+        inverse.ravel(), weights=saliency.ravel().astype(np.float64), minlength=len(region_ids)
     )
     return region_ids, scores
 
