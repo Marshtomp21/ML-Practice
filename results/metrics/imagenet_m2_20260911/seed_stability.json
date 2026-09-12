@@ -1,0 +1,4402 @@
+[
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.4640565784369311,
+    "top20_jaccard": 0.52
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.5144430187102742,
+    "top20_jaccard": 0.52
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.536495479096416,
+    "top20_jaccard": 0.35714285714285715
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5184417057085732,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.5093402166452805,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.5057891438632091,
+    "top20_jaccard": 0.3103448275862069
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.5630390021187073,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.5353764435558472,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.6241383426337619,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.6301512936050848,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9904807376682282,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9962251201098146,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9963444839008085,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9942108561367907,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9898839187132582,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9923159559547611,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9922861150070124,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9941660947151679,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9946883113007667,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9953746530989822,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5427647259107934,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.6033537623425265,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.6874021109976168,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.6120020429009194,
+    "top20_jaccard": 0.44
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.5420156622403814,
+    "top20_jaccard": 0.44
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.5934627170582227,
+    "top20_jaccard": 0.5
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.5342356145726933,
+    "top20_jaccard": 0.44
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.5641981613891727,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.40490296220633304,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.636567926455567,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9264215185563501,
+    "top20_jaccard": 0.5652173913043478
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9648621041879472,
+    "top20_jaccard": 0.6363636363636364
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9519407558733404,
+    "top20_jaccard": 0.6363636363636364
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9489445011916924,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9355635001702418,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9435648621041882,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9448076268300988,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9437861763704462,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9631256384065374,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9666155941436841,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.502895634677631,
+    "top20_jaccard": 0.2727272727272727
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.14754614644388067,
+    "top20_jaccard": 0.21739130434782608
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.2537135858630041,
+    "top20_jaccard": 0.21739130434782608
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.49085819263406527,
+    "top20_jaccard": 0.47368421052631576
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.24276091330592248,
+    "top20_jaccard": 0.21739130434782608
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.4116350275566442,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.5028606421135509,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.33255183273554373,
+    "top20_jaccard": 0.2727272727272727
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.2795380981541422,
+    "top20_jaccard": 0.21739130434782608
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.4189834660134721,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9927215466713323,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9963607733356661,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9955909369259032,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9937713235937362,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9944711748753389,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9930714723121337,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9936313533374157,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9929664946198933,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9952760038491819,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9941912343626979,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.8251088387162093,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.8728561304039688,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.8183254024501367,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.8350106307583275,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.8582160575073402,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.8533967803989065,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.8651412372177787,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.8615774020451554,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.8191151159258885,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.8551786979852182,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9937227903209476,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9961931760656069,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9965576592082616,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9948162397489118,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9946542472410651,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9941885187810064,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9955047079072593,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9944315075427763,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9960109344942797,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9964361648273767,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.6881183269664023,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.6640437087101795,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.6300867426344946,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.6367910667058478,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.6753626974020746,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.7132595422339765,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.703072452411271,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.7229024499080333,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.7105603987766785,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.73792187721074,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9929038647816197,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9971920201129721,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.995973052099999,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9951676625199988,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9927079592081062,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9945146439416201,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9928167956378361,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9954071026654041,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9961907249594585,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9958206810983773,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5825100565633525,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.5736171262117966,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.5527487939830156,
+    "top20_jaccard": 0.52
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5351632939290724,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.6123792056470878,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.614475286284543,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.6412157267697239,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.43239369326325844,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.5999106083257556,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.5032597136383953,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9895350091703528,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9948060354792472,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9931723255706425,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9914923785891527,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9915540280196661,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.992925727848589,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9918930998874897,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9931723255706425,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9945902624724504,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9957461892945763,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.8116982836495032,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.7719286359530263,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.7585140018066848,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.7815266485998195,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.7946251129177958,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.7931120144534778,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.8069783197831978,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.7854110207768743,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.8028455284552845,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.7968834688346884,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9952122854561879,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.996951219512195,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9969963866305329,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9964092140921409,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9960930442637759,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9959575429087624,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9959123757904246,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9957994579945799,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9968834688346883,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9978997289972898,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.45480172001911134,
+    "top20_jaccard": 0.1875
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.43261665870361526,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.49047619047619057,
+    "top20_jaccard": 0.3103448275862069
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5093008440834528,
+    "top20_jaccard": 0.26666666666666666
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.6175505653766523,
+    "top20_jaccard": 0.26666666666666666
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.5896798853320593,
+    "top20_jaccard": 0.3103448275862069
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.47633381111641987,
+    "top20_jaccard": 0.3103448275862069
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.5210543080108297,
+    "top20_jaccard": 0.26666666666666666
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.4200509635292244,
+    "top20_jaccard": 0.22580645161290322
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.47244784201305945,
+    "top20_jaccard": 0.22580645161290322
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9916706481923875,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9946806816372036,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9946806816372036,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9930880713489408,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.991813983118331,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9927536231884058,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.993422519509476,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9923395445134576,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9947443860487338,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.995636247810161,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5597716873437426,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.4642388791924147,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.45840841549129674,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5324307750365583,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.4417472522288787,
+    "top20_jaccard": 0.44
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.47588093778008395,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.4632199632058116,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.4730317467805085,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.614944101136846,
+    "top20_jaccard": 0.5
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.4178404641728383,
+    "top20_jaccard": 0.2413793103448276
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9601301948205103,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9848294730883531,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9801688758903722,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9711684513420444,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9606585216283787,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9698853719515071,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9682060474550686,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9719986791829802,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9775461106655975,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9814519552809093,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5655657611881962,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.6382450654680477,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.4694743013484464,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.547547391049443,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.6255227672464335,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.6067617744772327,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.5390267735000976,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.5964627711549736,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.5165917529802618,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.5150674223177644,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9926324017979287,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9951924956028922,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9969513386750049,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9951143247996873,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9921438342778971,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.994156732460426,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9946062145788547,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.994547586476451,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9951338675004887,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "resnet50",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9969122532734023,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.6023992121989793,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.5653367550953418,
+    "top20_jaccard": 0.7272727272727273
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.6157679567903076,
+    "top20_jaccard": 0.6521739130434783
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5775566231983527,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.5757960072811912,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.6806869386171704,
+    "top20_jaccard": 0.7272727272727273
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.6182745964011815,
+    "top20_jaccard": 0.6521739130434783
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.6134851242875473,
+    "top20_jaccard": 0.6521739130434783
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.6336576049655337,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.6405807048431857,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9917340574736653,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9965235295872994,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9954194145206051,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9942406970845391,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9924502402196292,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.995240368834114,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9945540270358985,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9949121184088805,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9953746530989822,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00000319",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9958222673152097,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.6626149131767111,
+    "top20_jaccard": 0.44
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.6800136193394621,
+    "top20_jaccard": 0.44
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.6525366019748043,
+    "top20_jaccard": 0.44
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5490977187606402,
+    "top20_jaccard": 0.44
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.7020769492679605,
+    "top20_jaccard": 0.5
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.7754341164453524,
+    "top20_jaccard": 0.44
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.654085801838611,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.7350187265917605,
+    "top20_jaccard": 0.5652173913043478
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.6427306775621383,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.7121552604698673,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9304732720463059,
+    "top20_jaccard": 0.5
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9646237657473613,
+    "top20_jaccard": 0.5652173913043478
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9521961184882535,
+    "top20_jaccard": 0.6363636363636364
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9569799114742935,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9330779707184202,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9393258426966293,
+    "top20_jaccard": 0.5652173913043478
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9464419475655432,
+    "top20_jaccard": 0.5652173913043478
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9389513108614232,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9624787197820908,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00001218",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9655600953353763,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.7154054763362786,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.7270580001749629,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.7054675881375209,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.6467150730469775,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.5555594436182311,
+    "top20_jaccard": 0.6470588235294118
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.6589274779109439,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.6036042341002537,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.7164202606946023,
+    "top20_jaccard": 0.75
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.764220103228064,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.8079608083282301,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9918117400052487,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9962208030793456,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9947861079520602,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9926865541072523,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9941212492345376,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9925115912868515,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9909369259032456,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9953459889773424,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9961508179511853,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00004344",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9952760038491819,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.916047382808545,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9321048901488307,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9257871823428168,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9357497215753772,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9181532854105499,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9249569707401033,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.942411663460565,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.920421180520401,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9197327123620533,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9414599574769668,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9933988053052547,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9967601498430698,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9968411460969931,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9956262022881442,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.994998481320239,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9940062772096793,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9948567378758734,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9949377341297965,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.996294421383011,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00006565",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9961729270021261,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.8754475898172636,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.8822389830324006,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.8434932140486064,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.8690697750350999,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.8705281831934785,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.8044427030615687,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.8631708405437468,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.8441897671988768,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.8909241301248353,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.8601887223691513,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.994101065508647,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9980191769789184,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9966913725362153,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9968872781097289,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9952111970918905,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.995102360662161,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9949499896605393,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9961471903875665,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9974967621162156,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00008228",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9966696052502694,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.30313024983431713,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.5349321085646471,
+    "top20_jaccard": 0.52
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.5321578841915447,
+    "top20_jaccard": 0.52
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5714285714285714,
+    "top20_jaccard": 0.52
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.4675492810135166,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.6305503752909082,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.5148498065749118,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.5640460521245935,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.6361758858252547,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.5643697116347888,
+    "top20_jaccard": 0.6521739130434783
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9895041844550961,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9947135613334771,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9943899018232818,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9920780481790299,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9917081515959496,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9926328930536504,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9924787694773669,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9934189232926961,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.993680933372378,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00009336",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9951605197046992,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.8871273712737128,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.8687895212285455,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.8582429990966576,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.8579042457091237,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9003613369467028,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.905736224028907,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.8955058717253839,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.8964543812104786,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.8472222222222221,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.8739611562782295,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.995144534778681,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9964995483288166,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9970415537488709,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9959123757904246,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9954832881662149,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9965447154471543,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9953026196928635,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9959123757904246,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9966124661246611,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00013800",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.997560975609756,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.7732282210543079,
+    "top20_jaccard": 0.7272727272727273
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.8001433349259437,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.7224080267558529,
+    "top20_jaccard": 0.7272727272727273
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.7904443382704254,
+    "top20_jaccard": 0.7272727272727273
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.7765089982481286,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.7087593565854436,
+    "top20_jaccard": 0.7272727272727273
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.7642458990285077,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.6947762382544992,
+    "top20_jaccard": 0.9
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.8333174072304509,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.731565535913362,
+    "top20_jaccard": 0.7272727272727273
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.992148431278866,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9954769867813347,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9951425386207996,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9935817805383023,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9933588150979454,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9932951106864152,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9919891702500399,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9932473323777673,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9953814301640389,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00017759",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.99520624303233,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.7273078918816925,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.7202698240483042,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.6984574744091703,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.7178168781546298,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.7150054247841879,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.638190480683051,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.7119675456389452,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.7683286947497524,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.7553658191424124,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.6712863814330865,
+    "top20_jaccard": 0.8
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9600547195622435,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9839992452474172,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9800556630029716,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9677531959054673,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9622246332374169,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9664889853294967,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9621114203500164,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9685645549318364,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9730930704278503,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00030571",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9763196377187604,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.7623998436583936,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.7660347860074261,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.7640414305256987,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.7400234512409615,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.7708813758061364,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.820500293140512,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.7915966386554623,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.800859878835255,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.7785030291186241,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.8309751807699824,
+    "top20_jaccard": 0.7
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.993296853625171,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9956419777213211,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9969708813758061,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9954465507133086,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.994078561657221,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9942349032636311,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9952315810044948,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.994938440492476,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9950556966972837,
+    "top20_jaccard": 1.0
+  },
+  {
+    "model": "vgg13",
+    "id": "ILSVRC2012_val_00031395",
+    "method": "rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9967363689661912,
+    "top20_jaccard": 1.0
+  }
+]

@@ -1,0 +1,23 @@
+# Frozen after the 2026-09-11 M2 end-to-end checks.
+# This records protocol choices; executable run configs remain separate.
+slic:
+  n_segments: 100
+  compactness: 10.0
+  sigma: 1.0
+  convert2lab: true
+  enforce_connectivity: true
+  start_label: 0
+perturbation:
+  baseline: zero_in_normalized_input_space
+  mask_rate: 0.5
+  forward_budget: 1024
+rise:
+  grid_size: 7
+  keep_probability: 0.5
+input_stability:
+  noise_space: pre_normalization_0_1
+  distribution: uniform
+  epsilon: 0.01
+  repeats: 10
+random_seeds: [0, 1, 2, 3, 4]
+target: correct_class_pre_softmax_logit
