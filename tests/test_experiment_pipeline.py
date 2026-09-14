@@ -2,7 +2,13 @@
 import numpy as np
 import pytest
 
-from evaluation.perturbation import insertion_deletion, seed_stability
+from evaluation.perturbation import (
+    input_stability,
+    insertion_deletion,
+    localization_metrics,
+    region_attribution_map,
+    seed_stability,
+)
 
 
 def test_auc_endpoints_actual_fractions_and_separate_budget():
@@ -41,6 +47,52 @@ def test_stability_known_rankings_and_constant_case():
     assert reversed_scores["spearman"] == pytest.approx(-1)
     assert reversed_scores["top20_jaccard"] == 0
     assert seed_stability([1, 1], [1, 2])["spearman"] is None
+
+
+def test_input_stability_signed_vectors():
+    result = input_stability(
+        np.array([3.0, 4.0]),
+        np.array([[3.0, 4.0], [0.0, 5.0]]),
+    )
+    assert result["max_sensitivity"] == pytest.approx(np.sqrt(10) / 5)
+    assert result["cosine_similarity"] == pytest.approx(0.9)
+    assert result["stability_repeats"] == 2
+    assert not result["zero_reference"]
+    assert result["zero_perturbed"] == 0
+
+
+def test_input_stability_zero_norm_diagnostics():
+    result = input_stability(np.zeros(2), np.ones((3, 2)))
+    assert result["max_sensitivity"] is None
+    assert result["cosine_similarity"] is None
+    assert result["zero_reference"]
+    result = input_stability(np.ones(2), np.array([[1.0, 1.0], [0.0, 0.0]]))
+    assert result["max_sensitivity"] == pytest.approx(1.0)
+    assert result["cosine_similarity"] is None
+    assert result["zero_perturbed"] == 1
+
+
+def test_region_map_conserves_signed_contributions():
+    segments = np.array([[4, 4, 9], [4, 9, 9]])
+    result = region_attribution_map(segments, np.array([6.0, -3.0]))
+    np.testing.assert_allclose(result, [[2, 2, -1], [2, -1, -1]])
+    assert result[segments == 4].sum() == pytest.approx(6)
+    assert result[segments == 9].sum() == pytest.approx(-3)
+
+
+def test_localization_metrics_positive_energy_and_pointing():
+    attribution = np.array([[3.0, 1.0], [-7.0, 2.0]])
+    mask = np.array([[True, False], [True, False]])
+    result = localization_metrics(attribution, mask)
+    assert result["localization_energy"] == pytest.approx(0.5)
+    assert result["pointing_game"] == 1
+    assert not result["zero_positive_energy"]
+    zero = localization_metrics(-np.ones((2, 2)), mask)
+    assert zero == {
+        "localization_energy": 0.0,
+        "pointing_game": 0,
+        "zero_positive_energy": True,
+    }
 
 
 def test_torch_adapter_eval_layout_and_counts():

@@ -1,0 +1,30 @@
+domain: imagenet
+stage: m3_default
+selection: seeded_subset
+data_root: data/raw/imagenet/subsetEBPG
+annotation_root: data/raw/imagenet/val_bbox
+class_index: data/raw/imagenet/imagenet_class_index.json
+localization_mask_root: data/raw/imagenet/subsetEBPG_masks
+models:
+  resnet50: models/checkpoints/resnet50_imagenet1k_v2.pth
+  vgg13: models/checkpoints/vgg13_imagenet1k_v1.pth
+sample_count: 10
+selection_seed: 0
+seeds: [0, 1, 2, 3, 4]
+num_samples: 1024
+batch_size: 32
+n_segments: 100
+compactness: 10.0
+sigma: 1.0
+mask_rate: 0.5
+kernel_width: 0.25
+ridge_alpha: 1.0
+kernel_shap_ridge_alpha: 0.0
+kernel_shap_paired_sampling: true
+grid_size: 7
+evaluation_steps: 20
+stability_epsilon: 0.01
+stability_repeats: 10
+warmup_batches: 3
+threads: 4
+device: cuda
