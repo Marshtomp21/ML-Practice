@@ -1,0 +1,14 @@
+{
+  "run": "m3_imagenet_default_20260913",
+  "seed": 0,
+  "figures": [
+    "results/figures/m3_imagenet_default_20260913/resnet50_ILSVRC2012_val_00000319.png",
+    "results/figures/m3_imagenet_default_20260913/resnet50_ILSVRC2012_val_00001218.png",
+    "results/figures/m3_imagenet_default_20260913/resnet50_ILSVRC2012_val_00004344.png",
+    "results/figures/m3_imagenet_default_20260913/resnet50_ILSVRC2012_val_00006565.png",
+    "results/figures/m3_imagenet_default_20260913/vgg13_ILSVRC2012_val_00000319.png",
+    "results/figures/m3_imagenet_default_20260913/vgg13_ILSVRC2012_val_00001218.png",
+    "results/figures/m3_imagenet_default_20260913/vgg13_ILSVRC2012_val_00004344.png",
+    "results/figures/m3_imagenet_default_20260913/vgg13_ILSVRC2012_val_00006565.png"
+  ]
+}

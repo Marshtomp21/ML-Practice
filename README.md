@@ -4,23 +4,23 @@
 
 ## 当前进度
 
-已实现并测试 LIME、RISE、Ablation，并完成 ImageNet/CHNCXR × ResNet-50/VGG13 的 M2 端到端验证。CHNCXR 已运行全部 434 张共同正确样本，ImageNet 已完成 10 张固定共同正确样本的预实验；数值结果、归因数组和可视化均已落盘。SHAP/KernelSHAP 属于 M3，尚未实现。
+已实现并测试 LIME、RISE、Ablation、KernelSHAP。M2 已完成 ImageNet/CHNCXR × ResNet-50/VGG13 的端到端验证；M3 已完成四种核心方法在两个数据域和两种模型上的默认设置比较，以及输入稳定性、跨种子稳定性、效率和定位性评价。
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 | 需求、数据和实验设计 | 已完成 |
 | M2 | 三个扰动基线与初步实验 | 已完成 |
-| M3 | 博弈论类方法与初步比较 | 未开始 |
+| M3 | 博弈论类方法与初步比较 | 已完成 |
 | M4 | 参数实验、消融与交叉对比 | 未开始 |
 | M5 | 报告与答辩 | 未开始 |
 
 ## 项目设置
 
-- 方法：LIME、RISE、Ablation；
+- 方法：LIME、RISE、Ablation、KernelSHAP；
 - 数据：ImageNet 子集和 CHNCXR；
 - 模型：ResNet-50、VGG13；
 - 目标：正确类别的 pre-Softmax logit；
-- 指标：Insertion/Deletion、Spearman、Top 20% Jaccard、耗时和前向次数；
+- 指标：Insertion/Deletion、Max-Sensitivity、Cosine Similarity、Spearman、Top 20% Jaccard、耗时、前向次数、掩码内能量和 Pointing Game；
 - CHNCXR 定位性评价只使用具有病灶掩码的阳性样本，其他指标使用全部共同正确样本。
 
 M1 主设置为 SLIC 名义区域数 100、遮蔽率 0.50、前向预算 1024、随机种子 `{0,1,2,3,4}`。参数扫描在后续单因素实验中运行。
@@ -80,6 +80,20 @@ conda run -n cjy_mob python scripts/validate_perturbation_run.py results/metrics
 
 10 张胸片的首轮流程验证结果位于 `results/metrics/chncxr_pilot_20260910/`。
 共同正确筛选前后的 M2 数据复核见 `results/tables/m2_postscreen_audit.json`。
+
+运行 M3 默认设置、合并分片并验证结果：
+
+```bash
+bash scripts/run_m3_default.sh
+python -m scripts.merge_m3_shards results/metrics/m3_imagenet_default_20260913 \
+  results/metrics/m3_imagenet_default_20260913_shard{0,1,2,3}
+python -m scripts.merge_m3_shards results/metrics/m3_chncxr_default_20260913 \
+  results/metrics/m3_chncxr_default_20260913_shard{0,1,2,3}
+python scripts/validate_m3_run.py results/metrics/m3_imagenet_default_20260913
+python scripts/validate_m3_run.py results/metrics/m3_chncxr_default_20260913
+```
+
+M3 中期报告与演示提纲位于 `reports/m3/`。OrdShap 的核验、图像包装和正式实验安排在 M4。
 
 ## 报告
 

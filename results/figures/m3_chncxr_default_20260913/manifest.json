@@ -1,0 +1,14 @@
+{
+  "run": "m3_chncxr_default_20260913",
+  "seed": 0,
+  "figures": [
+    "results/figures/m3_chncxr_default_20260913/resnet50_CHNCXR_0080_0.png",
+    "results/figures/m3_chncxr_default_20260913/resnet50_CHNCXR_0090_0.png",
+    "results/figures/m3_chncxr_default_20260913/resnet50_CHNCXR_0499_1.png",
+    "results/figures/m3_chncxr_default_20260913/resnet50_CHNCXR_0528_1.png",
+    "results/figures/m3_chncxr_default_20260913/vgg13_CHNCXR_0080_0.png",
+    "results/figures/m3_chncxr_default_20260913/vgg13_CHNCXR_0090_0.png",
+    "results/figures/m3_chncxr_default_20260913/vgg13_CHNCXR_0499_1.png",
+    "results/figures/m3_chncxr_default_20260913/vgg13_CHNCXR_0528_1.png"
+  ]
+}

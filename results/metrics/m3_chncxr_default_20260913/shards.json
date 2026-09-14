@@ -1,0 +1,35 @@
+{
+  "fingerprint": "ba804bbfb6ea56fc35b3e3ede04af22f7a3e0687ec72053a85ca149c216636c0",
+  "shards": [
+    {
+      "name": "m3_chncxr_default_20260913_shard0",
+      "sample_ids": [
+        "CHNCXR_0080_0",
+        "CHNCXR_0267_0",
+        "CHNCXR_0589_1"
+      ]
+    },
+    {
+      "name": "m3_chncxr_default_20260913_shard1",
+      "sample_ids": [
+        "CHNCXR_0090_0",
+        "CHNCXR_0499_1",
+        "CHNCXR_0630_1"
+      ]
+    },
+    {
+      "name": "m3_chncxr_default_20260913_shard2",
+      "sample_ids": [
+        "CHNCXR_0159_0",
+        "CHNCXR_0528_1"
+      ]
+    },
+    {
+      "name": "m3_chncxr_default_20260913_shard3",
+      "sample_ids": [
+        "CHNCXR_0194_0",
+        "CHNCXR_0537_1"
+      ]
+    }
+  ]
+}

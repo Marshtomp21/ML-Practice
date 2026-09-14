@@ -1,0 +1,35 @@
+{
+  "fingerprint": "9a6359048b877966d9a29f04d62e9226a4e334663b8ea77de87770b2c235e816",
+  "shards": [
+    {
+      "name": "m3_imagenet_default_20260913_shard0",
+      "sample_ids": [
+        "ILSVRC2012_val_00000319",
+        "ILSVRC2012_val_00008228",
+        "ILSVRC2012_val_00030571"
+      ]
+    },
+    {
+      "name": "m3_imagenet_default_20260913_shard1",
+      "sample_ids": [
+        "ILSVRC2012_val_00001218",
+        "ILSVRC2012_val_00009336",
+        "ILSVRC2012_val_00031395"
+      ]
+    },
+    {
+      "name": "m3_imagenet_default_20260913_shard2",
+      "sample_ids": [
+        "ILSVRC2012_val_00004344",
+        "ILSVRC2012_val_00013800"
+      ]
+    },
+    {
+      "name": "m3_imagenet_default_20260913_shard3",
+      "sample_ids": [
+        "ILSVRC2012_val_00006565",
+        "ILSVRC2012_val_00017759"
+      ]
+    }
+  ]
+}
