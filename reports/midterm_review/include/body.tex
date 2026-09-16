@@ -1,13 +1,55 @@
 % !Mode:: "TeX:UTF-8"
 % M3 中期检查报告
 
-\chapter{中期任务与完成状态}
+\chapter{阶段任务与完成状态}
 
 \section{阶段结论}
 
+项目已经完成从实验设计到四种核心方法统一比较的主链路。Ablation、LIME、RISE 与 KernelSHAP 均接入同一数据、模型、处理和评价链路；ImageNet、CHNCXR 两个数据域以及 ResNet-50、VGG13 两种模型均已得到完整结果。
+
+现阶段结果给出三项判断。第一，LIME 与 KernelSHAP 构成忠实性的优势组，但二者不存在跨数据域、跨模型的绝对胜者。第二，RISE 的输入扰动稳定性和跨种子稳定性最高，但同时忠实性较低、耗时最长。第三，Ablation 以不到随机方法十分之一的模型前向次数形成了有效的低成本参照。
+
 \section{M1--M3 任务推进}
 
+\begin{table}[htbp]
+    \centering
+    \caption{项目阶段任务与完成情况}
+    \label{tab:milestone-status}
+    \small
+    \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{1.2cm}X >{\centering\arraybackslash}p{2.2cm}}
+        \toprule
+        阶段 & 核心交付 & 状态 \\
+        \midrule
+        M1 & 明确 RQ1--RQ3，完成数据、方法、预算、评价指标和统计口径设计。 & 已完成 \\
+        M2 & 实现 Ablation、LIME、RISE，完成数据核验、共同筛选和端到端验证。 & 已完成 \\
+        M3 & 实现 KernelSHAP，统一四方法实验，完成默认设置下忠实性、稳定性、效率和定位性的初步比较。 & 已完成 \\
+        M4 & 执行参数扫描、消融、梯度类交叉比较与配置验证。 & 待开展 \\
+        M5 & 完成数据的统计与整理。 & 待开展 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+M1 分析并建立问题，M2 打通扰动类实现与数据流，M3 增加博弈论方法并完成初步分析和比较。主要流程为：固定样本清单提供图像与正确类别，预处理模块生成 $224\times224$ 的模型输入和 SLIC 区域，模型适配器返回 pre-Softmax logits 并累计前向样本数，四种解释器输出有符号区域贡献，评价模块再生成曲线、稳定性与定位性指标。
+
 \section{已实现的组成}
+
+\begin{table}[H]
+    \centering
+    \caption{M3 核心组成与接口职责}
+    \label{tab:software-components}
+    \small
+    \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.2cm}X}
+        \toprule
+        组成 & 核心对象 & 已实现职责 \\
+        \midrule
+        归因方法 & Ablation、LIME、RISE、KernelSHAP & 接收归一化图像、显式目标类别与预测函数，输出有符号归因及实际前向计数。 \\
+        预处理 & ImageNet、CHNCXR、SLIC、定位掩码 & 固化尺寸、通道、归一化和掩码插值，保证图像、区域和标注空间对齐。 \\
+        模型适配 & ResNet-50、VGG13 & 统一 NHWC 输入与 logit 输出，记录前向样本数和批次数。 \\
+        评价 & 忠实性、稳定性、效率、定位性 & 计算 Insertion/Deletion、Max-Sensitivity、Cosine、Spearman、Jaccard、正能量占比及 Pointing Game。 \\
+        实验管理 & 筛选、分片、续跑、合并、校验 & 固化配置与数据，生成结构化结果并检查约束。 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
 
 \chapter{方法实现与统一实验协议}
