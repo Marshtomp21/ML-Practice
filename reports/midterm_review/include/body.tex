@@ -186,18 +186,97 @@ KernelSHAP 共运行 200 次。ImageNet 与 CHNCXR 均为 100/100 次设计矩�
 
 \section{忠实性：LIME 与 KernelSHAP 构成优势}
 
+\input{include/generated_fidelity}
+\FloatBarrier
+
+四个组合中，LIME 三次取得最高 Insertion，三次取得最低 Deletion；KernelSHAP 在 CHNCXR--ResNet-50 的 Insertion 和 ImageNet--ResNet-50 的 Deletion 上领先。
+
+在 ImageNet--ResNet-50 中，LIME 的 Insertion 比 KernelSHAP 更高；KernelSHAP 的 Deletion 比 LIME 更低。在 ImageNet--VGG13 中，LIME 和 KernelSHAP 的 Insertion 和 Deletion 差距较小；KernelSHAP 的目标内正能量占比略高于 LIME。
+
+在 CHNCXR--ResNet-50 中，KernelSHAP 的 Insertion 领先 LIME；LIME 的 Deletion 比 KernelSHAP 更低。在 CHNCXR--VGG13 中，LIME 的 Insertion 比 KernelSHAP 更高，Deletion 更低。RISE 在四个组合中的 Insertion 均低于 LIME 和 KernelSHAP，Deletion 均更高，其稳定性优势没有同时转化为忠实性优势。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.98\textwidth]{m3_fidelity_comparison.png}
+    \caption{默认设置下四个数据域--模型组合的忠实性。蓝柱为 Insertion AUC（越高越好），红柱为 Deletion AUC（越低越好）；每个值先对同图随机种子取均值，再在图像间取中位数。}
+    \label{fig:m3-fidelity}
+\end{figure}
+
 \section{稳定性：RISE 领先}
+
+\input{include/generated_stability}
+\FloatBarrier
+
+RISE 在四个组合中均取得最低 Max-Sensitivity 和最高 Cosine Similarity。其 Max-Sensitivity 中位数明显低于 LIME 和 KernelSHAP。
+
+跨种子结果能够进一步确认这一优势。RISE 的 Spearman 中位数稳定在 0.9920--0.9943，Top 20\% Jaccard 为 0.8873--0.9230。LIME 对应范围为 0.5634--0.8907 和 0.4590--0.7589；KernelSHAP 为 0.3356--0.8443 和 0.3646--0.6282。ImageNet--ResNet-50 是 KernelSHAP 种子敏感性最强的组合，Spearman 仅为 0.3356。
+
+RISE 的低分辨率软掩码会产生空间更平滑的热图，这与其稳定性结果一致。后续将通过 $g\in\{4,7,10,14\}$ 的网格扫描判断其稳定性是否以降低定位分辨率和忠实性为代价。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.96\textwidth]{m3_stability_cost.png}
+    \caption{三种随机方法的跨种子稳定性与归因耗时。RISE 在四个数据域--模型组合中均位于高稳定性区域，但单图耗时约为 LIME 与 KernelSHAP 的两倍。}
+    \label{fig:m3-stability-cost}
+\end{figure}
 
 \section{效率：Ablation 提供最低成本}
 
+\input{include/generated_efficiency}
+\FloatBarrier
+
+Ablation 的归因耗时中位数集中在 0.1912--0.2113 秒，实际前向数中位数为 ImageNet 86.5、CHNCXR 91.0。相同组合下，LIME 和 KernelSHAP 需要 1024 次前向，耗时是 Ablation 的 13.5--14.4 倍；RISE 同样使用 1024 次前向，耗时是 Ablation 的 28.9--31.1 倍。
+
+RISE 的实现需要生成、上采样、平移和裁剪软掩码，前向预算不足以完整描述其工程成本。因此，RISE 与 LIME、KernelSHAP 的模型前向数完全相同的情况下，时间却约为后二者的两倍。
+
+低成本不等于质量最优。Ablation 在 ImageNet--ResNet-50 的 Insertion 高于 RISE，但其输入 Max-Sensitivity 是该组合中最高值。Ablation 更适合作为快速筛查和成本的下界，而不是替代所有随机方法。
+
 \section{定位性：自然图像与医学影像形成明显反差}
 
+ImageNet 的目标内正能量中位数为 0.3001--0.6742，多数方法与模型的 Pointing Game 中位数为 1。LIME 在 ResNet-50 上取得最高正能量占比，KernelSHAP 在 VGG13 上取得最高值。图~\ref{fig:imagenet-example} 的样例中，LIME 与 KernelSHAP 的主要正贡献覆盖目标主体，与定量定位结果一致。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenet_example.png}
+    \caption{ImageNet--ResNet-50 单图归因对照。面板从左至右依次为原图、SLIC、Ablation、LIME、RISE 与 KernelSHAP；红色和蓝色分别表示正、负贡献。}
+    \label{fig:imagenet-example}
+\end{figure}
+
+CHNCXR 的目标内正能量中位数仅为 0--0.0232。两种模型、四种方法合计产生 160 条适用定位记录，Pointing Game 命中数为 0；其中 ResNet-50--RISE 的 25 条适用记录正能量全部为零。图~\ref{fig:chncxr-example} 的阳性胸片显示，高响应区域没有集中覆盖病灶并集。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{chncxr_example.png}
+    \caption{CHNCXR--ResNet-50 阳性胸片归因对照。四种方法的主要响应均未稳定集中于小病灶区域，与 0/160 的 Pointing Game 结果一致。}
+    \label{fig:chncxr-example}
+\end{figure}
+
+现有证据确定了“定位失败”，但尚未区分其主要来源。M1 的数据分析表明 CHNCXR 病灶面积中位数仅为整图的 1.55\%，100 个 SLIC 区域仍可能过粗；零基线可能生成偏离医学图像分布的输入；分类模型也可能利用病灶外结构或采集线索。
 
 \chapter{阶段判断与后续工作安排}
 
-\section{面向目标的方法选择}
+\section{中期总结}
+
+M3 已完成四种核心归因方法、两种模型、两个数据域和评价的一致链路，默认设置结果全部通过完整性与数值审计。LIME 与 KernelSHAP 提供最高忠实性，RISE 提供最高稳定性，Ablation 提供最低计算成本；不存在同时支配其他方法的单一方案。
 
 \section{M4 阶段工作计划}
 
-\section{中期总结}
+目前的初步实验结果已经得出需要解决的三个问题：KernelSHAP 在 ImageNet--ResNet-50 上的种子敏感性、RISE 的稳定性--忠实性--成本权衡，以及 CHNCXR 的系统性定位失败。M4 的阶段目标是通过受控变量与独立评价集判断这些现象能否被参数调整解释或改善。
 
+\begin{table}[H]
+    \centering
+    \caption{M4 实验任务、动作与完成判据}
+    \label{tab:m4-plan}
+    \small
+    \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{4.0cm}>{\raggedright\arraybackslash}X}
+        \toprule
+        任务 & 实验动作与完成判据 \\
+        \midrule
+        CHNCXR 定位诊断 & 在 86 张配置选择集上扫描 SLIC $\{50,100,200,300\}$、RISE 网格 $\{4,7,10,14\}$、遮蔽率 $\{0.25,0.50,0.75\}$ 和预算 $\{256,512,1024,2048\}$；区分粒度、基线和病灶外线索。 \\
+        冻结集验证 & 配置确定后在最终评价集上运行一次主要比较，报告中位数、四分位数、配对差值、bootstrap 置信区间和 Holm 校正结果。 \\
+        KernelSHAP 预算扫描 & 检查预算增加能否改善 ImageNet--ResNet-50 的 Spearman 与 Top 20\% Jaccard，同时记录质量提升对应的前向成本。 \\
+        RISE 权衡分析 & 检验网格细化是否提高忠实性和定位性，以及稳定性与耗时是否变化。 \\
+        扩展对照 & 完成梯度类同协议交叉比较，并核验 OrdShap 的二维图像包装、位置扰动语义和额外预算。 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
