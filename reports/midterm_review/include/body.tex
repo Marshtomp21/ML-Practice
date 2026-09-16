@@ -56,35 +56,130 @@ M1 分析并建立问题，M2 打通扰动类实现与数据流，M3 增加博�
 
 \section{共同的区域价值函数}
 
+四种方法统一解释正确类别 $c$ 的 pre-Softmax logit $f_c(x)$。设 SLIC\cite{achanta2012slic} 将图像划分为 $C$ 个区域，二元向量 $z\in\{0,1\}^C$ 表示保留的区域集合。遮蔽映射 $h_x(z)$ 保留 $z_i=1$ 的区域，将其余区域替换为归一化输入空间的零。共同的价值函数为
+\[
+    v(z)=f_c\bigl(h_x(z)\bigr).
+\]
+该定义固定了方法比较中最容易混入差异的三个条件：解释目标、特征划分和缺失特征表示。LIME、Ablation 与 KernelSHAP 直接在 SLIC 区域上工作；RISE 保留原生低分辨率随机网格，生成像素热图后再在同一 SLIC 区域内求和，用于排序与评价。
+
 \section{三种扰动类方法}
 
-\subsection{Ablation}
+\subsection{Ablation：直接区域消融}
 
-\subsection{LIME}
+Ablation 逐一遮蔽区域 $i$，以完整图像与单区域删除后的 logit 差作为区域贡献：
+\[
+    a_i=f_c(x)-f_c\bigl(h_x(\bm{1}-\bm{e}_i)\bigr).
+\]
+每次扰动都从原图出发，若实际区域数为 $C$，默认计算原图和 $C$ 个消融输入，共 $C+1$ 次前向，其成本随实际区域数线性增长。Ablation 衡量的是完整上下文中的单区域删除效应，不满足 Shapley 可加性，也不将该结果包装成 Shapley 值。
 
-\subsection{RISE}
+\subsection{LIME：局部加权线性代理}
 
-\section{KernelSHAP}
+LIME\cite{ribeiro2016lime} 对二元区域开关进行 Bernoulli 采样，以遮蔽后的目标 logit 为响应，求解带 Ridge 正则的局部加权回归：
+\[
+    \min_{b,\bm{\beta}}
+    \sum_{n=1}^{N} w_n\left[v(z_n)-b-z_n^{\mathsf T}\bm{\beta}\right]^2
+    +\lambda\lVert\bm{\beta}\rVert_2^2.
+\]
+实现使用全部区域，不执行特征筛选；第一个样本强制为原图，$N=1024$ 包含该原图前向。权重由二元掩码与全一向量的余弦距离计算，主设置采用遮蔽率 0.50、核宽度 0.25、$\lambda=1$。
+
+\subsection{RISE：随机软掩码期望}
+
+RISE\cite{petsiuk2018rise} 在 $7\times7$ 网格上采样 Bernoulli 掩码，双线性上采样、随机平移并裁剪至输入尺寸。设保留概率为 $p$、软掩码为 $M_n$，像素显著图为
+\[
+    H=\frac{1}{Np}\sum_{n=1}^{N}f_c(x\odot M_n)M_n.
+\]
+主设置采用 $N=1024$、$p=0.50$。掩码按批次渲染并送入模型，避免一次性构造全部扰动图像。RISE 输出像素热图，区域评价分数由区域内像素显著性求和得到。
+
+\section{KernelSHAP：受约束的核加权回归}
+
+KernelSHAP\cite{lundberg2017shap} 以区域为参与者，利用联盟价值 $v(z)$ 估计 Shapley 贡献。内部联盟的 SHAP 核权重为
+\[
+    \pi(z)=\frac{C-1}{\binom{C}{|z|}|z|(C-|z|)},
+    \qquad 0<|z|<C.
+\]
+将空联盟与全联盟作为预算内锚点，有限预算不足以枚举全部 $2^C$ 个联盟时，按 SHAP 核诱导的联盟大小分布采样，并优先加入互补联盟以降低波动。主设置使用 1024 次前向、零 Ridge 正则和五个固定种子。
+
+回归通过 KKT 系统显式加入效率约束：
+\[
+    \sum_{i=1}^{C}\phi_i=v(\bm{1})-v(\bm{0}).
+\]
+求解后修正系数，使得局部预测 $v(\bm{0})+\sum_i\phi_i$ 与原图 logit 在机器精度内一致。同时记录设计矩阵秩、条件数、唯一联盟数、加权 $R^2$ 和效率残差。效率约束保证贡献和与端点差一致，有限预算下的区域排序的优劣性则由忠实性和稳定性实验判断。
 
 \section{评价指标}
 
 \subsection{忠实性}
 
+Insertion 从全零基线出发，按区域分数从高到低逐步恢复原图；Deletion 从原图出发，按同一顺序逐步遮蔽区域。两条曲线均在 21 个检查点上记录正确类别的原始 logit，并按实际改变区域比例用梯形法积分。Insertion AUC 越高、Deletion AUC 越低，说明高分区域越能控制目标 logit。
+
+此处积分的是有符号 logit，不是概率或归一化曲线，因此 AUC 不受 $[0,1]$ 约束。CHNCXR 的 Deletion AUC 出现负值，表示删除高分区域后目标 logit 在部分区间降至零以下，不构成数值异常。
+
 \subsection{输入扰动稳定性与跨种子稳定性}
+
+对归一化前的 $[0,1]$ 图像加入逐像素均匀噪声 $\delta_k\in[-0.01,0.01]$，裁剪后重新进行归一化。每个原图生成 $K=10$ 个输入，保持目标类别、SLIC 区域和方法随机种子不变。设有符号区域向量为 $a(x)$，指标为
+\[
+\begin{aligned}
+    \widehat{\mathrm{MaxSens}}(x)
+    &=\max_{1\le k\le K}\frac{\lVert a(x+\delta_k)-a(x)\rVert_2}{\lVert a(x)\rVert_2},\\
+    \mathrm{CosineSim}(x)
+    &=\frac{1}{K}\sum_{k=1}^{K}
+    \frac{a(x+\delta_k)^{\mathsf T}a(x)}
+    {\lVert a(x+\delta_k)\rVert_2\lVert a(x)\rVert_2}.
+\end{aligned}
+\]
+Max-Sensitivity 越低、Cosine Similarity 越高，输入扰动稳定性越好。复用同一随机种子使该实验主要反映输入变化，而不是重新采样造成的波动。
+
+LIME、RISE、KernelSHAP 另在种子 $\{0,1,2,3,4\}$ 的两两组合上计算 Spearman 秩相关与 Top 20\% 区域集合的 Jaccard 系数。两者越高，说明方法对随机采样越不敏感。Ablation 为确定性算法，不参与跨种子比较。
 
 \subsection{效率与定位性}
 
+效率的硬件无关主指标是归因阶段实际处理的输入样本数。从已准备的输入、区域和模型开始，到归因结果生成结束，不包含数据读取、公共预处理、指标计算和写入过程。
 
-\newpage
+定位性只使用正归因 $H^+=\max(H,0)$。目标内正能量占比为
+\[
+    E=\frac{\sum_{u\in\Omega}H^+(u)}{\sum_u H^+(u)},
+\]
+其中 $\Omega$ 是 ImageNet 边界框栅格化区域或 CHNCXR 病灶并集。Pointing Game 在最大正归因像素落入 $\Omega$ 时记为 1，否则为 0。若整幅图正能量为零，则两项指标均记为 0，并保留零能量诊断。
 
 
 \chapter{实验设置、汇总与结果统计}
 
 \section{数据、模型与固定样本}
 
+ImageNet 候选池包含 500 张图像，ResNet-50 与 VGG13 共同分类正确的样本为 374 张；M3 从中固定选择 10 张，覆盖 10 个类别。CHNCXR\cite{jaeger2014chncxr} 候选池包含 662 张胸片，共同正确样本为 434 张；M3 固定选择阴性 5 张、阳性 5 张。忠实性、稳定性与效率使用全部 10 张胸片，定位性只使用 5 张具有病灶并集掩码的阳性胸片。
+
+\begin{table}[htbp]
+    \centering
+    \caption{M3 默认实验参数}
+    \label{tab:m3-config}
+    \small
+    \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{4.0cm}X}
+        \toprule
+        参数 & 固定值 \\
+        \midrule
+        数据域与模型 & ImageNet、CHNCXR；ResNet-50、VGG13 \\
+        图像与定位掩码尺寸 & $224\times224$；图像双线性缩放，掩码最近邻缩放 \\
+        解释目标与遮蔽基线 & 正确类别 pre-Softmax logit；归一化输入空间零张量 \\
+        SLIC & 名义区域数 100，compactness 10.0，sigma 1.0 \\
+        LIME & 遮蔽率 0.50，核宽度 0.25，Ridge 系数 1.0 \\
+        RISE & $7\times7$ 网格，保留概率 0.50 \\
+        KernelSHAP & 互补联盟采样，Ridge 系数 0，空/全联盟计入预算 \\
+        随机方法预算与种子 & 每图每种子 1024 次前向；$\{0,1,2,3,4\}$ \\
+        输入稳定性 & $\epsilon=0.01$，每次归因对应 10 个扰动输入 \\
+        Insertion/Deletion & 21 个名义检查点，按实际区域比例积分 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
 \section{完整性与计算审计}
 
-\section{KernelSHAP 数值审计与仓库验证}
+\input{include/generated_audit}
+\FloatBarrier
+
+每个数据域包含三种随机方法各 100 条记录和 Ablation 的 20 条记录，共 320 条。两域基础归因累计处理 617,942 个模型输入，输入稳定性重算累计处理 6,179,420 个模型输入，Insertion/Deletion 曲线评价累计处理 26,880 个模型输入。基础归因、稳定性和曲线评价均分别计数。
+
+输入扰动后共完成 400 次额外类别检查，没有一次预测类别改变；640 条记录的 Max-Sensitivity 和 Cosine Similarity 均有定义。ImageNet 定位记录没有零正能量情况。CHNCXR 的 ResNet-50--RISE 在 25 条适用记录中正能量全部为零。
+
+KernelSHAP 共运行 200 次。ImageNet 与 CHNCXR 均为 100/100 次设计矩阵满秩；效率约束残差最大值为 $2.22\times10^{-16}$。因此，M3 中出现的 KernelSHAP 种子差异不是由秩亏或效率约束失效造成，而是有限联盟样本下区域系数估计的变化。
 
 
 \chapter{四种方法的默认设置比较}
