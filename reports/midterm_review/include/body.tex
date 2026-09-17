@@ -46,7 +46,6 @@ M1 分析并建立问题，M2 打通扰动类实现与数据流，M3 增加博�
         预处理 & ImageNet、CHNCXR、SLIC、定位掩码 & 固化尺寸、通道、归一化和掩码插值，保证图像、区域和标注空间对齐。 \\
         模型适配 & ResNet-50、VGG13 & 统一 NHWC 输入与 logit 输出，记录前向样本数和批次数。 \\
         评价 & 忠实性、稳定性、效率、定位性 & 计算 Insertion/Deletion、Max-Sensitivity、Cosine、Spearman、Jaccard、正能量占比及 Pointing Game。 \\
-        实验管理 & 筛选、分片、续跑、合并、校验 & 固化配置与数据，生成结构化结果并检查约束。 \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -70,7 +69,7 @@ Ablation 逐一遮蔽区域 $i$，以完整图像与单区域删除后的 logit 
 \[
     a_i=f_c(x)-f_c\bigl(h_x(\bm{1}-\bm{e}_i)\bigr).
 \]
-每次扰动都从原图出发，若实际区域数为 $C$，默认计算原图和 $C$ 个消融输入，共 $C+1$ 次前向，其成本随实际区域数线性增长。Ablation 衡量的是完整上下文中的单区域删除效应，不满足 Shapley 可加性，也不将该结果包装成 Shapley 值。
+每次扰动都从原图出发，若实际区域数为 $C$，默认计算原图和 $C$ 个消融输入，共 $C+1$ 次前向，其成本随实际区域数线性增长。
 
 \subsection{LIME：局部加权线性代理}
 
@@ -111,8 +110,6 @@ KernelSHAP\cite{lundberg2017shap} 以区域为参与者，利用联盟价值 $v(
 
 Insertion 从全零基线出发，按区域分数从高到低逐步恢复原图；Deletion 从原图出发，按同一顺序逐步遮蔽区域。两条曲线均在 21 个检查点上记录正确类别的原始 logit，并按实际改变区域比例用梯形法积分。Insertion AUC 越高、Deletion AUC 越低，说明高分区域越能控制目标 logit。
 
-此处积分的是有符号 logit，不是概率或归一化曲线，因此 AUC 不受 $[0,1]$ 约束。CHNCXR 的 Deletion AUC 出现负值，表示删除高分区域后目标 logit 在部分区间降至零以下，不构成数值异常。
-
 \subsection{输入扰动稳定性与跨种子稳定性}
 
 对归一化前的 $[0,1]$ 图像加入逐像素均匀噪声 $\delta_k\in[-0.01,0.01]$，裁剪后重新进行归一化。每个原图生成 $K=10$ 个输入，保持目标类别、SLIC 区域和方法随机种子不变。设有符号区域向量为 $a(x)$，指标为
@@ -142,6 +139,8 @@ LIME、RISE、KernelSHAP 另在种子 $\{0,1,2,3,4\}$ 的两两组合上计算 S
 
 
 \chapter{实验设置、汇总与结果统计}
+
+\section{实验环境}
 
 \section{数据、模型与固定样本}
 
@@ -265,7 +264,7 @@ M3 已完成四种核心归因方法、两种模型、两个数据域和评价�
 
 \begin{table}[H]
     \centering
-    \caption{M4 实验任务、动作与完成判据}
+    \caption{M4 实验任务}
     \label{tab:m4-plan}
     \small
     \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{4.0cm}>{\raggedright\arraybackslash}X}
