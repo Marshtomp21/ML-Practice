@@ -82,17 +82,19 @@ def write_table_assets(data):
     # Completeness and accounting audit.
     lines.extend(
         [
-            r"\begin{table}[H]",
-            r"    \centering",
-            r"    \caption{M3 默认设置结果完整性与前向样本审计}",
-            r"    \label{tab:m3-audit}",
-            r"    \footnotesize",
+            r"{\footnotesize",
             r"    \setlength{\tabcolsep}{4pt}",
             r"    \renewcommand{\arraystretch}{0.92}",
-            r"    \begin{tabular}{lrrrrr}",
+            r"    \begin{longtable}{lrrrrr}",
+            r"        \caption{M3 默认设置结果完整性与前向样本审计}\label{tab:m3-audit} \\",
             r"        \toprule",
             r"        数据域 & 完成记录 & 基础归因 & 稳定性重算 & 曲线评价 & 类别变化 \\",
             r"        \midrule",
+            r"        \endfirsthead",
+            r"        \toprule",
+            r"        数据域 & 完成记录 & 基础归因 & 稳定性重算 & 曲线评价 & 类别变化 \\",
+            r"        \midrule",
+            r"        \endhead",
         ]
     )
     for domain in RUNS:
@@ -102,23 +104,25 @@ def write_table_assets(data):
             f"{audit['base']:,} & {audit['stability']:,} & {audit['evaluation']:,} & "
             f"{audit['prediction_changes']} \\\\"
         )
-    lines.extend([r"        \bottomrule", r"    \end{tabular}", r"\end{table}", ""])
+    lines.extend([r"        \bottomrule", r"    \end{longtable}", r"}", ""])
 
     # Fidelity and localization, split by domain to keep the page readable.
     for domain in RUNS:
         lines.extend(
             [
-                r"\begin{table}[H]",
-                r"    \centering",
-                rf"    \caption{{{domain} 默认设置下的忠实性与定位性中位数}}",
-                rf"    \label{{tab:{domain.lower()}-fidelity}}",
-                r"    \footnotesize",
+                r"{\footnotesize",
                 r"    \setlength{\tabcolsep}{4pt}",
                 r"    \renewcommand{\arraystretch}{0.92}",
-                r"    \begin{tabular}{llrrrr}",
+                r"    \begin{longtable}{llrrrr}",
+                rf"        \caption{{{domain} 默认设置下的忠实性与定位性中位数}}\label{{tab:{domain.lower()}-fidelity}} \\",
                 r"        \toprule",
                 r"        模型 & 方法 & Insertion$\uparrow$ & Deletion$\downarrow$ & 正能量占比$\uparrow$ & Pointing$\uparrow$ \\",
                 r"        \midrule",
+                r"        \endfirsthead",
+                r"        \toprule",
+                r"        模型 & 方法 & Insertion$\uparrow$ & Deletion$\downarrow$ & 正能量占比$\uparrow$ & Pointing$\uparrow$ \\",
+                r"        \midrule",
+                r"        \endhead",
             ]
         )
         summary = data[domain]["summary"]
@@ -152,7 +156,7 @@ def write_table_assets(data):
                 )
             if model_index == 0:
                 lines.append(r"        \addlinespace[2pt]")
-        lines.extend([r"        \bottomrule", r"    \end{tabular}", r"\end{table}", ""])
+        lines.extend([r"        \bottomrule", r"    \end{longtable}", r"}", ""])
 
     # Input stability for all four methods.
     lines.extend(
