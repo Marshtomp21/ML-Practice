@@ -18,12 +18,14 @@
 \usepackage{amsmath}                        % AMSLaTeX宏包 用来排出更加漂亮的公式
 \usepackage{amssymb}                        % 数学符号生成命令
 \usepackage[below]{placeins}    %允许上一个section的浮动图形出现在下一个section的开始部分,还提供\FloatBarrier命令,使所有未处理的浮动图形立即被处理
+\usepackage{needspace}          % 避免小节标题与紧随其后的表格分离
 \usepackage{multirow}                       % 使用Multirow宏包，使得表格可以合并多个row格
 \usepackage{float}
 \usepackage{booktabs}                       % 表格，横的粗线；\specialrule{1pt}{0pt}{0pt}
 \usepackage{makecell}                       % 支持单元格合并
 \usepackage{longtable}                      % 支持跨页的表格。
 \usepackage{tabularx}                       % 自动设置表格的列宽
+\usepackage{xltabular}                      % 固定正文位置且可跨页的自适应列宽表格
 \usepackage{ccaption}                       % 支持子图的中文标题
 \usepackage{subfig}
 \usepackage[sort&compress,numbers]{natbib}  % 支持引用缩写的宏包
