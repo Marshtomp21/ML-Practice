@@ -148,6 +148,27 @@ LIME、RISE、KernelSHAP 另在种子 $\{0,1,2,3,4\}$ 的两两组合上计算 S
 
 \section{实验环境}
 
+{\small
+    \begin{xltabular}{\textwidth}{>{\raggedright\arraybackslash}p{4.0cm}X}
+        \caption{实验环境配置}\label{tab:env-config} \\
+        \toprule
+        配置项 & 规格与版本 \\
+        \midrule
+        \endfirsthead
+        \toprule
+        配置项 & 规格与版本 \\
+        \midrule
+        \endhead
+        CPU & Intel(R) Xeon(R) Platinum 8358P @ 2.60GHz \\
+        GPU & NVIDIA A100-SXM4-80GB \\
+        操作系统 & Ubuntu 20.04.5 LTS \\
+        编程语言 & Python 3.10.0 \\
+        深度学习框架 & PyTorch 2.6.0 \\
+        加速平台 & CUDA 13.0 \\
+        \bottomrule
+    \end{xltabular}
+}
+
 \section{数据、模型与固定样本}
 
 ImageNet 候选池包含 500 张图像，ResNet-50 与 VGG13 共同分类正确的样本为 374 张；M3 从中固定选择 10 张，覆盖 10 个类别。CHNCXR\cite{jaeger2014chncxr} 候选池包含 662 张胸片，共同正确样本为 434 张；M3 固定选择阴性 5 张、阳性 5 张。忠实性、稳定性与效率使用全部 10 张胸片，定位性只使用 5 张具有病灶并集掩码的阳性胸片。
