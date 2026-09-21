@@ -31,6 +31,7 @@ results/logs/**
 results/metrics/chncxr_pilot_20260910/
 # M3 GPU 分片是可恢复的运行中间件；只提交合并后的统一结果
 results/metrics/m3_*_shard*/
+results/metrics/m4_*_shard*/
 
 # ---- Python ----
 __pycache__/
