@@ -1,0 +1,264 @@
+{
+  "selected": [
+    {
+      "id": "CHNCXR_0006_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0006_0.png",
+      "target": 0,
+      "sha256": "9f7ee8bd6bb23e97d137078da9e367b9035152cca133381028c98b0f63bbb142"
+    },
+    {
+      "id": "CHNCXR_0011_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0011_0.png",
+      "target": 0,
+      "sha256": "62f9294553130eefc35efb4618ae35ee62917e3cbfe510ace66e17d7e262a7f7"
+    },
+    {
+      "id": "CHNCXR_0019_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0019_0.png",
+      "target": 0,
+      "sha256": "7c2bfbc90f7180498261df75db45a0f711fe9b626b7dcc132089d5f53481856d"
+    },
+    {
+      "id": "CHNCXR_0043_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0043_0.png",
+      "target": 0,
+      "sha256": "e7d37b208111e8f6c4da46048579cf2fa833cc1e8c1720c0cd98bc17f304d18a"
+    },
+    {
+      "id": "CHNCXR_0070_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0070_0.png",
+      "target": 0,
+      "sha256": "811de53ca3fb4255490c8065d4003e5bbbfa38d0ff8f99c1962fb09e2b135edb"
+    },
+    {
+      "id": "CHNCXR_0116_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0116_0.png",
+      "target": 0,
+      "sha256": "5f124a9d69dcd8287c97db8deb0ba4fd572da76740fd213584da54e12fd39e9c"
+    },
+    {
+      "id": "CHNCXR_0142_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0142_0.png",
+      "target": 0,
+      "sha256": "aa53911f4ceaf6eab0e86c18d2efb7d568e0249cc4fe89a491b5739ff005eead"
+    },
+    {
+      "id": "CHNCXR_0161_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0161_0.png",
+      "target": 0,
+      "sha256": "4000cae36eac4f323fdb9f8c7a16d9dfc582403a769cb58628f125217563d300"
+    },
+    {
+      "id": "CHNCXR_0165_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0165_0.png",
+      "target": 0,
+      "sha256": "2563008506f64d0f893b37224f9bade17ff438e3d7f7760ab17d3e09027e8838"
+    },
+    {
+      "id": "CHNCXR_0175_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0175_0.png",
+      "target": 0,
+      "sha256": "74b69b92cfb273cfd5bf5ffc082a1bc402eb0a24ca1f4914f6c3f84284e46b7a"
+    },
+    {
+      "id": "CHNCXR_0194_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0194_0.png",
+      "target": 0,
+      "sha256": "32f78bec07a68679ed4fa53db2c11b557d23b117dc5dbfe90e6f11731d7ae7b4"
+    },
+    {
+      "id": "CHNCXR_0209_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0209_0.png",
+      "target": 0,
+      "sha256": "419c669b158f5b66c005c487680954708fba115864a0a0e046f4c5b4fa60f243"
+    },
+    {
+      "id": "CHNCXR_0218_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0218_0.png",
+      "target": 0,
+      "sha256": "fc58b6e7816f959d1d198082d83055fcd399ebfd32f0bdff7eb5bf6c293ce653"
+    },
+    {
+      "id": "CHNCXR_0230_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0230_0.png",
+      "target": 0,
+      "sha256": "e600f17352b3e569b7fdf05cd02db036dad7014ea8f3f947605d01983e126b5d"
+    },
+    {
+      "id": "CHNCXR_0257_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0257_0.png",
+      "target": 0,
+      "sha256": "30c18537a598bb519adeb77c97cfb13a444705b205406f9f45641e34f8ce60a1"
+    },
+    {
+      "id": "CHNCXR_0275_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0275_0.png",
+      "target": 0,
+      "sha256": "00494cd79d63856c73c71b48d3571fba107a0f4f340c20e5d94a3d455317ed2b"
+    },
+    {
+      "id": "CHNCXR_0301_0",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0301_0.png",
+      "target": 0,
+      "sha256": "1833696f340214956e70ef0efbce9cb6442889bd0f809782b98b6d410f9bc2a7"
+    },
+    {
+      "id": "CHNCXR_0342_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0342_1.png",
+      "target": 1,
+      "sha256": "277092d4cedbce3433fa121b3ce4a8f4194a905217de892fbe2e588d3967ff39"
+    },
+    {
+      "id": "CHNCXR_0347_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0347_1.png",
+      "target": 1,
+      "sha256": "b223b0c2e62fe456baaad0f9e8811976ebeaa7900815cd6fc8a9fc3359566328"
+    },
+    {
+      "id": "CHNCXR_0353_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0353_1.png",
+      "target": 1,
+      "sha256": "19b0e54acbc9d5c9d27543a15235ae2da4e13bdd2ca6c67dc5c57732e714f102"
+    },
+    {
+      "id": "CHNCXR_0398_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0398_1.png",
+      "target": 1,
+      "sha256": "82da3c4f0c735bf37083cccca25c9cb341b6f86fe4f248a5bb7d9b41d1cc2997"
+    },
+    {
+      "id": "CHNCXR_0405_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0405_1.png",
+      "target": 1,
+      "sha256": "fc206867acb75d45269bd18d16f2fedc535d33a5ca73fb2a0d45332fb85b833b"
+    },
+    {
+      "id": "CHNCXR_0408_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0408_1.png",
+      "target": 1,
+      "sha256": "dfcdc44f97507e8ecdeeb2322df3d58ba0bb8f8fcc6f053a60bd63fa5874e182"
+    },
+    {
+      "id": "CHNCXR_0428_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0428_1.png",
+      "target": 1,
+      "sha256": "cc80ef8a837582f832047a1b25dd2004bb62a84ce856e188fa40230ac373a220"
+    },
+    {
+      "id": "CHNCXR_0433_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0433_1.png",
+      "target": 1,
+      "sha256": "e5eb0ef99651fd6e3e3682b2cd564c9ae3aaf49780e54e094502483381bae74b"
+    },
+    {
+      "id": "CHNCXR_0436_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0436_1.png",
+      "target": 1,
+      "sha256": "450c6b50f86c78906fce78eba2649b83099b6673edc0417a24b9ac8c8d47d18a"
+    },
+    {
+      "id": "CHNCXR_0444_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0444_1.png",
+      "target": 1,
+      "sha256": "efd3b2fd57aec69c5e09cd16d71178fc5e4f2b58732caec6ad0f3fe582e2e7f7"
+    },
+    {
+      "id": "CHNCXR_0453_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0453_1.png",
+      "target": 1,
+      "sha256": "433b94c319432d0af63f12c8d9ae6f6faf8cddbfc2a5bbe3664cae141e629f30"
+    },
+    {
+      "id": "CHNCXR_0468_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0468_1.png",
+      "target": 1,
+      "sha256": "edc4ac77a596a79680a4bc2b5ac3a4bbd803205f7031274100c69eab15630c81"
+    },
+    {
+      "id": "CHNCXR_0479_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0479_1.png",
+      "target": 1,
+      "sha256": "1795d3cfdf716af6ee2eb382a356a384498650bbfe52b2786a44c9f079c8e656"
+    },
+    {
+      "id": "CHNCXR_0481_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0481_1.png",
+      "target": 1,
+      "sha256": "329f9205c928719c37f975efc24493c9c7f2fed70ac01c6d60ea694503cc8d6c"
+    },
+    {
+      "id": "CHNCXR_0503_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0503_1.png",
+      "target": 1,
+      "sha256": "a9f6091e503cf839d7303adf8ddfdb71609626b3f7c4218bc7f9a4990e5928cb"
+    },
+    {
+      "id": "CHNCXR_0518_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0518_1.png",
+      "target": 1,
+      "sha256": "febef1d4a4b6de45a0d156750b8025310015306d4caccffb25d1c1e66f468cfc"
+    },
+    {
+      "id": "CHNCXR_0525_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0525_1.png",
+      "target": 1,
+      "sha256": "a92bf61ba9d0f4fd8b2b867003a4ac95a42c6992724a740a5c6b88b342fa7cdc"
+    },
+    {
+      "id": "CHNCXR_0538_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0538_1.png",
+      "target": 1,
+      "sha256": "0c0c5ca835328944574de2b68e1c908f9b78d1398c36073308fe0e62e3454382"
+    },
+    {
+      "id": "CHNCXR_0557_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0557_1.png",
+      "target": 1,
+      "sha256": "71b6b7c9ed9269abddd2a6086cb97a6de30d094857293b843b82c15c2432d3d5"
+    },
+    {
+      "id": "CHNCXR_0571_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0571_1.png",
+      "target": 1,
+      "sha256": "0a0d05698e32f9cd9a2a1d7810714ddbdb0b659b0e70da5a2ca28fee0686a87e"
+    },
+    {
+      "id": "CHNCXR_0579_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0579_1.png",
+      "target": 1,
+      "sha256": "017c124297193169ac916ce712b0f1cd2c63ef2861aca05938fb5fb441ac73d6"
+    },
+    {
+      "id": "CHNCXR_0583_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0583_1.png",
+      "target": 1,
+      "sha256": "5ebd8fdf1af677e95c6cca3c3ae7b5266464547fe1b8704118a256ecce5e8bf0"
+    },
+    {
+      "id": "CHNCXR_0587_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0587_1.png",
+      "target": 1,
+      "sha256": "92520cc413d231dcd2d18110e503964f7d52326f27c22d1429ad52ee3fd3c165"
+    },
+    {
+      "id": "CHNCXR_0602_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0602_1.png",
+      "target": 1,
+      "sha256": "1ab5eabf1449ce2425c1ce00bfff5404045b0bf2f301b5808e77675cf9d36a28"
+    },
+    {
+      "id": "CHNCXR_0620_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0620_1.png",
+      "target": 1,
+      "sha256": "4f54efcc78b4b8d19b67450280f67a18a0da934bc68d1750d3933e306c57876e"
+    },
+    {
+      "id": "CHNCXR_0648_1",
+      "path": "data/raw/chncxr/CXR_png/CHNCXR_0648_1.png",
+      "target": 1,
+      "sha256": "5316062b002578b2c81fdd4b644e9b0779920a1d7dbc41441aca26479e8f0748"
+    }
+  ],
+  "shard_index": 1,
+  "shard_count": 2
+}
