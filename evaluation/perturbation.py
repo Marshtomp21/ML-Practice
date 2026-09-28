@@ -4,24 +4,38 @@ from scipy.integrate import trapezoid
 from scipy.stats import spearmanr
 
 
-def insertion_deletion(image, segments, scores, predict, target, batch_size=32, steps=20):
-    """21 nominal checkpoints; integrate over actual changed-region fractions.
+def insertion_deletion(image, segments, scores, predict, target, batch_size=32, steps=20,
+                       fraction_mode="regions"):
+    """Evaluate insertion/deletion and integrate on region or pixel fractions.
 
     Scores correspond to sorted unique labels. Ties use ascending region ID.
     Keep signed contributions. Raw logit AUC is not bounded to [0,1]. Evaluation
     forwards are returned separately and must not count as attribution budget.
+
+    ``fraction_mode='regions'`` preserves the M2/M3 protocol. ``'pixels'``
+    selects checkpoints nearest to equally spaced cumulative pixel fractions;
+    this is the fair comparison for unequal SLIC regions versus equal ViT
+    patches. The returned x-axis always records the actual changed fraction.
     """
     image, segments, scores = map(np.asarray, (image, segments, scores))
     ids, inverse = np.unique(segments, return_inverse=True)
     inverse = inverse.reshape(segments.shape)
     if (segments.shape != image.shape[:2] or scores.shape != (len(ids),)
-            or not np.isfinite(scores).all() or batch_size < 1 or steps < 1):
+            or not np.isfinite(scores).all() or batch_size < 1 or steps < 1
+            or fraction_mode not in ("regions", "pixels")):
         raise ValueError("Invalid shapes, scores, batch_size or steps")
     order = np.argsort(-scores, kind="stable")
     rank = np.empty(len(ids), dtype=int)
     rank[order] = np.arange(len(ids))
-    counts = np.unique(np.rint(np.linspace(0, len(ids), steps+1)).astype(int))
-    fractions = counts / len(ids)
+    if fraction_mode == "regions":
+        counts = np.unique(np.rint(np.linspace(0, len(ids), steps + 1)).astype(int))
+        fractions = counts / len(ids)
+    else:
+        region_pixels = np.bincount(inverse.ravel(), minlength=len(ids))[order]
+        cumulative = np.r_[0, np.cumsum(region_pixels)] / segments.size
+        targets = np.linspace(0.0, 1.0, steps + 1)
+        counts = np.unique(np.abs(cumulative[:, None] - targets[None, :]).argmin(axis=0))
+        fractions = cumulative[counts]
     curves = {}
     forward_samples = 0
     for name in ("insertion", "deletion"):
@@ -34,10 +48,47 @@ def insertion_deletion(image, segments, scores, predict, target, batch_size=32, 
             values.extend(logits[:, target].tolist())
             forward_samples += len(keep)
         curves[name] = values
-    return {"fractions": fractions.tolist(), **curves,
-            "insertion_auc": float(trapezoid(curves["insertion"], fractions)),
-            "deletion_auc": float(trapezoid(curves["deletion"], fractions)),
-            "evaluation_forward_samples": forward_samples}
+    # The two endpoint predictions are each evaluated twice (once per curve).
+    # Average the duplicates to reduce tiny batch-dependent numerical variation.
+    baseline_logit = float((curves["insertion"][0] + curves["deletion"][-1]) / 2)
+    full_logit = float((curves["insertion"][-1] + curves["deletion"][0]) / 2)
+    normalization_delta = full_logit - baseline_logit
+    tolerance = 32 * np.finfo(np.float64).eps * max(
+        1.0, abs(baseline_logit), abs(full_logit)
+    )
+    normalized_insertion = normalized_deletion = None
+    normalized_insertion_auc = normalized_deletion_auc = None
+    if abs(normalization_delta) > tolerance:
+        normalized_insertion = (
+            (np.asarray(curves["insertion"], dtype=np.float64) - baseline_logit)
+            / normalization_delta
+        )
+        normalized_deletion = (
+            (np.asarray(curves["deletion"], dtype=np.float64) - baseline_logit)
+            / normalization_delta
+        )
+        normalized_insertion_auc = float(trapezoid(normalized_insertion, fractions))
+        normalized_deletion_auc = float(trapezoid(normalized_deletion, fractions))
+
+    return {
+        "fractions": fractions.tolist(),
+        "fraction_mode": fraction_mode,
+        **curves,
+        "insertion_auc": float(trapezoid(curves["insertion"], fractions)),
+        "deletion_auc": float(trapezoid(curves["deletion"], fractions)),
+        "baseline_logit": baseline_logit,
+        "full_logit": full_logit,
+        "normalization_delta": normalization_delta,
+        "normalized_insertion": (
+            None if normalized_insertion is None else normalized_insertion.tolist()
+        ),
+        "normalized_deletion": (
+            None if normalized_deletion is None else normalized_deletion.tolist()
+        ),
+        "normalized_insertion_auc": normalized_insertion_auc,
+        "normalized_deletion_auc": normalized_deletion_auc,
+        "evaluation_forward_samples": forward_samples,
+    }
 
 
 def seed_stability(left, right):

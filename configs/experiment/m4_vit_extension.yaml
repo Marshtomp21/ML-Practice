@@ -1,0 +1,50 @@
+stage: m4_vit_extension
+domain: imagenet
+data_root: data/raw/imagenet/subsetEBPG
+annotation_root: data/raw/imagenet/val_bbox
+class_index: data/raw/imagenet/imagenet_class_index.json
+localization_mask_root: data/raw/imagenet/subsetEBPG_masks
+models:
+  resnet50: models/checkpoints/resnet50_imagenet1k_v2.pth
+  vit_b_16: models/checkpoints/vit_b_16_imagenet1k_v1.pth
+
+# Reuse the exact M3 ImageNet sample set and its CNN results. Only ViT is
+# screened here; samples misclassified by ViT are excluded from both M4
+# experiments, and the matching M3 per-image CNN rows are reused as-is.
+selection: m3_reuse
+m3_results_dir: results/metrics/m3_imagenet_default_20260913
+sample_count: 10
+selection_seed: 0
+seeds: [0, 1, 2, 3, 4]
+
+num_samples: 1024
+batch_size: 32
+mask_rate: 0.5
+kernel_width: 0.25
+ridge_alpha: 1.0
+kernel_shap_ridge_alpha: 0.0
+kernel_shap_paired_sampling: true
+grid_size: 7
+compactness: 10.0
+sigma: 1.0
+
+evaluation_steps: 20
+stability_epsilon: 0.01
+stability_repeats: 10
+warmup_batches: 3
+threads: 4
+device: cuda
+
+experiments:
+  architecture:
+    # ResNet-50 and VGG13 are read from M3; only this model is newly executed.
+    models: [vit_b_16]
+    reuse_models: [resnet50, vgg13]
+    n_segments: 100
+    evaluation_fraction_mode: regions
+  partition:
+    models: [resnet50, vit_b_16]
+    partitions: [slic, patch]
+    n_segments: 196
+    patch_size: 16
+    evaluation_fraction_mode: pixels

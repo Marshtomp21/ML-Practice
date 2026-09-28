@@ -4,14 +4,14 @@
 
 ## 当前进度
 
-已实现并测试 LIME、RISE、Ablation、KernelSHAP。M2 已完成 ImageNet/CHNCXR × ResNet-50/VGG13 的端到端验证；M3 已完成四种核心方法在两个数据域和两种模型上的默认设置比较，以及输入稳定性、跨种子稳定性、效率和定位性评价。
+已实现并测试 LIME、RISE、Ablation、KernelSHAP。M2 已完成 ImageNet/CHNCXR × ResNet-50/VGG13 的端到端验证；M3 已完成四种核心方法在两个数据域和两种模型上的默认设置比较，以及输入稳定性、跨种子稳定性、效率和定位性评价。M4 的 ViT 扩展代码已实现，待在完整 ImageNet/GPU 环境运行。
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 | 需求、数据和实验设计 | 已完成 |
 | M2 | 三个扰动基线与初步实验 | 已完成 |
 | M3 | 博弈论类方法与初步比较 | 已完成 |
-| M4 | 参数实验、消融与交叉对比 | 未开始 |
+| M4 | 参数实验、ViT 跨架构与特征划分对照 | 代码已完成，待完整运行 |
 | M5 | 报告与答辩 | 未开始 |
 
 ## 项目设置
@@ -93,7 +93,32 @@ python scripts/validate_m3_run.py results/metrics/m3_imagenet_default_20260913
 python scripts/validate_m3_run.py results/metrics/m3_chncxr_default_20260913
 ```
 
-M3 中期报告与演示提纲位于 `reports/m3/`。OrdShap 的核验、图像包装和正式实验安排在 M4。
+M3 中期报告与演示材料位于 `reports/midterm_review/`。
+
+运行 M4 ViT 扩展前，先准备 TorchVision ViT-B/16 ImageNet-1K V1 权重：
+
+```bash
+python scripts/download_vit_weights.py
+```
+
+检查实验矩阵（不读取数据和权重）：
+
+```bash
+python -m experiments.m4_vit_extension \
+  --experiment architecture --phase main \
+  --output results/metrics/m4_vit_architecture --dry-run
+python -m experiments.m4_vit_extension \
+  --experiment partition --phase main \
+  --output results/metrics/m4_vit_partition --dry-run
+```
+
+运行全部跨架构和 SLIC/Patch 实验（支持中断后续跑）：
+
+```bash
+bash scripts/run_m4_vit_extension.sh all
+```
+
+也可将最后一个参数换成 `architecture` 或 `partition` 单独运行。`architecture` 直接复用 M3 的 ResNet-50/VGG13 逐图结果，本次只新增运行 ViT；`partition` 中的 ResNet-50 SLIC-196/Grid-196 是 M3 没有的新控制条件，仍需运行。完整协议、分阶段命令和输出说明见 `docx/M4_ViT扩展实验实施说明.md`。
 
 ## 报告
 

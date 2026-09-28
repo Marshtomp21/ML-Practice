@@ -43,7 +43,11 @@ def load_chncxr(architecture, checkpoint, device="cuda"):
 
 def load_imagenet(architecture, checkpoint, device="cuda"):
     """Load a frozen torchvision ImageNet state dict from a local file."""
-    constructors = {"resnet50": models.resnet50, "vgg13": models.vgg13}
+    constructors = {
+        "resnet50": models.resnet50,
+        "vgg13": models.vgg13,
+        "vit_b_16": models.vit_b_16,
+    }
     if architecture not in constructors:
         raise ValueError(f"Unsupported architecture: {architecture}")
     state = torch.load(Path(checkpoint), map_location="cpu", weights_only=True)

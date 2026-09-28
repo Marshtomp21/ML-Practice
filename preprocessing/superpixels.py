@@ -26,3 +26,26 @@ def slic_segments(rgb: np.ndarray, n_segments: int = 100,
     return slic(rgb, n_segments=n_segments, compactness=compactness,
                 sigma=sigma, start_label=0, enforce_connectivity=True,
                 convert2lab=True, channel_axis=-1)
+
+
+def regular_grid_segments(image_shape: tuple[int, int], patch_size: int = 16) -> np.ndarray:
+    """Return row-major labels for a non-overlapping square patch grid.
+
+    ViT-B/16 receives 224 x 224 inputs, so ``patch_size=16`` produces the
+    model-aligned 14 x 14 = 196 feature partition. Requiring exact divisibility
+    avoids silently creating partial boundary features that do not correspond
+    to ViT tokens.
+    """
+    if (not isinstance(image_shape, (tuple, list)) or len(image_shape) != 2
+            or any(isinstance(value, bool) or not isinstance(value, Integral)
+                   or value < 1 for value in image_shape)):
+        raise ValueError("image_shape must contain two positive integers")
+    if isinstance(patch_size, bool) or not isinstance(patch_size, Integral) or patch_size < 1:
+        raise ValueError("patch_size must be a positive integer")
+    height, width = map(int, image_shape)
+    if height % patch_size or width % patch_size:
+        raise ValueError("image dimensions must be divisible by patch_size")
+    rows = np.arange(height, dtype=np.int64) // int(patch_size)
+    columns = np.arange(width, dtype=np.int64) // int(patch_size)
+    grid_width = width // int(patch_size)
+    return rows[:, None] * grid_width + columns[None, :]
