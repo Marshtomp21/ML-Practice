@@ -1,0 +1,21 @@
+{
+  "source": "results/metrics/m3_imagenet_default_20260913",
+  "models": [
+    "resnet50",
+    "vgg13"
+  ],
+  "sample_ids": [
+    "ILSVRC2012_val_00000319",
+    "ILSVRC2012_val_00001218",
+    "ILSVRC2012_val_00004344",
+    "ILSVRC2012_val_00006565",
+    "ILSVRC2012_val_00008228",
+    "ILSVRC2012_val_00009336",
+    "ILSVRC2012_val_00013800",
+    "ILSVRC2012_val_00017759",
+    "ILSVRC2012_val_00030571",
+    "ILSVRC2012_val_00031395"
+  ],
+  "rows_reused": 320,
+  "note": "M3 files are read-only; CNN attribution cells were not rerun."
+}

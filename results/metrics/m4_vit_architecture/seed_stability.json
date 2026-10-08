@@ -1,0 +1,4202 @@
+[
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5683059293963175,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.6497567962758496,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.687639879442571,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5945808838888722,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.47830563098684015,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.5927158246545909,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.6099191310316016,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.5139058816508011,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.6095610396586194,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.6187072901435349,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9906150219330965,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9967324162215391,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9960759153710721,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.993808003342186,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9900928053474976,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9921518307421442,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.991957864581779,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9945241860881501,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.994345140401659,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9949718003043775,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.09689355733938108,
+    "top20_jaccard": 0.22580645161290322
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.20945361224672493,
+    "top20_jaccard": 0.22580645161290322
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.3333979887201217,
+    "top20_jaccard": 0.26666666666666666
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.2264331115156217,
+    "top20_jaccard": 0.22580645161290322
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.5142639730237831,
+    "top20_jaccard": 0.35714285714285715
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.2742383098087195,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.24957476649458382,
+    "top20_jaccard": 0.3103448275862069
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.2737608546447435,
+    "top20_jaccard": 0.35714285714285715
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.41123810092208524,
+    "top20_jaccard": 0.26666666666666666
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00000319",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.2999910477156754,
+    "top20_jaccard": 0.35714285714285715
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5828907048008172,
+    "top20_jaccard": 0.44
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.5512597889002384,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.523765747361253,
+    "top20_jaccard": 0.5
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5272046305754172,
+    "top20_jaccard": 0.44
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.5386448757235275,
+    "top20_jaccard": 0.44
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.6663091590057884,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.5515151515151516,
+    "top20_jaccard": 0.44
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.4685052774940416,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.5535240040858019,
+    "top20_jaccard": 0.5
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.534286687095676,
+    "top20_jaccard": 0.44
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9345590738849168,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9666326183180118,
+    "top20_jaccard": 0.8
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9546646237657476,
+    "top20_jaccard": 0.8
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.953336738168199,
+    "top20_jaccard": 0.8
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9334865509022814,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9441266598569972,
+    "top20_jaccard": 0.6363636363636364
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9493020088525707,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9391726251276814,
+    "top20_jaccard": 0.7142857142857143
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9620871637725573,
+    "top20_jaccard": 0.8
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9668369084099423,
+    "top20_jaccard": 0.8
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5364998297582568,
+    "top20_jaccard": 0.44
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.33154579502894116,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.38607422540006814,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.31338100102145056,
+    "top20_jaccard": 0.2413793103448276
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.4155090228123937,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.4327204630575418,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.31722846441947566,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.3458290772897515,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.5066564521620702,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00001218",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.5185052774940416,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5487009010585251,
+    "top20_jaccard": 0.5555555555555556
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.4208730644737993,
+    "top20_jaccard": 0.4
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.3565567316945149,
+    "top20_jaccard": 0.47368421052631576
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5798442830898434,
+    "top20_jaccard": 0.4
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.3767124486046715,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.4668532936750941,
+    "top20_jaccard": 0.47368421052631576
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.46961770623742455,
+    "top20_jaccard": 0.47368421052631576
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.46366897034380194,
+    "top20_jaccard": 0.47368421052631576
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.45590062111801244,
+    "top20_jaccard": 0.4
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.44904207855830636,
+    "top20_jaccard": 0.4
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9922666433382906,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9959758551307846,
+    "top20_jaccard": 0.75
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9953809815414224,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9936313533374157,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9941912343626979,
+    "top20_jaccard": 0.75
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9924765987227714,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9932114425684542,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.992896509491733,
+    "top20_jaccard": 0.75
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9954159741055026,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9944361823112589,
+    "top20_jaccard": 0.8666666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.3089318519814539,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.2864316332779284,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.29853906044965445,
+    "top20_jaccard": 0.47368421052631576
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.3181348963345289,
+    "top20_jaccard": 0.47368421052631576
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.2854518414836847,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.31837984428308985,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.2509491733006736,
+    "top20_jaccard": 0.16666666666666666
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.3621555419473362,
+    "top20_jaccard": 0.5555555555555556
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.35263756451754,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00004344",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.32891260607120987,
+    "top20_jaccard": 0.4
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.8809152576693329,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.8833248962235497,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.8859572744760555,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.896466538422598,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.8358408423610408,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.8723904019439102,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.8751442745773007,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.843009010833249,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.8626506024096385,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.8707097296750026,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9933178090513314,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9960311835577605,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9955654550977019,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9948567378758734,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.995221221018528,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9920421180520401,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9946947453680268,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9931760656069658,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9968816442239548,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9951807228915663,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.46459451250379674,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.5476561709020957,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.3987040599372279,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.45831730282474437,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.5078667611622962,
+    "top20_jaccard": 0.36
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.5087982180824137,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.4836691303027235,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.552212210185279,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.5027032499746886,
+    "top20_jaccard": 0.36
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00006565",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.5988863015085553,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.8326095710756305,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.8072942175204884,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.7438643462739849,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.7751874707502096,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.8013299811712977,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.815152207746977,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.8447339493475257,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.7829148572610224,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.8337850045167119,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.7401203730912811,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9954506372372961,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9970614163972965,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9964519323908098,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9952764989497285,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9949717569464852,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9947323168010797,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9951676625199988,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9951894298059446,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9962342595313504,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9960383539578369,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5972616754279992,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.7218576201826276,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.5804137961058325,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.6580794723609886,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.6142183911798959,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.49332288503607935,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.4997006998182432,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.5552072789804203,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.6446925915042283,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00008228",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.5769963322123182,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5926513878828045,
+    "top20_jaccard": 0.6521739130434783
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.621950279734291,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.6135659571844705,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5336837075967511,
+    "top20_jaccard": 0.6521739130434783
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.6745064192469521,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.6784211580845523,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.5865943313348642,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.482961638641863,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.4933495676833685,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.54832544734368,
+    "top20_jaccard": 0.6521739130434783
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9899665551839465,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9946673242605921,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9933110367892977,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9913536673704976,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9916002650925512,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9927253671994205,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9919393369603748,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9932647997164126,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9947597984063621,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9957924263674613,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.4151472650771388,
+    "top20_jaccard": 0.35714285714285715
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.46275603779110086,
+    "top20_jaccard": 0.35714285714285715
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.38253471633555786,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5195659880091857,
+    "top20_jaccard": 0.35714285714285715
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.46386572754034183,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.40209299816592947,
+    "top20_jaccard": 0.35714285714285715
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.43800379143997653,
+    "top20_jaccard": 0.3103448275862069
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.41420711126180976,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.471078710910408,
+    "top20_jaccard": 0.4074074074074074
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00009336",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.4458486814728048,
+    "top20_jaccard": 0.35714285714285715
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.6591237579042457,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.5262420957542908,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.6464092140921409,
+    "top20_jaccard": 0.5454545454545454
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.6312330623306234,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.5365627822944896,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.6200993676603432,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.7031842818428184,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.5336946702800361,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.5155826558265582,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.546951219512195,
+    "top20_jaccard": 0.4782608695652174
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9961833785004517,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9974480578139113,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9973125564588979,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9968608852755195,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9963866305329719,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.996702800361337,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9963188798554652,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9964092140921409,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9972448057813912,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9982610659439927,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5214995483288166,
+    "top20_jaccard": 0.25925925925925924
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.34317976513098464,
+    "top20_jaccard": 0.25925925925925924
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.3958672086720867,
+    "top20_jaccard": 0.36
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.3929765130984643,
+    "top20_jaccard": 0.25925925925925924
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.3959349593495935,
+    "top20_jaccard": 0.36
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.21205962059620595,
+    "top20_jaccard": 0.25925925925925924
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.5326558265582655,
+    "top20_jaccard": 0.36
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.28525293586269196,
+    "top20_jaccard": 0.25925925925925924
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.48599819331526645,
+    "top20_jaccard": 0.36
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00013800",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.28633694670280035,
+    "top20_jaccard": 0.3076923076923077
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.5759515846472368,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.5525402134097787,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.48348463131071834,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.5605828953655041,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.46319477623825456,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.5355948399426661,
+    "top20_jaccard": 0.52
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.5766204809683071,
+    "top20_jaccard": 0.5833333333333334
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.48053830227743277,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.6127090301003345,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.5286829112916069,
+    "top20_jaccard": 0.46153846153846156
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9915113871635611,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9944736422997293,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.994616977225673,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9935021500238892,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9909061952540213,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9931039974518237,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9932314062748846,
+    "top20_jaccard": 0.9
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.992148431278866,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9945851250199077,
+    "top20_jaccard": 0.8095238095238095
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9959069915591655,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.2152094282529065,
+    "top20_jaccard": 0.1875
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.21307533046663482,
+    "top20_jaccard": 0.15151515151515152
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.22830068482242394,
+    "top20_jaccard": 0.22580645161290322
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.1585443541965281,
+    "top20_jaccard": 0.11764705882352941
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.25465838509316774,
+    "top20_jaccard": 0.26666666666666666
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.1236661888835802,
+    "top20_jaccard": 0.26666666666666666
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.1477942347507565,
+    "top20_jaccard": 0.11764705882352941
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.17005892658066574,
+    "top20_jaccard": 0.3103448275862069
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.2642936773371556,
+    "top20_jaccard": 0.22580645161290322
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00017759",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.3350374263417742,
+    "top20_jaccard": 0.26666666666666666
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.27339968866455966,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.5961507618283881,
+    "top20_jaccard": 0.5652173913043478
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.6005283268078683,
+    "top20_jaccard": 0.5652173913043478
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.4045379499032973,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.20796263974715787,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.43418085758762204,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.3718760318882966,
+    "top20_jaccard": 0.3333333333333333
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.45859710363696404,
+    "top20_jaccard": 0.6363636363636364
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.38572574178027264,
+    "top20_jaccard": 0.38461538461538464
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.4086513514788433,
+    "top20_jaccard": 0.44
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9608094721449123,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9843954903533185,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9801688758903722,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9702816170574085,
+    "top20_jaccard": 0.8947368421052632
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9619793386480493,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9690362752960043,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9679984904948346,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9712439266003111,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9758479173545921,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9798481060427376,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.10159913203452993,
+    "top20_jaccard": 0.09090909090909091
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.07263550167460729,
+    "top20_jaccard": 0.125
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.1712250577857446,
+    "top20_jaccard": 0.125
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.26400301901033063,
+    "top20_jaccard": 0.2413793103448276
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": -0.03574696919666022,
+    "top20_jaccard": 0.09090909090909091
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.40287749422142555,
+    "top20_jaccard": 0.2857142857142857
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.1371291098636728,
+    "top20_jaccard": 0.2
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.14675220529270247,
+    "top20_jaccard": 0.2
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.14852587386197463,
+    "top20_jaccard": 0.2
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00030571",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.0765979527336195,
+    "top20_jaccard": 0.2
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.6883720930232559,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.7135040062536643,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.7153410201289818,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.6954465507133086,
+    "top20_jaccard": 0.7894736842105263
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.6841899550517881,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.6776431502833691,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.618155169044362,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.6833887043189368,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.6080125073285128,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "lime",
+    "variant": "slic_100__lime",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.7374633574359977,
+    "top20_jaccard": 0.7
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.9922610904827047,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.9947820988860661,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.9965995700605824,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.9950556966972837,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.9922415477819034,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.9934336525307798,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.9946843853820598,
+    "top20_jaccard": 0.8888888888888888
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.9946062145788547,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.9954270080125073,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "rise",
+    "variant": "slic_100__rise",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.9968536251709987,
+    "top20_jaccard": 1.0
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      1
+    ],
+    "spearman": 0.40572601133476643,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      2
+    ],
+    "spearman": 0.36155950752393984,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      3
+    ],
+    "spearman": 0.2044752784834864,
+    "top20_jaccard": 0.3076923076923077
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      0,
+      4
+    ],
+    "spearman": 0.4912644127418409,
+    "top20_jaccard": 0.36
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      2
+    ],
+    "spearman": 0.3603869454758648,
+    "top20_jaccard": 0.3076923076923077
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      3
+    ],
+    "spearman": 0.3349032636310338,
+    "top20_jaccard": 0.4166666666666667
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      1,
+      4
+    ],
+    "spearman": 0.36984561266367016,
+    "top20_jaccard": 0.3076923076923077
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      3
+    ],
+    "spearman": 0.3521203830369357,
+    "top20_jaccard": 0.3076923076923077
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      2,
+      4
+    ],
+    "spearman": 0.40719171389486025,
+    "top20_jaccard": 0.6190476190476191
+  },
+  {
+    "experiment": "architecture",
+    "model": "vit_b_16",
+    "id": "ILSVRC2012_val_00031395",
+    "partition": "slic_100",
+    "method": "kernel_shap",
+    "variant": "slic_100__kernel_shap",
+    "seeds": [
+      3,
+      4
+    ],
+    "spearman": 0.32499511432479966,
+    "top20_jaccard": 0.36
+  }
+]

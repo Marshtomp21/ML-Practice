@@ -1,0 +1,594 @@
+[
+  {
+    "model": "resnet50",
+    "partition": "patch_16",
+    "method": "ablation",
+    "images": 10,
+    "runs": 10,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.5599851530491773,
+      "q25": 0.413971135982795,
+      "q75": 0.6556799148380636
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9034911050676222,
+      "q25": 0.8324098419041114,
+      "q75": 0.9429097073050159
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 3.105961457826197,
+      "q25": 2.9811828257516026,
+      "q75": 3.1250735414214432
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 1970.0,
+      "q25": 1970.0,
+      "q75": 1970.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "resnet50",
+    "partition": "patch_16",
+    "method": "kernel_shap",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.0868910033631357,
+      "q25": 0.05549174876799273,
+      "q75": 0.14273101297947152
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9973317129951997,
+      "q25": 0.9921940481099896,
+      "q75": 0.9988553582427777
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 22.530638970062135,
+      "q25": 21.95144542613998,
+      "q75": 22.764601619355382
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "resnet50",
+    "partition": "patch_16",
+    "method": "lime",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.2264274946841715,
+      "q25": 0.18794953291849348,
+      "q75": 0.28890958456669774
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9801455370201151,
+      "q25": 0.9637124366669654,
+      "q75": 0.985419396344489
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 22.4998800734058,
+      "q25": 22.078543825168165,
+      "q75": 22.688932261057197
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "resnet50",
+    "partition": "patch_16",
+    "method": "region_rise",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.011441355099270797,
+      "q25": 0.003891861098787392,
+      "q75": 0.015868764776856444
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9999994930161931,
+      "q25": 0.9999991348558466,
+      "q75": 0.9999998921331338
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 23.23079525884241,
+      "q25": 22.582764079514888,
+      "q75": 23.720590332429857
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "resnet50",
+    "partition": "slic_196",
+    "method": "ablation",
+    "images": 10,
+    "runs": 10,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.5167858571564543,
+      "q25": 0.3766255924405931,
+      "q75": 0.6289487465998629
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9231703741857671,
+      "q25": 0.8591583822115292,
+      "q75": 0.9541401610939034
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 2.7085511460900307,
+      "q25": 2.599437714088708,
+      "q75": 2.767500748857856
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 1745.0,
+      "q25": 1660.0,
+      "q75": 1787.5
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "resnet50",
+    "partition": "slic_196",
+    "method": "kernel_shap",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.12744341822971797,
+      "q25": 0.1006354746377319,
+      "q75": 0.16598865407593325
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9944313996228114,
+      "q25": 0.9897056738544804,
+      "q75": 0.9964066424938061
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 22.52962353117764,
+      "q25": 22.18599009476602,
+      "q75": 22.63574561905116
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "resnet50",
+    "partition": "slic_196",
+    "method": "lime",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.2117989548111528,
+      "q25": 0.17663145987979542,
+      "q75": 0.22850060352267057
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9845015886810746,
+      "q25": 0.9821520160240655,
+      "q75": 0.9879644136392227
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 22.5204519784078,
+      "q25": 22.321413235738873,
+      "q75": 22.666879665479065
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "resnet50",
+    "partition": "slic_196",
+    "method": "region_rise",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.011627948257980632,
+      "q25": 0.003709866298476341,
+      "q75": 0.0501020606037276
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9999993548445831,
+      "q25": 0.9999948307221131,
+      "q75": 0.9999998423906201
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 23.080535676144066,
+      "q25": 22.625949715822934,
+      "q75": 23.613561591599137
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "vit_b_16",
+    "partition": "patch_16",
+    "method": "ablation",
+    "images": 10,
+    "runs": 10,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.16968852197248874,
+      "q25": 0.1434600937345791,
+      "q75": 0.2730693287595149
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9949863225520106,
+      "q25": 0.9857940534267284,
+      "q75": 0.9971183779284958
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 5.8371034460142255,
+      "q25": 5.798902256414294,
+      "q75": 5.861174673307687
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 1970.0,
+      "q25": 1970.0,
+      "q75": 1970.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "vit_b_16",
+    "partition": "patch_16",
+    "method": "kernel_shap",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.06234115282101023,
+      "q25": 0.043271918813638434,
+      "q75": 0.07251907617670972
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9987416979786556,
+      "q25": 0.9981356642040469,
+      "q75": 0.999340309994764
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 35.94465551823377,
+      "q25": 35.71356036150828,
+      "q75": 36.16743094697595
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "vit_b_16",
+    "partition": "patch_16",
+    "method": "lime",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.1329329607220119,
+      "q25": 0.0683073143702484,
+      "q75": 0.1854889206021389
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9941698177768482,
+      "q25": 0.9882635753565655,
+      "q75": 0.99816416402893
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 35.8867408156395,
+      "q25": 35.64684232743457,
+      "q75": 36.05035503422842
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "vit_b_16",
+    "partition": "patch_16",
+    "method": "region_rise",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.005497081402502206,
+      "q25": 0.0037413126683283992,
+      "q75": 0.00968633552944691
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9999998913942838,
+      "q25": 0.9999997436983804,
+      "q75": 0.9999999588905796
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 35.36727904062718,
+      "q25": 35.175360813084986,
+      "q75": 35.51572515172884
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "vit_b_16",
+    "partition": "slic_196",
+    "method": "ablation",
+    "images": 10,
+    "runs": 10,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.19508404338367832,
+      "q25": 0.15258555269709234,
+      "q75": 0.30849406551270825
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9891559456293504,
+      "q25": 0.9829804886872663,
+      "q75": 0.9970955712426621
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 5.138449441641569,
+      "q25": 4.996723762247711,
+      "q75": 5.323560854420066
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 1745.0,
+      "q25": 1660.0,
+      "q75": 1787.5
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "vit_b_16",
+    "partition": "slic_196",
+    "method": "kernel_shap",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.05353003566858462,
+      "q25": 0.04970787699077194,
+      "q75": 0.05761730880516725
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9990338715209732,
+      "q25": 0.998883181694215,
+      "q75": 0.9993824262819708
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 35.9632568012923,
+      "q25": 35.69298134595156,
+      "q75": 36.09451519148425
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "vit_b_16",
+    "partition": "slic_196",
+    "method": "lime",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.07070380391480754,
+      "q25": 0.06037075343462422,
+      "q75": 0.08407784078723263
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9983189345249328,
+      "q25": 0.9978184055468557,
+      "q75": 0.9989007875020373
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 35.82710827868432,
+      "q25": 35.73600956937298,
+      "q75": 36.0268935803324
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  },
+  {
+    "model": "vit_b_16",
+    "partition": "slic_196",
+    "method": "region_rise",
+    "images": 10,
+    "runs": 50,
+    "max_sensitivity": {
+      "count": 10,
+      "median": 0.006462475430325168,
+      "q25": 0.0025449293894805585,
+      "q75": 0.013887285126126327
+    },
+    "cosine_similarity": {
+      "count": 10,
+      "median": 0.9999998680163265,
+      "q25": 0.9999995642853317,
+      "q75": 0.999999972143616
+    },
+    "stability_seconds": {
+      "count": 10,
+      "median": 35.31320961862802,
+      "q25": 35.22639733431861,
+      "q75": 35.569836903270335
+    },
+    "stability_forward_samples": {
+      "count": 10,
+      "median": 10240.0,
+      "q25": 10240.0,
+      "q75": 10240.0
+    },
+    "prediction_changes": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    }
+  }
+]
