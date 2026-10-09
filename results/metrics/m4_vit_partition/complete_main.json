@@ -1,0 +1,6 @@
+{
+  "experiment": "partition",
+  "rows": 640,
+  "expected": 640,
+  "completed_utc": "2026-10-08T06:17:48.997258+00:00"
+}

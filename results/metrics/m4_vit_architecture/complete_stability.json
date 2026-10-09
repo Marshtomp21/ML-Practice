@@ -1,0 +1,12 @@
+{
+  "experiment": "architecture",
+  "rows": 160,
+  "expected": 160,
+  "completed_utc": "2026-10-08T04:56:45.980304+00:00",
+  "auxiliary_workers": [
+    "m4_vit_architecture_stability_aux_gpu2",
+    "m4_vit_architecture_stability_aux_gpu3",
+    "m4_vit_architecture_stability_aux_gpu4",
+    "m4_vit_architecture_stability_aux_gpu6"
+  ]
+}

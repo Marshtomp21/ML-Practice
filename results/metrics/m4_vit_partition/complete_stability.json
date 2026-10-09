@@ -1,0 +1,12 @@
+{
+  "experiment": "partition",
+  "rows": 640,
+  "expected": 640,
+  "completed_utc": "2026-10-08T07:46:05.950554+00:00",
+  "auxiliary_workers": [
+    "m4_vit_partition_stability_aux_gpu2",
+    "m4_vit_partition_stability_aux_gpu3",
+    "m4_vit_partition_stability_aux_gpu4",
+    "m4_vit_partition_stability_aux_gpu6"
+  ]
+}

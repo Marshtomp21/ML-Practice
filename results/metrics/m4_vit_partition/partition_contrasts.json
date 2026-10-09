@@ -1,0 +1,1378 @@
+[
+  {
+    "method": "ablation",
+    "metric": "normalized_insertion_auc",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.07255782995704885,
+      "q25": 0.03156424957147044,
+      "q75": 0.15396951651774451
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": -0.04324218007963637,
+      "q25": -0.07094132214174415,
+      "q75": 0.0647394652670599
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.09697137777033726,
+      "q25": -0.16940717994409418,
+      "q75": 0.012073881901650207
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 0.021566893726199576,
+        "vit_patch_minus_slic": -0.03514217356034799,
+        "vit_specific_interaction": -0.056709067286547565
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.15913494442872522,
+        "vit_patch_minus_slic": -0.051342186598924755,
+        "vit_specific_interaction": -0.21047713102764998
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.07941447607670205,
+        "vit_patch_minus_slic": 0.0669126343716494,
+        "vit_specific_interaction": -0.012501841705052641
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.3994913011386181,
+        "vit_patch_minus_slic": -0.06916777531678264,
+        "vit_specific_interaction": -0.4686590764554007
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.2362927996644909,
+        "vit_patch_minus_slic": 0.05821995795329138,
+        "vit_specific_interaction": -0.17807284171119953
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.1384732327848024,
+        "vit_patch_minus_slic": 0.376377464032215,
+        "vit_specific_interaction": 0.2379042312474126
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.06155631710728304,
+        "vit_patch_minus_slic": -0.08185387753549511,
+        "vit_specific_interaction": -0.14341019464277815
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.06570118383739565,
+        "vit_patch_minus_slic": -0.07153250441673131,
+        "vit_specific_interaction": -0.13723368825412696
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": -0.015907296671702875,
+        "vit_patch_minus_slic": 0.10167291024518543,
+        "vit_specific_interaction": 0.11758020691688831
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": -0.12802388785756214,
+        "vit_patch_minus_slic": -0.10775809808701098,
+        "vit_specific_interaction": 0.020265789770551157
+      }
+    ]
+  },
+  {
+    "method": "ablation",
+    "metric": "normalized_deletion_auc",
+    "direction": "lower_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.022290601830920687,
+      "q25": -0.003190301068587559,
+      "q75": 0.08714672368539951
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": 0.010676131171489134,
+      "q25": -0.03437283793346846,
+      "q75": 0.08672437998930875
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.03345660924861121,
+      "q25": -0.09953767962401644,
+      "q75": 0.12483116847161872
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 0.01234580162139387,
+        "vit_patch_minus_slic": -0.10736256860961624,
+        "vit_specific_interaction": -0.11970837023101011
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.1397809077428943,
+        "vit_patch_minus_slic": 0.34178597069384953,
+        "vit_specific_interaction": 0.20200506295095522
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.014558461361910857,
+        "vit_patch_minus_slic": -0.09241482133042345,
+        "vit_specific_interaction": -0.1069732826923343
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": -0.05711726353466945,
+        "vit_patch_minus_slic": 0.09478166905686425,
+        "vit_specific_interaction": 0.1518989325915337
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.030022742299930516,
+        "vit_patch_minus_slic": -0.02132419290677945,
+        "vit_specific_interaction": -0.051346935206709965
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.2849425425325013,
+        "vit_patch_minus_slic": -0.03872238627569813,
+        "vit_specific_interaction": -0.3236649288081994
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.09015603288814777,
+        "vit_patch_minus_slic": 0.012925162469084928,
+        "vit_specific_interaction": -0.07723087041906285
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": -0.008369001965248035,
+        "vit_patch_minus_slic": 0.17173489383131135,
+        "vit_specific_interaction": 0.1801038957965594
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": -0.03520077623798046,
+        "vit_patch_minus_slic": 0.00842709987389334,
+        "vit_specific_interaction": 0.0436278761118738
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": 0.07811879607715472,
+        "vit_patch_minus_slic": 0.06255251278664226,
+        "vit_specific_interaction": -0.015566283290512462
+      }
+    ]
+  },
+  {
+    "method": "ablation",
+    "metric": "localization_energy",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.07047000514130344,
+      "q25": 0.0019549932622978383,
+      "q75": 0.12368400563290448
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": 0.05890573182734848,
+      "q25": -5.058328540785695e-05,
+      "q75": 0.29715878680854985
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.02384278586350294,
+      "q25": -0.07991127320178537,
+      "q75": 0.22014437750891913
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 0.13331566240048687,
+        "vit_patch_minus_slic": 0.04561825992952914,
+        "vit_specific_interaction": -0.08769740247095772
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.09478903533015731,
+        "vit_patch_minus_slic": 0.1877645922545788,
+        "vit_specific_interaction": 0.0929755569244215
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.25249835306197344,
+        "vit_patch_minus_slic": 0.07219320372516781,
+        "vit_specific_interaction": -0.18030514933680564
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.09268906658080484,
+        "vit_patch_minus_slic": -0.0858329480821233,
+        "vit_specific_interaction": -0.17852201466292814
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.030806160734682342,
+        "vit_patch_minus_slic": 0.02470349193576743,
+        "vit_specific_interaction": -0.006102668798914912
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": -0.0076620625618303295,
+        "vit_patch_minus_slic": 0.49478725857529327,
+        "vit_specific_interaction": 0.5024493211371236
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": -0.031693440092048386,
+        "vit_patch_minus_slic": 0.3336235183265402,
+        "vit_specific_interaction": 0.3653169584185886
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.04825094370180205,
+        "vit_patch_minus_slic": -0.008301941692466286,
+        "vit_specific_interaction": -0.05655288539426834
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.1753237551289799,
+        "vit_patch_minus_slic": 0.43785773949939827,
+        "vit_specific_interaction": 0.26253398437041836
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": -0.037177240610152706,
+        "vit_patch_minus_slic": -0.07876014353824368,
+        "vit_specific_interaction": -0.04158290292809097
+      }
+    ]
+  },
+  {
+    "method": "ablation",
+    "metric": "pointing_game",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": 0.0,
+      "q25": -0.75,
+      "q75": 0.75
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 1.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": -1.0
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 1.0,
+        "vit_patch_minus_slic": 1.0,
+        "vit_specific_interaction": 0.0
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 1.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": -1.0
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": -1.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 1.0
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": -1.0,
+        "vit_specific_interaction": -1.0
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 1.0,
+        "vit_specific_interaction": 1.0
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.0
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 1.0,
+        "vit_patch_minus_slic": 1.0,
+        "vit_specific_interaction": 0.0
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 1.0,
+        "vit_specific_interaction": 1.0
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.0
+      }
+    ]
+  },
+  {
+    "method": "kernel_shap",
+    "metric": "normalized_insertion_auc",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.02916569301485894,
+      "q25": -0.0185194478345016,
+      "q75": 0.05917606330978978
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": -0.05989248528442426,
+      "q25": -0.07601708051426428,
+      "q75": 0.000715064235150692
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.0964386913439037,
+      "q25": -0.12519437728153393,
+      "q75": -0.012713347311610307
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": -0.021667340135513413,
+        "vit_patch_minus_slic": -0.16201674535086763,
+        "vit_specific_interaction": -0.14034940521535422
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.0397920504748821,
+        "vit_patch_minus_slic": -0.04887546555572486,
+        "vit_specific_interaction": -0.08866751603060696
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.025031024385641087,
+        "vit_patch_minus_slic": -0.130683518287819,
+        "vit_specific_interaction": -0.15571454267346008
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.13793003173301188,
+        "vit_patch_minus_slic": 0.007059717923797226,
+        "vit_specific_interaction": -0.13087031380921466
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.12254151892094844,
+        "vit_patch_minus_slic": 0.014374951222456689,
+        "vit_specific_interaction": -0.10816656769849176
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.06563740092142567,
+        "vit_patch_minus_slic": 0.07196225216259255,
+        "vit_specific_interaction": 0.0063248512411668845
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.03330036164407679,
+        "vit_patch_minus_slic": -0.07090950501312365,
+        "vit_specific_interaction": -0.10420986665720045
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": -0.04882600486790445,
+        "vit_patch_minus_slic": -0.07195001641637744,
+        "vit_specific_interaction": -0.02312401154847299
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": -0.009075770931466165,
+        "vit_patch_minus_slic": -0.01831889683078891,
+        "vit_specific_interaction": -0.009243125899322746
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": -0.1585309319733661,
+        "vit_patch_minus_slic": -0.07737276854689323,
+        "vit_specific_interaction": 0.08115816342647286
+      }
+    ]
+  },
+  {
+    "method": "kernel_shap",
+    "metric": "normalized_deletion_auc",
+    "direction": "lower_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.22135524321196776,
+      "q25": 0.16411151397934287,
+      "q75": 0.24152848869553212
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": 0.1493978550304673,
+      "q25": 0.06301094921160486,
+      "q75": 0.27286519138267085
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.03667083628596046,
+      "q25": -0.0950255902216713,
+      "q75": 0.05445668220007388
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 0.22724871127070934,
+        "vit_patch_minus_slic": 0.24090311851331747,
+        "vit_specific_interaction": 0.013654407242608135
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.24114757193148695,
+        "vit_patch_minus_slic": 0.5120157363363107,
+        "vit_specific_interaction": 0.27086816440482375
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.3000842416013781,
+        "vit_patch_minus_slic": 0.1413978520164359,
+        "vit_specific_interaction": -0.1586863895849422
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.08868323579685833,
+        "vit_patch_minus_slic": 0.026959539593415016,
+        "vit_specific_interaction": -0.06172369620344331
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.16186669825109085,
+        "vit_patch_minus_slic": 0.06325177892410083,
+        "vit_specific_interaction": -0.09861491932699001
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.2711421743327986,
+        "vit_patch_minus_slic": 0.3708043065564487,
+        "vit_specific_interaction": 0.09966213222365011
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.21546177515322618,
+        "vit_patch_minus_slic": 0.2835192156724553,
+        "vit_specific_interaction": 0.06805744051922913
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.24165546095021384,
+        "vit_patch_minus_slic": 0.15739785804449868,
+        "vit_specific_interaction": -0.08425760290571516
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.05981229386226139,
+        "vit_patch_minus_slic": 0.04819431749378378,
+        "vit_specific_interaction": -0.011617976368477612
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": 0.170845961164099,
+        "vit_patch_minus_slic": 0.06293067264077287,
+        "vit_specific_interaction": -0.10791528852332613
+      }
+    ]
+  },
+  {
+    "method": "kernel_shap",
+    "metric": "localization_energy",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": -0.03094106227965046,
+      "q25": -0.058123441101196355,
+      "q75": 0.012927603156188253
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": -0.04188805388822758,
+      "q25": -0.06205348971077024,
+      "q75": 0.04501273043350271
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": 0.007827606600131182,
+      "q25": -0.03845535327177685,
+      "q75": 0.02755729544440269
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": -0.02210369923422545,
+        "vit_patch_minus_slic": -0.08939591542419034,
+        "vit_specific_interaction": -0.06729221618996489
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.0530988649638382,
+        "vit_patch_minus_slic": -0.09584009099287771,
+        "vit_specific_interaction": -0.1489389559567159
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": -0.061613463493286835,
+        "vit_patch_minus_slic": -0.062339616625940786,
+        "vit_specific_interaction": -0.0007261531326539505
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.023824926626897447,
+        "vit_patch_minus_slic": 0.05269309888920504,
+        "vit_specific_interaction": 0.02886817226230759
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": -0.03977842532507547,
+        "vit_patch_minus_slic": 0.04985315155500558,
+        "vit_specific_interaction": 0.08963157688008105
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": -0.01976436725593933,
+        "vit_patch_minus_slic": -0.06119510896525859,
+        "vit_specific_interaction": -0.04143074170931926
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": -0.07612876517513456,
+        "vit_patch_minus_slic": -0.05974739884221825,
+        "vit_specific_interaction": 0.016381366332916314
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": -0.04765337392492491,
+        "vit_patch_minus_slic": -0.02402870893423692,
+        "vit_specific_interaction": 0.023624664990687994
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.06002065502814369,
+        "vit_patch_minus_slic": 0.030491467068994083,
+        "vit_specific_interaction": -0.029529187959149605
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": -0.06776887757576555,
+        "vit_patch_minus_slic": 0.061889348194192784,
+        "vit_specific_interaction": 0.12965822576995834
+      }
+    ]
+  },
+  {
+    "method": "kernel_shap",
+    "metric": "pointing_game",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.0,
+      "q25": -0.19999999999999996,
+      "q75": 0.0
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.20000000000000004
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": 0.10000000000000003,
+      "q25": 0.0,
+      "q75": 0.19999999999999996
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": -0.19999999999999996,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.19999999999999996
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": -0.19999999999999996,
+        "vit_specific_interaction": -0.19999999999999996
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.0
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.19999999999999996,
+        "vit_patch_minus_slic": 0.6,
+        "vit_specific_interaction": 0.4
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": -0.19999999999999996,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.19999999999999996
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": -0.20000000000000007,
+        "vit_patch_minus_slic": -0.19999999999999996,
+        "vit_specific_interaction": 1.1102230246251565e-16
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 0.19999999999999996,
+        "vit_specific_interaction": 0.19999999999999996
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": -0.4,
+        "vit_patch_minus_slic": 0.20000000000000007,
+        "vit_specific_interaction": 0.6000000000000001
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.4,
+        "vit_patch_minus_slic": 0.20000000000000007,
+        "vit_specific_interaction": -0.19999999999999996
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.0
+      }
+    ]
+  },
+  {
+    "method": "lime",
+    "metric": "normalized_insertion_auc",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.048268261553240044,
+      "q25": 0.001482806609135412,
+      "q75": 0.07075480253259792
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": -0.02848279715479729,
+      "q25": -0.05911142990394222,
+      "q75": 0.01982648168558332
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.05672616963788002,
+      "q25": -0.11082950986008908,
+      "q75": -0.004604647784381494
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": -0.008745770359857907,
+        "vit_patch_minus_slic": -0.05921765845448468,
+        "vit_specific_interaction": -0.05047188809462677
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.03882216433151375,
+        "vit_patch_minus_slic": -0.024158286849619515,
+        "vit_specific_interaction": -0.06298045118113327
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.057714358774966334,
+        "vit_patch_minus_slic": -0.058792744252314844,
+        "vit_specific_interaction": -0.11650710302728118
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.16998603978411064,
+        "vit_patch_minus_slic": -0.08912482744509265,
+        "vit_specific_interaction": -0.2591108672292033
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.15521467165024128,
+        "vit_patch_minus_slic": -0.009562041505798646,
+        "vit_specific_interaction": -0.16477671315603992
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.07400992907728465,
+        "vit_patch_minus_slic": 0.07399144195231988,
+        "vit_specific_interaction": -1.8487124964772228e-05
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.03216853751611537,
+        "vit_patch_minus_slic": 0.04721126690069899,
+        "vit_specific_interaction": 0.01504272938458362
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.060989422898537704,
+        "vit_patch_minus_slic": -0.032807307459975066,
+        "vit_specific_interaction": -0.09379673035851277
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": -0.019392867639541844,
+        "vit_patch_minus_slic": 0.02962265608271064,
+        "vit_specific_interaction": 0.049015523722252485
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": -0.0716988930753073,
+        "vit_patch_minus_slic": -0.09006202283793896,
+        "vit_specific_interaction": -0.018363129762631658
+      }
+    ]
+  },
+  {
+    "method": "lime",
+    "metric": "normalized_deletion_auc",
+    "direction": "lower_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.12970852266788235,
+      "q25": 0.04383552391167697,
+      "q75": 0.1937726584379424
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": 0.11903630825910108,
+      "q25": -0.015853773698597855,
+      "q75": 0.2249893973018072
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.017707333434188344,
+      "q25": -0.13391217849414364,
+      "q75": 0.108736944191155
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 0.1789605200474772,
+        "vit_patch_minus_slic": 0.18409246846841087,
+        "vit_specific_interaction": 0.005131948420933674
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.13346915635810908,
+        "vit_patch_minus_slic": 0.3338740357392039,
+        "vit_specific_interaction": 0.2004048793810948
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.23028885256775755,
+        "vit_patch_minus_slic": -0.0348097107409463,
+        "vit_specific_interaction": -0.26509856330870385
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.19871003790143077,
+        "vit_patch_minus_slic": 0.041014037428447475,
+        "vit_specific_interaction": -0.1576960004729833
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.03179546253478549,
+        "vit_patch_minus_slic": 0.05398014804979129,
+        "vit_specific_interaction": 0.022184685515005798
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.3652785860125224,
+        "vit_patch_minus_slic": 0.324731970723212,
+        "vit_specific_interaction": -0.04054661528931036
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.12594788897765563,
+        "vit_patch_minus_slic": -0.08099427808746895,
+        "vit_specific_interaction": -0.20694216706512458
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": -0.0308915220965158,
+        "vit_patch_minus_slic": 0.22747139469389088,
+        "vit_specific_interaction": 0.2583629167904067
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": -0.0014308958345587985,
+        "vit_patch_minus_slic": -0.06399160839218343,
+        "vit_specific_interaction": -0.06256071255762463
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": 0.07995570804235141,
+        "vit_patch_minus_slic": 0.21754340512555614,
+        "vit_specific_interaction": 0.13758769708320473
+      }
+    ]
+  },
+  {
+    "method": "lime",
+    "metric": "localization_energy",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": -0.04087950893935452,
+      "q25": -0.07905964628547897,
+      "q75": 0.041515168771078706
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": -0.06555389726821625,
+      "q25": -0.08755468009682385,
+      "q75": -0.043152382267086314
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.052535455972197914,
+      "q25": -0.11865708137170161,
+      "q75": 0.03149381092815767
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": -0.007571441952222535,
+        "vit_patch_minus_slic": -0.1455511169012857,
+        "vit_specific_interaction": -0.13797967494906316
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": -0.0741875759264865,
+        "vit_patch_minus_slic": -0.07496587020615064,
+        "vit_specific_interaction": -0.0007782942796641379
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": -0.20534714193953704,
+        "vit_patch_minus_slic": -0.06664724309205994,
+        "vit_specific_interaction": 0.1386998988474771
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": -0.076753080711854,
+        "vit_patch_minus_slic": 0.009665901507274588,
+        "vit_specific_interaction": 0.08641898221912858
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.000811738009038776,
+        "vit_patch_minus_slic": -0.059877562630578196,
+        "vit_specific_interaction": -0.06068930063961697
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": -0.15648621323169631,
+        "vit_patch_minus_slic": -0.21113833451128794,
+        "vit_specific_interaction": -0.054652121279591626
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.10286757532440532,
+        "vit_patch_minus_slic": -0.09175095006038159,
+        "vit_specific_interaction": -0.1946185253847869
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.23903471323578418,
+        "vit_patch_minus_slic": -0.06446055144437257,
+        "vit_specific_interaction": -0.30349526468015675
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.055082979025092016,
+        "vit_patch_minus_slic": 0.004664188360287813,
+        "vit_specific_interaction": -0.0504187906648042
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": -0.0798285014766873,
+        "vit_patch_minus_slic": -0.037577322145922354,
+        "vit_specific_interaction": 0.04225117933076494
+      }
+    ]
+  },
+  {
+    "method": "lime",
+    "metric": "pointing_game",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.0,
+      "q25": -0.35,
+      "q75": 0.0
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": 0.0,
+      "q25": -0.7000000000000001,
+      "q75": 0.0
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": 0.0,
+      "q25": -0.7000000000000001,
+      "q75": 0.14999999999999997
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": -0.4,
+        "vit_patch_minus_slic": 0.19999999999999996,
+        "vit_specific_interaction": 0.6
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.0
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": -0.19999999999999996,
+        "vit_patch_minus_slic": -1.0,
+        "vit_specific_interaction": -0.8
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": -0.6,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.6
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": -1.0,
+        "vit_patch_minus_slic": -0.8,
+        "vit_specific_interaction": 0.19999999999999996
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.0
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 1.0,
+        "vit_patch_minus_slic": -1.0,
+        "vit_specific_interaction": -2.0
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.8,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": -0.8
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": -0.39999999999999997,
+        "vit_specific_interaction": -0.39999999999999997
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.0
+      }
+    ]
+  },
+  {
+    "method": "region_rise",
+    "metric": "normalized_insertion_auc",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.05621318276387599,
+      "q25": 0.02335880051403144,
+      "q75": 0.09671110527511292
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": -0.012086208007912602,
+      "q25": -0.09537727928712564,
+      "q75": 0.019467007969091676
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.08016986629399275,
+      "q25": -0.12285231652236892,
+      "q75": -0.015888926239776696
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 0.09014456580332642,
+        "vit_patch_minus_slic": 0.020250467232848846,
+        "vit_specific_interaction": -0.06989409857047757
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": -0.011263725766766264,
+        "vit_patch_minus_slic": -0.1017093597842742,
+        "vit_specific_interaction": -0.09044563401750794
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.03204154808361337,
+        "vit_patch_minus_slic": -0.07638103779567995,
+        "vit_specific_interaction": -0.10842258587929332
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.12643818640800253,
+        "vit_patch_minus_slic": -0.12872921809511773,
+        "vit_specific_interaction": -0.25516740450312025
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.19517470468225517,
+        "vit_patch_minus_slic": 0.01711663017782017,
+        "vit_specific_interaction": -0.178058074504435
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.0611263019990228,
+        "vit_patch_minus_slic": 0.05551113520383233,
+        "vit_specific_interaction": -0.005615166795190474
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.05130006352872918,
+        "vit_patch_minus_slic": 0.004589858955193815,
+        "vit_specific_interaction": -0.04671020457353536
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.09889995176570843,
+        "vit_patch_minus_slic": -0.02876227497101902,
+        "vit_specific_interaction": -0.12766222673672745
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.0204645513241708,
+        "vit_patch_minus_slic": 0.02155909690332336,
+        "vit_specific_interaction": 0.0010945455791525616
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": -0.21635455993298525,
+        "vit_patch_minus_slic": -0.12823342295718787,
+        "vit_specific_interaction": 0.08812113697579738
+      }
+    ]
+  },
+  {
+    "method": "region_rise",
+    "metric": "normalized_deletion_auc",
+    "direction": "lower_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.19355964736337308,
+      "q25": 0.06565900159086399,
+      "q75": 0.30771933757688635
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": 0.10003138270099932,
+      "q25": 0.037902006947631045,
+      "q75": 0.21111056900791114
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.02833674109786044,
+      "q25": -0.16593855486256964,
+      "q75": 0.012144714127197476
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 0.022958408599801694,
+        "vit_patch_minus_slic": -0.0025837108932057484,
+        "vit_specific_interaction": -0.025542119493007442
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": 0.309755445918273,
+        "vit_patch_minus_slic": 0.49146338039738063,
+        "vit_specific_interaction": 0.18170793447910766
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.12970408537099265,
+        "vit_patch_minus_slic": -0.11050634051062991,
+        "vit_specific_interaction": -0.24021042588162256
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": 0.43458208588912123,
+        "vit_patch_minus_slic": 0.15384369363884615,
+        "vit_specific_interaction": -0.2807383922502751
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.3016110125527265,
+        "vit_patch_minus_slic": 0.10494272386865577,
+        "vit_specific_interaction": -0.1966682886840707
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": 0.4077313195523992,
+        "vit_patch_minus_slic": 0.3339819661543328,
+        "vit_specific_interaction": -0.07374935339806643
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.09403711830030848,
+        "vit_patch_minus_slic": 0.06457931799607497,
+        "vit_specific_interaction": -0.029457800304233506
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.056199629354382497,
+        "vit_patch_minus_slic": 0.09512004153334286,
+        "vit_specific_interaction": 0.03892041217896036
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.004302577930883955,
+        "vit_patch_minus_slic": 0.02900956993148307,
+        "vit_specific_interaction": 0.024706992000599115
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": 0.2574152093557535,
+        "vit_patch_minus_slic": 0.23019952746426614,
+        "vit_specific_interaction": -0.027215681891487375
+      }
+    ]
+  },
+  {
+    "method": "region_rise",
+    "metric": "localization_energy",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": -0.0001782996003351356,
+      "q25": -0.0016774094103779238,
+      "q75": 0.0008983541634879494
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": -0.0004738816359029785,
+      "q25": -0.0020522675985497063,
+      "q75": 0.0006552696274880199
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": -0.0003097766232911525,
+      "q25": -0.0007152313533383345,
+      "q75": -1.9990316413434628e-05
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 0.0013611621408909647,
+        "vit_patch_minus_slic": 0.000994013488310408,
+        "vit_specific_interaction": -0.00036714865258055673
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": -0.0007283774724076153,
+        "vit_patch_minus_slic": -0.0006848354127084733,
+        "vit_specific_interaction": 4.3542059699142044e-05
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.0003717782717373441,
+        "vit_patch_minus_slic": 0.0006339635636461449,
+        "vit_specific_interaction": 0.0002621852919088008
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": -0.0017328603926025365,
+        "vit_patch_minus_slic": -0.0031841523676391648,
+        "vit_specific_interaction": -0.0014512919750366282
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": -0.0015110564637040858,
+        "vit_patch_minus_slic": -0.0009532752984160453,
+        "vit_specific_interaction": 0.0005577811652880404
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": -0.0021450353341738726,
+        "vit_patch_minus_slic": -0.0024185983652609266,
+        "vit_specific_interaction": -0.00027356303108705404
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.0010083618642638958,
+        "vit_patch_minus_slic": 0.0006623716487686448,
+        "vit_specific_interaction": -0.000345990215495251
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.00056833106116011,
+        "vit_patch_minus_slic": -0.00026292785909748373,
+        "vit_specific_interaction": -0.0008312589202575937
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.001547702319802724,
+        "vit_patch_minus_slic": 0.0013371148750515593,
+        "vit_specific_interaction": -0.00021058744475116464
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": -0.0026287256066086506,
+        "vit_patch_minus_slic": -0.005584572754424921,
+        "vit_specific_interaction": -0.0029558471478162707
+      }
+    ]
+  },
+  {
+    "method": "region_rise",
+    "metric": "pointing_game",
+    "direction": "higher_is_better",
+    "images": 10,
+    "resnet_patch_minus_slic": {
+      "count": 10,
+      "median": 0.0,
+      "q25": -0.35000000000000003,
+      "q75": 0.20000000000000004
+    },
+    "vit_patch_minus_slic": {
+      "count": 10,
+      "median": -0.09999999999999998,
+      "q25": -0.2,
+      "q75": 0.19999999999999996
+    },
+    "vit_specific_interaction": {
+      "count": 10,
+      "median": 0.0,
+      "q25": -0.15000000000000002,
+      "q75": 0.20000000000000004
+    },
+    "per_image": [
+      {
+        "id": "ILSVRC2012_val_00000319",
+        "resnet_patch_minus_slic": 0.4,
+        "vit_patch_minus_slic": 0.6000000000000001,
+        "vit_specific_interaction": 0.20000000000000007
+      },
+      {
+        "id": "ILSVRC2012_val_00001218",
+        "resnet_patch_minus_slic": -0.20000000000000007,
+        "vit_patch_minus_slic": -0.20000000000000007,
+        "vit_specific_interaction": 0.0
+      },
+      {
+        "id": "ILSVRC2012_val_00004344",
+        "resnet_patch_minus_slic": 0.19999999999999996,
+        "vit_patch_minus_slic": 0.19999999999999996,
+        "vit_specific_interaction": 0.0
+      },
+      {
+        "id": "ILSVRC2012_val_00006565",
+        "resnet_patch_minus_slic": -0.4,
+        "vit_patch_minus_slic": -0.19999999999999996,
+        "vit_specific_interaction": 0.20000000000000007
+      },
+      {
+        "id": "ILSVRC2012_val_00008228",
+        "resnet_patch_minus_slic": 0.20000000000000007,
+        "vit_patch_minus_slic": -0.19999999999999996,
+        "vit_specific_interaction": -0.4
+      },
+      {
+        "id": "ILSVRC2012_val_00009336",
+        "resnet_patch_minus_slic": -0.6,
+        "vit_patch_minus_slic": -0.6,
+        "vit_specific_interaction": 0.0
+      },
+      {
+        "id": "ILSVRC2012_val_00013800",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": -0.2,
+        "vit_specific_interaction": -0.2
+      },
+      {
+        "id": "ILSVRC2012_val_00017759",
+        "resnet_patch_minus_slic": 0.6,
+        "vit_patch_minus_slic": 0.39999999999999997,
+        "vit_specific_interaction": -0.2
+      },
+      {
+        "id": "ILSVRC2012_val_00030571",
+        "resnet_patch_minus_slic": 0.0,
+        "vit_patch_minus_slic": 0.19999999999999996,
+        "vit_specific_interaction": 0.19999999999999996
+      },
+      {
+        "id": "ILSVRC2012_val_00031395",
+        "resnet_patch_minus_slic": -0.4,
+        "vit_patch_minus_slic": 0.0,
+        "vit_specific_interaction": 0.4
+      }
+    ]
+  }
+]
