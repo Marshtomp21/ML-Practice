@@ -1,0 +1,26 @@
+stage: m4_baseline_sensitivity
+source_config: configs/experiment/m4.yaml
+split_file: data/splits/m4_frozen_20260917.json
+split_name: configuration_selection
+methods: [ablation, lime, rise, kernel_shap]
+baselines:
+  - normalized_zero
+  - dataset_mean_image
+  - dataset_mean_color
+  - gaussian_blur_sigma10
+  - gaussian_noise_dataset_stats
+selection_seed: 20260917
+seeds: [0, 1, 2, 3, 4]
+num_samples: 1024
+n_segments: 100
+mask_rate: 0.5
+grid_size: 7
+evaluation_baseline: normalized_zero
+evaluation_steps: 20
+blur_sigma_rgb_pixels: 10.0
+noise_distribution: per-channel Gaussian fitted to RGB pixels in the frozen configuration-selection set, clipped to [0,1]
+dataset_mean_image: pixel-wise RGB mean over the frozen configuration-selection set
+dataset_mean_color: per-channel RGB mean over all pixels in the frozen configuration-selection set
+paired_attribution_seeds_across_baselines: true
+bootstrap_replicates: 10000
+bootstrap_seed: 20261008

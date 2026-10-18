@@ -1,0 +1,7 @@
+{
+  "domain": "imagenet",
+  "model": "resnet50",
+  "rows": 6000,
+  "expected": 6000,
+  "completed_utc": "2026-10-08T16:38:57.498594+00:00"
+}

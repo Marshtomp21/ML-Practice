@@ -93,21 +93,24 @@ def method_config(config, method, seed):
     raise ValueError(f"Unknown method: {method}")
 
 
-def explain(method, image, segments, predictor, target, config):
+def explain(method, image, segments, predictor, target, config, baseline=None):
     if method == "lime":
-        result = fit_lime(image, segments, predictor, target, config)
+        result = fit_lime(image, segments, predictor, target, config,
+                          baseline=baseline)
         ids, scores = result.region_ids, result.coefficients
         pixel_map = region_attribution_map(segments, scores)
     elif method == "rise":
-        result = explain_rise(image, predictor, target, config)
+        result = explain_rise(image, predictor, target, config, baseline=baseline)
         ids, scores = region_scores_from_saliency(result.saliency, segments)
         pixel_map = result.saliency
     elif method == "kernel_shap":
-        result = fit_kernel_shap(image, segments, predictor, target, config)
+        result = fit_kernel_shap(image, segments, predictor, target, config,
+                                 baseline=baseline)
         ids, scores = result.region_ids, result.coefficients
         pixel_map = region_attribution_map(segments, scores)
     elif method == "ablation":
-        result = fit_ablation(image, segments, predictor, target, config)
+        result = fit_ablation(image, segments, predictor, target, config,
+                              baseline=baseline)
         ids, scores = result.region_ids, result.coefficients
         pixel_map = region_attribution_map(segments, scores)
     else:

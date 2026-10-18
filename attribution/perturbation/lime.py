@@ -12,6 +12,7 @@ from numbers import Integral
 from typing import Callable
 
 import numpy as np
+from attribution.baseline import prepare_baseline
 from sklearn.linear_model import Ridge
 
 
@@ -87,6 +88,8 @@ def fit_lime(
     predict_logits: Callable[[np.ndarray], np.ndarray],
     target: int,
     config: LimeConfig | None = None,
+    *,
+    baseline: np.ndarray | None = None,
 ) -> LimeResult:
     """Fit one LIME surrogate, without producing or saving an attribution map.
 
@@ -113,6 +116,7 @@ def fit_lime(
         raise ValueError("segments must be an integer HW array aligned with image")
     if isinstance(target, bool) or not isinstance(target, Integral) or target < 0:
         raise ValueError("target must be a nonnegative integer class index")
+    reference = prepare_baseline(image, baseline)
 
     region_ids, inverse = np.unique(segments, return_inverse=True)
     inverse = inverse.reshape(segments.shape)
@@ -124,7 +128,8 @@ def fit_lime(
         stop = min(start + config.batch_size, config.num_samples)
         keep = masks[start:stop, inverse]
         # Allocate only one batch of images; never materialize B x H x W x C.
-        perturbed = image[None, ...] * keep[..., None]
+        perturbed = (image[None, ...] * keep[..., None]
+                     + reference[None, ...] * (~keep)[..., None])
         logits = np.asarray(predict_logits(perturbed))
         if (logits.ndim != 2 or logits.shape[0] != stop - start
                 or logits.shape[1] <= target or not np.isfinite(logits).all()):

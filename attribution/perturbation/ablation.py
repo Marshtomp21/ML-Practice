@@ -10,6 +10,7 @@ from numbers import Integral, Real
 from typing import Callable
 
 import numpy as np
+from attribution.baseline import prepare_baseline
 
 
 @dataclass(frozen=True)
@@ -42,8 +43,9 @@ def fit_ablation(
     config: AblationConfig | None = None,
     *,
     original_logit: float | None = None,
+    baseline: np.ndarray | None = None,
 ) -> AblationResult:
-    """Compute f_target(image) - f_target(image with region i zeroed).
+    """Compute f_target(image) - f_target(image with region i replaced.
 
     image: finite floating-point normalized HWC input, already resized/cropped.
     segments: shared integer HW labels aligned with image; noncontiguous and
@@ -77,6 +79,7 @@ def fit_ablation(
         or not np.isfinite(original_logit)
     ):
         raise ValueError("original_logit must be a finite real scalar or None")
+    reference = prepare_baseline(image, baseline)
 
     region_ids, inverse = np.unique(segments, return_inverse=True)
     inverse = inverse.reshape(segments.shape)
@@ -92,7 +95,8 @@ def fit_ablation(
         removed = np.arange(start - offset, stop - offset)
         keep = inverse[None, ...] != removed[:, None, None]
         # Only materialize one image batch, not all C perturbed images.
-        perturbed = image[None, ...] * keep[..., None]
+        perturbed = (image[None, ...] * keep[..., None]
+                     + reference[None, ...] * (~keep)[..., None])
         logits = np.asarray(predict_logits(perturbed))
         if (logits.ndim != 2 or logits.shape[0] != stop - start
                 or logits.shape[1] <= target

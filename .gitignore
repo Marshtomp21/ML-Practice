@@ -65,3 +65,11 @@ reports/**/figures/m1_slic_overlay.png
 .idea/
 .DS_Store
 Thumbs.db
+
+# Noto Sans SC for report figures (OFL; see scripts/plot_m4.py)
+reports/fonts/
+
+# M4 中间件：由合并后的 summary / paired_contrasts 取代，体积大且可由脚本重建
+results/metrics/m4_baseline_sensitivity/per_run.jsonl
+results/metrics/m4_baseline_sensitivity/*/metrics.jsonl
+results/metrics/m4_*_stability_aux_*/

@@ -1,0 +1,11 @@
+{
+  "rows": 25760,
+  "expected": 25760,
+  "completed_utc": "2026-10-08T17:38:48.017440+00:00",
+  "worker_outputs": [
+    "imagenet_resnet50",
+    "imagenet_vgg13",
+    "chncxr_resnet50",
+    "chncxr_vgg13"
+  ]
+}

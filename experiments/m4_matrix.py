@@ -1,4 +1,11 @@
-"""Run frozen M4 experiment-1/2 cells with per-image resumable records."""
+"""Run frozen M4 experiment cells with per-image resumable records.
+
+``exp1``/``exp2`` are the configuration-selection scans. ``final`` reruns the
+cells frozen by ``scripts/analyze_m4_config.py`` on the held-out
+``final_evaluation`` split, and additionally scores every attribution on the
+common default SLIC partition so that granularity changes do not alter the
+evaluation resolution.
+"""
 
 from __future__ import annotations
 
@@ -21,6 +28,7 @@ from evaluation.perturbation import (
     localization_metrics,
     seed_stability,
 )
+from attribution.perturbation.rise import region_scores_from_saliency
 from experiments.m3_default import explain, make_stability_inputs, method_config
 from experiments.perturbation_pilot import (
     ROOT,
@@ -59,8 +67,18 @@ def variants(experiment: str) -> list[dict]:
     return cells
 
 
-def all_tasks(config: dict, experiment: str) -> list[tuple[dict, int | None]]:
-    return [(cell, seed) for cell in variants(experiment)
+FINAL_SELECTION = ROOT / "results/metrics/m4_config_analysis/final_selection.json"
+
+
+def model_cells(config: dict, experiment: str, model: str | None = None) -> list[dict]:
+    if experiment == "final":
+        return config["final_cells"][model]
+    return variants(experiment)
+
+
+def all_tasks(config: dict, experiment: str,
+              model: str | None = None) -> list[tuple[dict, int | None]]:
+    return [(cell, seed) for cell in model_cells(config, experiment, model)
             for seed in (config["seeds"] if cell["method"] != "ablation" else [None])]
 
 
@@ -85,8 +103,23 @@ def load_config(path: Path, domain: str, experiment: str, split_name: str) -> tu
         "split_name": split_name,
         "split_fingerprint": frozen["split_fingerprint"],
         "split_file_sha256": hashlib.sha256(frozen_path.read_bytes()).hexdigest(),
-        "matrix": variants(experiment),
     })
+    if experiment == "final":
+        if split_name != "final_evaluation":
+            raise ValueError("The final experiment runs only on final_evaluation")
+        frozen_cells = json.loads(FINAL_SELECTION.read_text(encoding="utf-8"))
+        cells = frozen_cells["final_cells"][domain]
+        cfg["final_cells"] = {
+            model: [{key: value for key, value in cell.items() if key != "roles"}
+                    for cell in cells[model]]
+            for model in cfg["models"]
+        }
+        cfg["final_roles"] = {model: {cell["id"]: cell["roles"] for cell in cells[model]}
+                              for model in cfg["models"]}
+        cfg["final_selection_sha256"] = hashlib.sha256(FINAL_SELECTION.read_bytes()).hexdigest()
+        cfg["matrix"] = cfg["final_cells"]
+    else:
+        cfg["matrix"] = variants(experiment)
     for key in ("batch_size", "evaluation_steps", "stability_repeats", "threads"):
         if type(cfg[key]) is not int or cfg[key] < 1:
             raise ValueError(f"{key} must be positive")
@@ -108,7 +141,7 @@ def row_key(row: dict) -> tuple:
 def expected_keys(config: dict, selected: list[dict], experiment: str) -> set[tuple]:
     return {(model, sample["id"], cell["id"], seed)
             for model in config["models"] for sample in selected
-            for cell, seed in all_tasks(config, experiment)}
+            for cell, seed in all_tasks(config, experiment, model)}
 
 
 def append_jsonl(path: Path, row: dict) -> None:
@@ -127,7 +160,7 @@ def finish_main(config: dict, output: Path, selection: dict, experiment: str) ->
     stability = []
     for model in config["models"]:
         for sample in selection["selected"]:
-            for cell in variants(experiment):
+            for cell in model_cells(config, experiment, model):
                 if cell["method"] == "ablation":
                     continue
                 for left, right in combinations(config["seeds"], 2):
@@ -146,6 +179,34 @@ def finish_main(config: dict, output: Path, selection: dict, experiment: str) ->
     })
 
 
+COMMON_FIELDS = ("insertion_auc", "deletion_auc", "normalized_insertion_auc",
+                 "normalized_deletion_auc", "evaluation_forward_samples")
+
+
+def common_partition_scores(image, segments, segments_by_count, rgb, config, pixel_map,
+                            curves, predictor, target) -> dict:
+    """Score a pixel map on the default SLIC partition (region sums of the map)."""
+    count = config["n_segments"]
+    if count not in segments_by_count:
+        segments_by_count[count] = slic_segments(
+            rgb, count, config["compactness"], config["sigma"])
+    common_segments = segments_by_count[count]
+    if np.array_equal(common_segments, segments):
+        result = {f"common_{field}": curves[field] for field in COMMON_FIELDS}
+        result["common_evaluation_forward_samples"] = 0
+        result["common_partition_reused"] = True
+        return result
+    _, scores = region_scores_from_saliency(pixel_map, common_segments)
+    before = predictor.samples
+    common = insertion_deletion(image, common_segments, scores, predictor, target,
+                                config["batch_size"], config["evaluation_steps"])
+    if predictor.samples - before != common["evaluation_forward_samples"]:
+        raise AssertionError("Common-partition evaluation forward count mismatch")
+    result = {f"common_{field}": common[field] for field in COMMON_FIELDS}
+    result["common_partition_reused"] = False
+    return result
+
+
 def run_main(config: dict, output: Path, metadata: dict, selection: dict,
              experiment: str) -> None:
     domain, _, _, load_image, load_model = domain_api(config)
@@ -161,7 +222,7 @@ def run_main(config: dict, output: Path, metadata: dict, selection: dict,
         for _ in range(config["warmup_batches"]):
             predictor(np.repeat(warm[None], config["batch_size"], axis=0))
         for sample in selection["selected"]:
-            tasks = all_tasks(config, experiment)
+            tasks = all_tasks(config, experiment, model_name)
             order_seed = int(hashlib.sha256(sample["id"].encode()).hexdigest()[:8], 16)
             np.random.default_rng(order_seed).shuffle(tasks)
             if all((model_name, sample["id"], cell["id"], seed) in done
@@ -206,6 +267,11 @@ def run_main(config: dict, output: Path, metadata: dict, selection: dict,
                 )
                 if predictor.samples - evaluation_before != curves["evaluation_forward_samples"]:
                     raise AssertionError("Evaluation forward count mismatch")
+                common = {}
+                if experiment == "final":
+                    common = common_partition_scores(
+                        image, segments, segments_by_count, rgb, config, pixel_map,
+                        curves, predictor, sample["target"])
                 localization = {"localization_energy": None, "pointing_game": None,
                                 "zero_positive_energy": None}
                 if target_mask is not None:
@@ -225,7 +291,7 @@ def run_main(config: dict, output: Path, metadata: dict, selection: dict,
                     "config": asdict(method_options), "n_segments": count,
                     "actual_regions": len(ids), "attribution_seconds": elapsed,
                     "forward_samples": forward, "forward_batches": batches,
-                    "diagnostics": diagnostics, **curves, **localization,
+                    "diagnostics": diagnostics, **curves, **common, **localization,
                     "run_fingerprint": metadata["fingerprint"],
                     "artifact": str(artifact.relative_to(ROOT)),
                 }
@@ -252,7 +318,7 @@ def run_stability(config: dict, output: Path, metadata: dict, selection: dict,
     for model_name, checkpoint in config["models"].items():
         predictor = load_model(model_name, ROOT / checkpoint, config["device"])
         for sample in selection["selected"]:
-            tasks = all_tasks(config, experiment)
+            tasks = all_tasks(config, experiment, model_name)
             if all((model_name, sample["id"], cell["id"], seed) in done
                    for cell, seed in tasks):
                 continue
@@ -324,7 +390,7 @@ def main() -> None:
     parser.add_argument("--domain", choices=("imagenet", "chncxr"), required=True)
     parser.add_argument("--split", choices=("configuration_selection", "final_evaluation"),
                         default="configuration_selection")
-    parser.add_argument("--experiment", choices=("exp1", "exp2"), required=True)
+    parser.add_argument("--experiment", choices=("exp1", "exp2", "final"), required=True)
     parser.add_argument("--phase", choices=("main", "stability"), default="main")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--shard-index", type=int, default=0)
