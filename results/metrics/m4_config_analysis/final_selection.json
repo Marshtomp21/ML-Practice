@@ -1,0 +1,667 @@
+{
+  "created_utc": "2026-10-09T05:55:12.626165+00:00",
+  "scope": "configuration_selection",
+  "source_fingerprints": {
+    "results/metrics/m4_imagenet_config_exp1_shard0": "59f16e8dda672e763390aa78603ad5eacab30218ccf47cec81689ae2c8c89580",
+    "results/metrics/m4_imagenet_config_exp1_shard1": "59f16e8dda672e763390aa78603ad5eacab30218ccf47cec81689ae2c8c89580",
+    "results/metrics/m4_chncxr_config_exp1_shard0": "611f3cb6b06ee547e9ef1b54f7a0da52592cfd281fbfb57df01c7a45a18daeae",
+    "results/metrics/m4_chncxr_config_exp1_shard1": "611f3cb6b06ee547e9ef1b54f7a0da52592cfd281fbfb57df01c7a45a18daeae",
+    "results/metrics/m4_imagenet_config_exp2_shard0": "43610832125a8b82234084a626dc1538447b232129d48925e48cf162d78997fa",
+    "results/metrics/m4_imagenet_config_exp2_shard1": "43610832125a8b82234084a626dc1538447b232129d48925e48cf162d78997fa",
+    "results/metrics/m4_chncxr_config_exp2_shard0": "7f1173cbed1e9fabf96478ade69a66a6f576afd993f8674c02d7a7b7476469e1",
+    "results/metrics/m4_chncxr_config_exp2_shard1": "7f1173cbed1e9fabf96478ade69a66a6f576afd993f8674c02d7a7b7476469e1"
+  },
+  "bootstrap": {
+    "repeats": 10000,
+    "seed": 20261009
+  },
+  "rule": "(fixed before any final-evaluation run):\nwithin each domain, model and method, candidates are the configuration cells at\nthe main 1024 forward budget. Each image ranks its candidates on insertion AUC\n(high is better) and deletion AUC (low is better); the cell with the lowest\nmean rank over images and both metrics is selected, ties broken by the lower\nmedian attribution time. Stability is reported but does not enter the rule.",
+  "choice": {
+    "imagenet": {
+      "resnet50": {
+        "lime": {
+          "selected": "lime_budget_1024",
+          "parameters": {
+            "num_samples": 1024
+          },
+          "candidates": [
+            {
+              "variant": "lime_budget_1024",
+              "mean_rank": 3.2,
+              "median_seconds": 2.4013126540929077
+            },
+            {
+              "variant": "lime_slic_300",
+              "mean_rank": 3.2866666666666666,
+              "median_seconds": 2.2819146111607553
+            },
+            {
+              "variant": "lime_slic_200",
+              "mean_rank": 3.32,
+              "median_seconds": 2.2496316839009523
+            },
+            {
+              "variant": "lime_mask_0.75",
+              "mean_rank": 3.3466666666666667,
+              "median_seconds": 2.2275494603440165
+            },
+            {
+              "variant": "lime_slic_50",
+              "mean_rank": 3.82,
+              "median_seconds": 2.209652959369123
+            },
+            {
+              "variant": "lime_mask_0.25",
+              "mean_rank": 4.026666666666666,
+              "median_seconds": 2.2251205207780003
+            }
+          ],
+          "images": 75
+        },
+        "rise": {
+          "selected": "rise_mask_0.75",
+          "parameters": {
+            "mask_rate": 0.75
+          },
+          "candidates": [
+            {
+              "variant": "rise_mask_0.75",
+              "mean_rank": 1.8466666666666667,
+              "median_seconds": 3.6582890573889015
+            },
+            {
+              "variant": "rise_budget_1024",
+              "mean_rank": 3.533333333333333,
+              "median_seconds": 4.819969170726836
+            },
+            {
+              "variant": "rise_grid_4",
+              "mean_rank": 3.566666666666667,
+              "median_seconds": 4.1295515589416025
+            },
+            {
+              "variant": "rise_grid_10",
+              "mean_rank": 3.58,
+              "median_seconds": 3.597706921584904
+            },
+            {
+              "variant": "rise_grid_14",
+              "mean_rank": 3.74,
+              "median_seconds": 3.3856864189729095
+            },
+            {
+              "variant": "rise_mask_0.25",
+              "mean_rank": 4.733333333333333,
+              "median_seconds": 3.7326331328600646
+            }
+          ],
+          "images": 75
+        },
+        "kernel_shap": {
+          "selected": "kernel_shap_budget_1024",
+          "parameters": {
+            "num_samples": 1024
+          },
+          "candidates": [
+            {
+              "variant": "kernel_shap_budget_1024",
+              "mean_rank": 1.0,
+              "median_seconds": 2.353460141271353
+            }
+          ],
+          "images": 75
+        },
+        "ablation": {
+          "selected": "ablation_default",
+          "parameters": {},
+          "candidates": [
+            {
+              "variant": "ablation_default",
+              "mean_rank": 1.0,
+              "median_seconds": 0.16190349031239748
+            }
+          ],
+          "images": 75
+        }
+      },
+      "vgg13": {
+        "lime": {
+          "selected": "lime_budget_1024",
+          "parameters": {
+            "num_samples": 1024
+          },
+          "candidates": [
+            {
+              "variant": "lime_budget_1024",
+              "mean_rank": 2.86,
+              "median_seconds": 2.460197317972779
+            },
+            {
+              "variant": "lime_slic_200",
+              "mean_rank": 3.36,
+              "median_seconds": 2.3367279026657344
+            },
+            {
+              "variant": "lime_mask_0.25",
+              "mean_rank": 3.4,
+              "median_seconds": 2.307664060220122
+            },
+            {
+              "variant": "lime_slic_50",
+              "mean_rank": 3.64,
+              "median_seconds": 2.2904468988999724
+            },
+            {
+              "variant": "lime_slic_300",
+              "mean_rank": 3.7933333333333334,
+              "median_seconds": 2.371478066034615
+            },
+            {
+              "variant": "lime_mask_0.75",
+              "mean_rank": 3.9466666666666668,
+              "median_seconds": 2.307865378819406
+            }
+          ],
+          "images": 75
+        },
+        "rise": {
+          "selected": "rise_mask_0.75",
+          "parameters": {
+            "mask_rate": 0.75
+          },
+          "candidates": [
+            {
+              "variant": "rise_mask_0.75",
+              "mean_rank": 1.2666666666666666,
+              "median_seconds": 4.365353101119399
+            },
+            {
+              "variant": "rise_grid_4",
+              "mean_rank": 2.6533333333333333,
+              "median_seconds": 4.734032343327999
+            },
+            {
+              "variant": "rise_budget_1024",
+              "mean_rank": 3.2933333333333334,
+              "median_seconds": 4.943317263200879
+            },
+            {
+              "variant": "rise_grid_10",
+              "mean_rank": 3.7266666666666666,
+              "median_seconds": 4.2569923045113685
+            },
+            {
+              "variant": "rise_grid_14",
+              "mean_rank": 4.6,
+              "median_seconds": 4.021880037337541
+            },
+            {
+              "variant": "rise_mask_0.25",
+              "mean_rank": 5.46,
+              "median_seconds": 4.307264669425786
+            }
+          ],
+          "images": 75
+        },
+        "kernel_shap": {
+          "selected": "kernel_shap_budget_1024",
+          "parameters": {
+            "num_samples": 1024
+          },
+          "candidates": [
+            {
+              "variant": "kernel_shap_budget_1024",
+              "mean_rank": 1.0,
+              "median_seconds": 2.4212546972557902
+            }
+          ],
+          "images": 75
+        },
+        "ablation": {
+          "selected": "ablation_default",
+          "parameters": {},
+          "candidates": [
+            {
+              "variant": "ablation_default",
+              "mean_rank": 1.0,
+              "median_seconds": 0.1697635529562831
+            }
+          ],
+          "images": 75
+        }
+      }
+    },
+    "chncxr": {
+      "resnet50": {
+        "lime": {
+          "selected": "lime_slic_300",
+          "parameters": {
+            "n_segments": 300
+          },
+          "candidates": [
+            {
+              "variant": "lime_slic_300",
+              "mean_rank": 1.1511627906976745,
+              "median_seconds": 2.295588939078152
+            },
+            {
+              "variant": "lime_slic_200",
+              "mean_rank": 1.8895348837209303,
+              "median_seconds": 2.267117906920612
+            },
+            {
+              "variant": "lime_budget_1024",
+              "mean_rank": 3.511627906976744,
+              "median_seconds": 2.4262432492338117
+            },
+            {
+              "variant": "lime_mask_0.25",
+              "mean_rank": 4.22093023255814,
+              "median_seconds": 2.229333481565118
+            },
+            {
+              "variant": "lime_mask_0.75",
+              "mean_rank": 4.761627906976744,
+              "median_seconds": 2.221614083275199
+            },
+            {
+              "variant": "lime_slic_50",
+              "mean_rank": 5.465116279069767,
+              "median_seconds": 2.217525063082576
+            }
+          ],
+          "images": 86
+        },
+        "rise": {
+          "selected": "rise_mask_0.25",
+          "parameters": {
+            "mask_rate": 0.25
+          },
+          "candidates": [
+            {
+              "variant": "rise_mask_0.25",
+              "mean_rank": 2.296511627906977,
+              "median_seconds": 4.2411580384708945
+            },
+            {
+              "variant": "rise_grid_4",
+              "mean_rank": 2.7732558139534884,
+              "median_seconds": 4.68297406034544
+            },
+            {
+              "variant": "rise_budget_1024",
+              "mean_rank": 3.302325581395349,
+              "median_seconds": 4.878482428006828
+            },
+            {
+              "variant": "rise_mask_0.75",
+              "mean_rank": 3.372093023255814,
+              "median_seconds": 4.267054362315685
+            },
+            {
+              "variant": "rise_grid_10",
+              "mean_rank": 4.1395348837209305,
+              "median_seconds": 4.254319470003248
+            },
+            {
+              "variant": "rise_grid_14",
+              "mean_rank": 5.116279069767442,
+              "median_seconds": 4.122455342486501
+            }
+          ],
+          "images": 86
+        },
+        "kernel_shap": {
+          "selected": "kernel_shap_budget_1024",
+          "parameters": {
+            "num_samples": 1024
+          },
+          "candidates": [
+            {
+              "variant": "kernel_shap_budget_1024",
+              "mean_rank": 1.0,
+              "median_seconds": 2.3902879612520334
+            }
+          ],
+          "images": 86
+        },
+        "ablation": {
+          "selected": "ablation_default",
+          "parameters": {},
+          "candidates": [
+            {
+              "variant": "ablation_default",
+              "mean_rank": 1.0,
+              "median_seconds": 0.17374920519068837
+            }
+          ],
+          "images": 86
+        }
+      },
+      "vgg13": {
+        "lime": {
+          "selected": "lime_slic_300",
+          "parameters": {
+            "n_segments": 300
+          },
+          "candidates": [
+            {
+              "variant": "lime_slic_300",
+              "mean_rank": 2.25,
+              "median_seconds": 2.287330235727131
+            },
+            {
+              "variant": "lime_slic_200",
+              "mean_rank": 2.4825581395348837,
+              "median_seconds": 2.260921339597553
+            },
+            {
+              "variant": "lime_budget_1024",
+              "mean_rank": 3.2093023255813953,
+              "median_seconds": 2.423069142922759
+            },
+            {
+              "variant": "lime_mask_0.25",
+              "mean_rank": 3.86046511627907,
+              "median_seconds": 2.225875432603061
+            },
+            {
+              "variant": "lime_mask_0.75",
+              "mean_rank": 4.180232558139535,
+              "median_seconds": 2.227305252850056
+            },
+            {
+              "variant": "lime_slic_50",
+              "mean_rank": 5.017441860465116,
+              "median_seconds": 2.216871717199683
+            }
+          ],
+          "images": 86
+        },
+        "rise": {
+          "selected": "rise_grid_10",
+          "parameters": {
+            "grid_size": 10
+          },
+          "candidates": [
+            {
+              "variant": "rise_grid_10",
+              "mean_rank": 2.5406976744186047,
+              "median_seconds": 3.78793533956632
+            },
+            {
+              "variant": "rise_mask_0.75",
+              "mean_rank": 2.686046511627907,
+              "median_seconds": 3.819934873841703
+            },
+            {
+              "variant": "rise_grid_14",
+              "mean_rank": 2.9593023255813953,
+              "median_seconds": 3.5173992718569935
+            },
+            {
+              "variant": "rise_budget_1024",
+              "mean_rank": 3.313953488372093,
+              "median_seconds": 4.867404749523848
+            },
+            {
+              "variant": "rise_grid_4",
+              "mean_rank": 4.325581395348837,
+              "median_seconds": 4.130418877024203
+            },
+            {
+              "variant": "rise_mask_0.25",
+              "mean_rank": 5.174418604651163,
+              "median_seconds": 3.8258703611791134
+            }
+          ],
+          "images": 86
+        },
+        "kernel_shap": {
+          "selected": "kernel_shap_budget_1024",
+          "parameters": {
+            "num_samples": 1024
+          },
+          "candidates": [
+            {
+              "variant": "kernel_shap_budget_1024",
+              "mean_rank": 1.0,
+              "median_seconds": 2.366059802286327
+            }
+          ],
+          "images": 86
+        },
+        "ablation": {
+          "selected": "ablation_default",
+          "parameters": {},
+          "candidates": [
+            {
+              "variant": "ablation_default",
+              "mean_rank": 1.0,
+              "median_seconds": 0.1662860754877329
+            }
+          ],
+          "images": 86
+        }
+      }
+    }
+  },
+  "final_cells": {
+    "imagenet": {
+      "resnet50": [
+        {
+          "id": "ablation_default",
+          "method": "ablation",
+          "roles": [
+            "default:ablation",
+            "tuned:ablation"
+          ]
+        },
+        {
+          "id": "kernel_shap_budget_1024",
+          "method": "kernel_shap",
+          "num_samples": 1024,
+          "roles": [
+            "default:kernel_shap",
+            "tuned:kernel_shap"
+          ]
+        },
+        {
+          "id": "lime_budget_1024",
+          "method": "lime",
+          "num_samples": 1024,
+          "roles": [
+            "default:lime",
+            "tuned:lime"
+          ]
+        },
+        {
+          "id": "rise_budget_1024",
+          "method": "rise",
+          "num_samples": 1024,
+          "roles": [
+            "default:rise"
+          ]
+        },
+        {
+          "id": "rise_mask_0.75",
+          "method": "rise",
+          "mask_rate": 0.75,
+          "roles": [
+            "tuned:rise"
+          ]
+        }
+      ],
+      "vgg13": [
+        {
+          "id": "ablation_default",
+          "method": "ablation",
+          "roles": [
+            "default:ablation",
+            "tuned:ablation"
+          ]
+        },
+        {
+          "id": "kernel_shap_budget_1024",
+          "method": "kernel_shap",
+          "num_samples": 1024,
+          "roles": [
+            "default:kernel_shap",
+            "tuned:kernel_shap"
+          ]
+        },
+        {
+          "id": "lime_budget_1024",
+          "method": "lime",
+          "num_samples": 1024,
+          "roles": [
+            "default:lime",
+            "tuned:lime"
+          ]
+        },
+        {
+          "id": "rise_budget_1024",
+          "method": "rise",
+          "num_samples": 1024,
+          "roles": [
+            "default:rise"
+          ]
+        },
+        {
+          "id": "rise_mask_0.75",
+          "method": "rise",
+          "mask_rate": 0.75,
+          "roles": [
+            "tuned:rise"
+          ]
+        }
+      ]
+    },
+    "chncxr": {
+      "resnet50": [
+        {
+          "id": "ablation_default",
+          "method": "ablation",
+          "roles": [
+            "default:ablation",
+            "transfer:ablation",
+            "tuned:ablation"
+          ]
+        },
+        {
+          "id": "kernel_shap_budget_1024",
+          "method": "kernel_shap",
+          "num_samples": 1024,
+          "roles": [
+            "default:kernel_shap",
+            "transfer:kernel_shap",
+            "tuned:kernel_shap"
+          ]
+        },
+        {
+          "id": "lime_budget_1024",
+          "method": "lime",
+          "num_samples": 1024,
+          "roles": [
+            "default:lime",
+            "transfer:lime"
+          ]
+        },
+        {
+          "id": "lime_slic_300",
+          "method": "lime",
+          "n_segments": 300,
+          "roles": [
+            "tuned:lime"
+          ]
+        },
+        {
+          "id": "rise_budget_1024",
+          "method": "rise",
+          "num_samples": 1024,
+          "roles": [
+            "default:rise"
+          ]
+        },
+        {
+          "id": "rise_mask_0.25",
+          "method": "rise",
+          "mask_rate": 0.25,
+          "roles": [
+            "tuned:rise"
+          ]
+        },
+        {
+          "id": "rise_mask_0.75",
+          "method": "rise",
+          "mask_rate": 0.75,
+          "roles": [
+            "transfer:rise"
+          ]
+        }
+      ],
+      "vgg13": [
+        {
+          "id": "ablation_default",
+          "method": "ablation",
+          "roles": [
+            "default:ablation",
+            "transfer:ablation",
+            "tuned:ablation"
+          ]
+        },
+        {
+          "id": "kernel_shap_budget_1024",
+          "method": "kernel_shap",
+          "num_samples": 1024,
+          "roles": [
+            "default:kernel_shap",
+            "transfer:kernel_shap",
+            "tuned:kernel_shap"
+          ]
+        },
+        {
+          "id": "lime_budget_1024",
+          "method": "lime",
+          "num_samples": 1024,
+          "roles": [
+            "default:lime",
+            "transfer:lime"
+          ]
+        },
+        {
+          "id": "lime_slic_300",
+          "method": "lime",
+          "n_segments": 300,
+          "roles": [
+            "tuned:lime"
+          ]
+        },
+        {
+          "id": "rise_budget_1024",
+          "method": "rise",
+          "num_samples": 1024,
+          "roles": [
+            "default:rise"
+          ]
+        },
+        {
+          "id": "rise_grid_10",
+          "method": "rise",
+          "grid_size": 10,
+          "roles": [
+            "tuned:rise"
+          ]
+        },
+        {
+          "id": "rise_mask_0.75",
+          "method": "rise",
+          "mask_rate": 0.75,
+          "roles": [
+            "transfer:rise"
+          ]
+        }
+      ]
+    }
+  }
+}

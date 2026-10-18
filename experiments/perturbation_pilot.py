@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 import platform
 import subprocess
+import sys
 import time
 
 import numpy as np
@@ -124,10 +125,27 @@ def validate_config(config):
                    config["mask_rate"], seed)
 
 
+def loaded_sources():
+    """Project modules imported by this process, i.e. the code the run executes.
+
+    Fingerprinting only these files lets unrelated modules be added to the
+    source folders without invalidating a resumable run.
+    """
+    folders = [(ROOT/folder).resolve() for folder in SOURCE_DIRS]
+    paths = set()
+    for module in list(sys.modules.values()):
+        name = getattr(module, "__file__", None)
+        if not name or not name.endswith(".py"):
+            continue
+        path = Path(name).resolve()
+        if any(path.is_relative_to(folder) for folder in folders):
+            paths.add(path)
+    return sorted(paths)
+
+
 def freeze_run(config, output, resume):
     domain, protocol, make_candidates, _, _ = domain_api(config)
-    source = {str(p.relative_to(ROOT)): sha256(p)
-              for folder in SOURCE_DIRS for p in sorted((ROOT/folder).rglob("*.py"))}
+    source = {str(p.relative_to(ROOT)): sha256(p) for p in loaded_sources()}
     pool = make_candidates()
     for row in pool:
         row["sha256"] = sha256(row["path"])

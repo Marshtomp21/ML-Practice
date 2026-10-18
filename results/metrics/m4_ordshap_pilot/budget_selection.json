@@ -1,0 +1,47 @@
+{
+  "rule": "cheapest budget with median VI Spearman >= 0.9 and PI Spearman >= 0.8; else the most expensive",
+  "qualified": true,
+  "table": [
+    {
+      "cell": "k128_p8",
+      "num_coalitions": 128,
+      "num_permutations": 8,
+      "median_vi_spearman": 0.7970588235294118,
+      "median_pi_spearman": 0.44803921568627453,
+      "median_forward_samples": 1090.0,
+      "median_seconds": 4.592121943831444
+    },
+    {
+      "cell": "k128_p32",
+      "num_coalitions": 128,
+      "num_permutations": 32,
+      "median_vi_spearman": 0.7872549019607844,
+      "median_pi_spearman": 0.6833333333333333,
+      "median_forward_samples": 4354.0,
+      "median_seconds": 15.880079503171146
+    },
+    {
+      "cell": "k512_p8",
+      "num_coalitions": 512,
+      "num_permutations": 8,
+      "median_vi_spearman": 0.9401960784313724,
+      "median_pi_spearman": 0.7401960784313725,
+      "median_forward_samples": 4162.0,
+      "median_seconds": 17.875071493908763
+    },
+    {
+      "cell": "k512_p32",
+      "num_coalitions": 512,
+      "num_permutations": 32,
+      "median_vi_spearman": 0.961764705882353,
+      "median_pi_spearman": 0.8485294117647058,
+      "median_forward_samples": 16642.0,
+      "median_seconds": 61.64332649484277
+    }
+  ],
+  "selected": {
+    "num_coalitions": 512,
+    "num_permutations": 32
+  },
+  "completed_utc": "2026-10-09T18:04:49.165487+00:00"
+}

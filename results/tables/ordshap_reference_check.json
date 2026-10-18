@@ -1,0 +1,17 @@
+[
+  {
+    "features": 3,
+    "max_abs_vi_difference": 4.163336342344337e-17,
+    "max_abs_pi_difference": 3.885780586188048e-16
+  },
+  {
+    "features": 4,
+    "max_abs_vi_difference": 8.890457814381136e-18,
+    "max_abs_pi_difference": 7.216449660063518e-16
+  },
+  {
+    "features": 5,
+    "max_abs_vi_difference": 7.632783294297951e-17,
+    "max_abs_pi_difference": 1.7208456881689926e-14
+  }
+]

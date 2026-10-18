@@ -1,0 +1,7 @@
+{
+  "domain": "imagenet",
+  "model": "vgg13",
+  "rows": 6000,
+  "expected": 6000,
+  "completed_utc": "2026-10-08T16:51:54.305544+00:00"
+}

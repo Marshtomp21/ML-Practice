@@ -1,0 +1,48 @@
+stage: m4_ordshap
+domain: imagenet
+data_root: data/raw/imagenet/subsetEBPG
+annotation_root: data/raw/imagenet/val_bbox
+class_index: data/raw/imagenet/imagenet_class_index.json
+split_file: data/splits/m4_frozen_20260917.json
+models:
+  resnet50: models/checkpoints/resnet50_imagenet1k_v2.pth
+  vgg13: models/checkpoints/vgg13_imagenet1k_v1.pth
+
+# Optional experiment 5 (M1): 4x4 row-major patch lattice on the 224x224 input,
+# normalized-zero uniform baseline, correct-class pre-Softmax logit.
+grid: 4
+batch_size: 32
+evaluation_steps: 16
+selection_seed: 20261009
+threads: 4
+device: cuda
+
+# Budget pilot on configuration_selection images (never final images).
+# Rule, fixed before the pilot: pick the cheapest budget whose median cross-seed
+# Spearman over image x model is >= 0.9 for OrdShap-VI and >= 0.8 for
+# OrdShap-PI; if no budget qualifies, take the most expensive one and report
+# the instability. full_permutations = 10 x num_permutations (official default).
+pilot:
+  images: 5
+  seeds: [0, 1, 2]
+  budgets:
+    - {num_coalitions: 128, num_permutations: 8}
+    - {num_coalitions: 128, num_permutations: 32}
+    - {num_coalitions: 512, num_permutations: 8}
+    - {num_coalitions: 512, num_permutations: 32}
+
+# Formal run on a seeded subset of the ImageNet final_evaluation split.
+main:
+  images: 50
+  seeds: [0, 1, 2, 3, 4]
+  kernel_shap_num_samples: 1024  # same patch lattice, fixed positions
+
+# Position-move check, run after main. Each rule selects k patches by the
+# seed-averaged magnitude of its score (or uniformly at random); every selected
+# patch is swapped with a partner slot outside the set. Partner slots come from
+# one random slot order per (image, repeat), shared by all rules. A deletion
+# control replaces the same k patches with the baseline.
+moves:
+  k: 2
+  repeats: 32
+  rules: [ordshap_pi, ordshap_vi, kernel_shap, random]

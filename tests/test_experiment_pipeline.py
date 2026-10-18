@@ -1,4 +1,7 @@
 """Analytic evaluation and real torch adapter tests, without course checkpoints."""
+import sys
+import types
+
 import numpy as np
 import pytest
 
@@ -151,9 +154,16 @@ def test_resume_rejects_source_and_data_changes(tmp_path, monkeypatch):
     source = root/"models/fixture.py"
     source.write_text("# original", encoding="utf-8")
     monkeypatch.setattr(pilot, "ROOT", root)
+    # Only imported project modules are fingerprinted; register the fixture.
+    module = types.ModuleType("fixture_source")
+    module.__file__ = str(source)
+    monkeypatch.setitem(sys.modules, "fixture_source", module)
     config = {"data_root": "images", "models": {"resnet50": "models/fixture.pt"}, "device": "cpu"}
     output = tmp_path/"run"
     first = pilot.freeze_run(config, output, False)
+    assert pilot.freeze_run(config, output, True)["fingerprint"] == first["fingerprint"]
+    assert "models/fixture.py" in first["source_sha256"]
+    (root/"models/unrelated.py").write_text("# not imported", encoding="utf-8")
     assert pilot.freeze_run(config, output, True)["fingerprint"] == first["fingerprint"]
     with pytest.raises(ValueError, match="Output exists"):
         pilot.freeze_run(config, output, False)

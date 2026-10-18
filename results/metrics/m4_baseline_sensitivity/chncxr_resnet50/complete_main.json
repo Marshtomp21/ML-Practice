@@ -1,0 +1,7 @@
+{
+  "domain": "chncxr",
+  "model": "resnet50",
+  "rows": 6880,
+  "expected": 6880,
+  "completed_utc": "2026-10-08T17:26:35.169839+00:00"
+}

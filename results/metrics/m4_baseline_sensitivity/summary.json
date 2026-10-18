@@ -1,0 +1,4482 @@
+[
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.283877068605177,
+      "q25": 5.373148233052145,
+      "q75": 6.663184222262917
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.5397274732589725,
+      "q25": 4.429032329571748,
+      "q75": 6.099297897500553
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.94507234611733,
+      "q25": 0.8120122147771366,
+      "q75": 0.9863025768469122
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.826835129106259,
+      "q25": 0.6802836075764582,
+      "q75": 0.8994782565757635
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.4911101197699548,
+      "q25": 0.36760131931935336,
+      "q75": 0.6161957782841053
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.19742543622851372,
+      "q25": 0.17750034481287003,
+      "q75": 0.22065896540880203
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.203324687751858,
+      "q25": 5.590051569954241,
+      "q75": 6.78586913788796
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.8124662996693095,
+      "q25": 4.4963011068435526,
+      "q75": 6.254941236788136
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9413277369497592,
+      "q25": 0.8348115344086463,
+      "q75": 1.00342540604004
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.8545117836762518,
+      "q25": 0.6923690039785981,
+      "q75": 0.9132459386957708
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.5035255165498578,
+      "q25": 0.3541212952083181,
+      "q75": 0.6384588407468003
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.1904720403254032,
+      "q25": 0.17952732369303703,
+      "q75": 0.22011990193277597
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.269314291925791,
+      "q25": 5.339986095111351,
+      "q75": 6.67193432440055
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.73071246390993,
+      "q25": 4.548942599723821,
+      "q75": 6.185579218675974
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9329901938936916,
+      "q25": 0.8240165960379204,
+      "q75": 0.9929953259059835
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.8345215509801619,
+      "q25": 0.7135538617674982,
+      "q75": 0.9041990695137245
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.47241496933963445,
+      "q25": 0.3539518509893874,
+      "q75": 0.6259220751357258
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.18566742911934853,
+      "q25": 0.17300962656736374,
+      "q75": 0.21539518050849438
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.335385702062576,
+      "q25": 5.665352027915342,
+      "q75": 6.7371727753624615
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.814609913663431,
+      "q25": 4.462894963725466,
+      "q75": 6.311722960049382
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9539124419697855,
+      "q25": 0.8566167321646676,
+      "q75": 0.9949163776494809
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.8553015205596615,
+      "q25": 0.6603751469099746,
+      "q75": 0.9261064640839746
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.5740157998442509,
+      "q25": 0.3815183939740948,
+      "q75": 0.7021405256083193
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.18560042046010494,
+      "q25": 0.1736736036837101,
+      "q75": 0.2235216060653329
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 5.744194682862828,
+      "q25": 4.960572176199516,
+      "q75": 6.448448449081994
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.952178081107694,
+      "q25": 4.4572235830217775,
+      "q75": 6.292134727807028
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.8886255590795721,
+      "q25": 0.761876511176959,
+      "q75": 0.9652063100301234
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.8490885871591739,
+      "q25": 0.6883111246427865,
+      "q75": 0.926324981747406
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.4133345655164514,
+      "q25": 0.26947796836304827,
+      "q75": 0.5843640551030791
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.18795696459710598,
+      "q25": 0.17481513507664204,
+      "q75": 0.22371057514101267
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.853894851037436,
+      "q25": 6.649876596056169,
+      "q75": 7.03118041742071
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.3451147122505835,
+      "q25": 1.268003655214411,
+      "q75": 3.623871972892152
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 1.009655859859056,
+      "q25": 0.9730139385998543,
+      "q75": 1.0648814184296984
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.38019464468856734,
+      "q25": 0.2090441054932237,
+      "q75": 0.5549694572878087
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.708179860567275,
+      "q25": 0.5677511649735172,
+      "q75": 0.7915286715016714
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.943196631222963,
+      "q25": 2.740963209979236,
+      "q75": 3.0586073929443955
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.711999678491861,
+      "q25": 6.5595208896841335,
+      "q75": 6.866726682994557
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.3262902731757342,
+      "q25": 1.472486812971117,
+      "q75": 3.5951340896829036
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9862558473581398,
+      "q25": 0.9629809838621456,
+      "q75": 1.0203876411542578
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.3396367864167374,
+      "q25": 0.23102234595067217,
+      "q75": 0.5464161847802924
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.738460091632586,
+      "q25": 0.6284802589930396,
+      "q75": 0.8311284549314413
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.9124327294528483,
+      "q25": 2.7726701686158775,
+      "q75": 3.0662875961512324
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.842025832618985,
+      "q25": 6.620320541408562,
+      "q75": 7.008226030688364
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.2975401192993283,
+      "q25": 1.332225921408108,
+      "q75": 3.5891218763355868
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 1.0029788735436846,
+      "q25": 0.9699025464206028,
+      "q75": 1.052837390446437
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.3636535092376051,
+      "q25": 0.20858013554709426,
+      "q75": 0.5518842928056236
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.714417605181545,
+      "q25": 0.567701948169498,
+      "q75": 0.7998631754420642
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.915616487711668,
+      "q25": 2.7640497444197534,
+      "q75": 3.070962996967137
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.666492930906159,
+      "q25": 6.4972612169546045,
+      "q75": 6.8447956276407895
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.3940809120923014,
+      "q25": 1.5950388045417165,
+      "q75": 3.9169009050683865
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9810942006178042,
+      "q25": 0.9606005788498351,
+      "q75": 1.0034418468343107
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.37463305255918317,
+      "q25": 0.24971603167677048,
+      "q75": 0.5807795270486822
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.7318777929626976,
+      "q25": 0.625776849924169,
+      "q75": 0.8187806236677488
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.9177029710263014,
+      "q25": 2.758117216825485,
+      "q75": 3.083351323753595
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.642782381365353,
+      "q25": 6.493942197892681,
+      "q75": 6.830990605739912
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.5279905278191324,
+      "q25": 1.5854074455472948,
+      "q75": 3.8684118190358183
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9810139180688306,
+      "q25": 0.9580697706772714,
+      "q75": 1.0165220201419995
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.32699986696390837,
+      "q25": 0.23326421616633602,
+      "q75": 0.5888948972787661
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.7318614959502336,
+      "q25": 0.6203758607447505,
+      "q75": 0.8033492746083003
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.919891142100096,
+      "q25": 2.778160375729203,
+      "q75": 3.069201121106744
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.3038055417243015,
+      "q25": 5.743260220212891,
+      "q75": 6.632260510796655
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.695409249080407,
+      "q25": 3.5464706019668473,
+      "q75": 5.3393535059863755
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9256958522388482,
+      "q25": 0.8334484065162032,
+      "q75": 0.9716860627988846
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.6996856796616534,
+      "q25": 0.533341840476264,
+      "q75": 0.795959922234443
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.3505963616230775,
+      "q25": 0.24741808732762188,
+      "q75": 0.43442793222630544
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 0.4,
+      "q25": 0.2,
+      "q75": 0.8
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.250652123615145,
+      "q25": 5.016730726696551,
+      "q75": 5.493445968069136
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.32015067383095,
+      "q25": 5.727090907798331,
+      "q75": 6.6355010923841
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.558242257381534,
+      "q25": 3.5350478216693935,
+      "q75": 5.338112417677808
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.92595669957017,
+      "q25": 0.8432220444876611,
+      "q75": 0.9744567913732789
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.6920616620797139,
+      "q25": 0.5306173693411396,
+      "q75": 0.7952433755561901
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.3521743211495366,
+      "q25": 0.24724274530189383,
+      "q75": 0.435432814266561
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 0.6,
+      "q25": 0.4,
+      "q75": 0.8
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.272212795540691,
+      "q25": 4.976306356862187,
+      "q75": 5.49635568074882
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.307189898812369,
+      "q25": 5.7605796718478395,
+      "q75": 6.629596197823199
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.704526450369093,
+      "q25": 3.5310747085560275,
+      "q75": 5.342547266563011
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9258406017891726,
+      "q25": 0.8352275442990529,
+      "q75": 0.9715899486323172
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.6992851204799544,
+      "q25": 0.5321570252052685,
+      "q75": 0.794847453676441
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.3503576732981496,
+      "q25": 0.2478429549506756,
+      "q75": 0.43472099062399494
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 0.6,
+      "q25": 0.2,
+      "q75": 0.8
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.219379484653473,
+      "q25": 5.036076210811734,
+      "q75": 5.496446996927261
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.296530184317171,
+      "q25": 5.767137311657592,
+      "q75": 6.623961283834019
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.710882241806288,
+      "q25": 3.540223280735638,
+      "q75": 5.317031362894861
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9227982942854398,
+      "q25": 0.8290548123535626,
+      "q75": 0.9750538618419025
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.7002932381302938,
+      "q25": 0.5343523419842355,
+      "q75": 0.7982263566797955
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.35064482057074575,
+      "q25": 0.24648948787152675,
+      "q75": 0.4343229301875186
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 0.4,
+      "q25": 0.2,
+      "q75": 0.8
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.332694606110453,
+      "q25": 5.019641814753413,
+      "q75": 5.468020286783576
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.352815325466203,
+      "q25": 5.88014126254331,
+      "q75": 6.640528539662201
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.532699394482991,
+      "q25": 3.0065150889688095,
+      "q75": 5.247086475765216
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9306489411000823,
+      "q25": 0.8555440558892009,
+      "q75": 0.9794633211032153
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.6763728530233883,
+      "q25": 0.48412258404500025,
+      "q75": 0.7780680367479895
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.3574797607286623,
+      "q25": 0.25286879732087353,
+      "q75": 0.4423386968480638
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 0.8,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.27667050845921,
+      "q25": 4.972117985971272,
+      "q75": 5.500995622761547
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.707890388718806,
+      "q25": 6.534365687099889,
+      "q75": 6.905299646053729
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.4455057987306694,
+      "q25": 1.391934403308472,
+      "q75": 3.7891688773457517
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9890572205043225,
+      "q25": 0.9675448924264652,
+      "q75": 1.025410906485293
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.3908003206736027,
+      "q25": 0.22549908801680948,
+      "q75": 0.5786899710027793
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6118038374151609,
+      "q25": 0.4815930512964181,
+      "q75": 0.7283517534722308
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.9269160743802787,
+      "q25": 2.758516286127269,
+      "q75": 3.071949918940663
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.6914102902573145,
+      "q25": 6.53946117638764,
+      "q75": 6.821115690036101
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.9416278244292533,
+      "q25": 1.8802905517877901,
+      "q75": 3.8754471932759804
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9849150733007213,
+      "q25": 0.9612892038312195,
+      "q75": 1.014040621026569
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.45212430588545593,
+      "q25": 0.28393173643822867,
+      "q75": 0.5961772595323982
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6350884788344916,
+      "q25": 0.5696134342628135,
+      "q75": 0.7072821208580257
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.8863677445799114,
+      "q25": 2.7201072042807937,
+      "q75": 3.038884646072984
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.708014822006225,
+      "q25": 6.528562416538046,
+      "q75": 6.884451344522697
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.536825047594955,
+      "q25": 1.5368484453081095,
+      "q75": 3.800493674984887
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9878336875281415,
+      "q25": 0.9656710816424954,
+      "q75": 1.0238884301550852
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.37953600306331947,
+      "q25": 0.22427068797969935,
+      "q75": 0.5791607189100121
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6177773518375703,
+      "q25": 0.5012365830206508,
+      "q75": 0.7284536404158866
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.8980167716741563,
+      "q25": 2.76990274451673,
+      "q75": 3.067993173934519
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.587771235926207,
+      "q25": 6.34322022119155,
+      "q75": 6.748771806408264
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 3.3414591922372407,
+      "q25": 2.2025474199873036,
+      "q75": 4.6449923508817115
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9724513329048987,
+      "q25": 0.9460623986938291,
+      "q75": 0.9965685784870963
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.5087345266155994,
+      "q25": 0.3470749912496912,
+      "q75": 0.7092866713365651
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.5866320833658385,
+      "q25": 0.510724216670836,
+      "q75": 0.6599247325006548
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 0.8,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.9355125710368157,
+      "q25": 2.7405120244249703,
+      "q75": 3.072757401689887
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 6.6207998676101365,
+      "q25": 6.4661587617082485,
+      "q75": 6.7993001453138735
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 3.0030797974239376,
+      "q25": 1.9564221176777867,
+      "q75": 4.128576394863078
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.9755875805786409,
+      "q25": 0.9568629285888008,
+      "q75": 1.0096987900382386
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.4677815688678857,
+      "q25": 0.28342799497769466,
+      "q75": 0.6163103442903417
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6087119521983972,
+      "q25": 0.5283795195262164,
+      "q75": 0.6810915077906061
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.9107968408614395,
+      "q25": 2.7326279547065497,
+      "q75": 3.07490171212703
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 17.23031996136688,
+      "q25": 13.530914537747353,
+      "q75": 20.69138017145026
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.673671682675679,
+      "q25": 2.586837310705815,
+      "q75": 6.876925296800112
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.7997684776730205,
+      "q25": 0.6988412381478978,
+      "q75": 0.8844279092198355
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.22878192571536482,
+      "q25": 0.11721860116901711,
+      "q75": 0.30933584283368903
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.5879891352786992,
+      "q25": 0.40754982436125947,
+      "q75": 0.6819339175249908
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.20907053723931313,
+      "q25": 0.18744727224111557,
+      "q75": 0.2282045129686594
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 16.709719231430913,
+      "q25": 13.19752332972116,
+      "q75": 20.359035698654047
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.825028136754646,
+      "q25": 3.01373829943968,
+      "q75": 7.102608132773664
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.7683743824603771,
+      "q25": 0.6965623873050149,
+      "q75": 0.8970243592534191
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.23439927281601036,
+      "q25": 0.1294370268876433,
+      "q75": 0.32907383517889105
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6245978006027488,
+      "q25": 0.4470999284628202,
+      "q75": 0.7028880829061488
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.20330441184341908,
+      "q25": 0.187868676148355,
+      "q75": 0.23102788999676704
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 17.03438684086741,
+      "q25": 13.38985739448916,
+      "q75": 21.056312612422452
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.65998853197912,
+      "q25": 2.5173492940179525,
+      "q75": 6.705013040537062
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.8002173120809184,
+      "q25": 0.7058103771256536,
+      "q75": 0.8938030120303179
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.21342279334590777,
+      "q25": 0.1139750588128289,
+      "q75": 0.2995988480850831
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.609792920972806,
+      "q25": 0.44822514745227193,
+      "q75": 0.6850421317735806
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.21293573454022408,
+      "q25": 0.18825218081474304,
+      "q75": 0.23254359886050224
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 16.617553377544485,
+      "q25": 12.276186611594223,
+      "q75": 19.082921557024275
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.9487345491576455,
+      "q25": 2.787578505350322,
+      "q75": 6.55621890819781
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.7460504131644397,
+      "q25": 0.6603035779501787,
+      "q75": 0.8678035161050135
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.23078346884164758,
+      "q25": 0.1211320939640809,
+      "q75": 0.31204503549595386
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.7173687875281095,
+      "q25": 0.5546958281994758,
+      "q75": 0.783351613552939
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.2045381087809801,
+      "q25": 0.18614432774484158,
+      "q75": 0.22836185339838266
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 15.718451286184377,
+      "q25": 12.76949258079576,
+      "q75": 20.4756423324511
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 4.355226000682228,
+      "q25": 2.5136278117687443,
+      "q75": 6.9839440208675025
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.7913770530632828,
+      "q25": 0.6776394699729925,
+      "q75": 0.8378074655311865
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.21084341277732588,
+      "q25": 0.1066690300464245,
+      "q75": 0.3161318431243598
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.5766218522071391,
+      "q25": 0.45079581735705987,
+      "q75": 0.6938319010544659
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 0.20196182280778885,
+      "q25": 0.18656155187636614,
+      "q75": 0.23288449551910162
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 88.0,
+      "q25": 83.0,
+      "q75": 91.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 19.055758966620154,
+      "q25": 15.683298192907692,
+      "q75": 22.175092917191776
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.113639777057938,
+      "q25": 0.48416004695566783,
+      "q75": 3.8292001281162564
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.8855667917445688,
+      "q25": 0.7838698642068116,
+      "q75": 0.997162899041643
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.09016229477972552,
+      "q25": 0.014992026959318953,
+      "q75": 0.16143691380988778
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.7038125164642299,
+      "q25": 0.561962483780527,
+      "q75": 0.7735690099761643
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 3.028714941814542,
+      "q25": 2.89057127404958,
+      "q75": 3.2211425988003612
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 17.91172592639923,
+      "q25": 15.28083931759634,
+      "q75": 21.889459777780562
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.3241785353288433,
+      "q25": 0.5710518564109281,
+      "q75": 3.923490994959193
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.8594178556172201,
+      "q25": 0.7557234318748989,
+      "q75": 0.9635448070614929
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.09615535271680495,
+      "q25": 0.026281194868812335,
+      "q75": 0.1740693518598893
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.7225555075789054,
+      "q25": 0.5870420140462779,
+      "q75": 0.7780459246994351
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 2.989761158451438,
+      "q25": 2.9148164680227637,
+      "q75": 3.16006779987365
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 18.96912139316837,
+      "q25": 15.710217574664526,
+      "q75": 22.104356064975903
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.1218073734853946,
+      "q25": 0.5347925833124718,
+      "q75": 3.9335954492259755
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.882754268310822,
+      "q25": 0.7815514881237636,
+      "q75": 0.9822568797051903
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.09089499584573664,
+      "q25": 0.0180404089610386,
+      "q75": 0.1675782891718918
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.7103903970210974,
+      "q25": 0.5828589023602824,
+      "q75": 0.7706951195479395
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 3.0531047265976667,
+      "q25": 2.9201442560181023,
+      "q75": 3.2103285979479548
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 17.504849219038373,
+      "q25": 14.676889338145097,
+      "q75": 21.906982443367106
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.421249771705302,
+      "q25": 1.0407178050698014,
+      "q75": 4.502931570365558
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.8363159990588207,
+      "q25": 0.7132221292183482,
+      "q75": 0.9582265545735853
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.11479891598425407,
+      "q25": 0.040638614088100766,
+      "q75": 0.18398157237901785
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.7736550946219292,
+      "q25": 0.6645033400324739,
+      "q75": 0.8302239576792401
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 3.0396577455103397,
+      "q25": 2.9184315597638486,
+      "q75": 3.165506807155907
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 15.850546973868262,
+      "q25": 12.574470717718782,
+      "q75": 20.238206093237565
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 3.024303657737341,
+      "q25": 1.0733367037980095,
+      "q75": 5.1815316351329255
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.7568993813949458,
+      "q25": 0.6659492821772449,
+      "q75": 0.8491027356507477
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.12383820253394291,
+      "q25": 0.06640586533033005,
+      "q75": 0.21023174361068986
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6641418800989177,
+      "q25": 0.4829997411727158,
+      "q75": 0.7564630068031442
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 3.050574118643999,
+      "q25": 2.898956442438066,
+      "q75": 3.168203457631171
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 12.043496498039788,
+      "q25": 9.93800915491542,
+      "q75": 14.37491674571341
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.6004660094721945,
+      "q25": 3.6193056770485073,
+      "q75": 8.52215099070741
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.573592355850143,
+      "q25": 0.46624663698530966,
+      "q75": 0.6637886844614843
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.29089566835802383,
+      "q25": 0.16732250490402018,
+      "q75": 0.35962591860190807
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.3579863190769193,
+      "q25": 0.25566984217393807,
+      "q75": 0.4396051384786599
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.309578597173095,
+      "q25": 5.08457210548222,
+      "q75": 5.460401047766208
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 11.58892685856138,
+      "q25": 9.895694651971846,
+      "q75": 14.388885303824164
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.757713087567365,
+      "q25": 3.61293259169729,
+      "q75": 8.679417783061602
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.5724829980297063,
+      "q25": 0.46560166266735636,
+      "q75": 0.6557930400961098
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.29514198724934787,
+      "q25": 0.1668780402436057,
+      "q75": 0.3651228104373195
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.3562841525473074,
+      "q25": 0.25394908567720753,
+      "q75": 0.43923593066171573
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.279342025145889,
+      "q25": 5.051243693195284,
+      "q75": 5.503636007010937
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 12.121758613608339,
+      "q25": 9.950658719019565,
+      "q75": 14.366039154027213
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.607701934321542,
+      "q25": 3.6065479484945535,
+      "q75": 8.515694724018019
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.5760187792351549,
+      "q25": 0.46592182029665796,
+      "q75": 0.6645100484239017
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.2908784954857143,
+      "q25": 0.1673165001076459,
+      "q75": 0.35905112415691753
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.35810416403673273,
+      "q25": 0.255759484909426,
+      "q75": 0.43999475596267046
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.340205692127347,
+      "q25": 5.0423837935552,
+      "q75": 5.532500988617539
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 11.943850271723727,
+      "q25": 9.874737888277117,
+      "q75": 14.202440874273227
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.662590876903879,
+      "q25": 3.649807436149567,
+      "q75": 8.688048665662727
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.5747511745431821,
+      "q25": 0.4619496224325077,
+      "q75": 0.6575131665673178
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.29563504288263875,
+      "q25": 0.1678735156127012,
+      "q75": 0.3562787480987072
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.35713732312583674,
+      "q25": 0.2553135877669802,
+      "q75": 0.4387414305993404
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 0.8,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.326226035505533,
+      "q25": 5.034542951732874,
+      "q75": 5.5192184139043095
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 12.277530443830525,
+      "q25": 10.571966644966867,
+      "q75": 15.258726121997054
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 5.44014316826332,
+      "q25": 3.162577344017264,
+      "q75": 7.8602732323423155
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.6048725082573498,
+      "q25": 0.48584414469578063,
+      "q75": 0.7111456339936288
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.2616341254512293,
+      "q25": 0.153923138109561,
+      "q75": 0.3394517258162768
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.3720394112351395,
+      "q25": 0.2606332972292843,
+      "q75": 0.4476707948419006
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 5.2302608389407395,
+      "q25": 5.087190787494183,
+      "q75": 5.547963765636086
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 18.076105303608855,
+      "q25": 14.581275891228199,
+      "q75": 22.271523294974987
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.361554407705495,
+      "q25": 0.8692302826829132,
+      "q75": 3.815611230433565
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.8757040211177539,
+      "q25": 0.7253118920519341,
+      "q75": 0.9599125838292519
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.10008511172033967,
+      "q25": 0.0289019591935551,
+      "q75": 0.18211947043148421
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6742909926100326,
+      "q25": 0.5193965230984732,
+      "q75": 0.7567696653787028
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 3.034589583054185,
+      "q25": 2.9033875554800033,
+      "q75": 3.1910334642976523
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 17.936511279373285,
+      "q25": 14.21497269623422,
+      "q75": 21.645072677398936
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.47410229826039,
+      "q25": 1.0133276308547021,
+      "q75": 3.802915717139081
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.8450059766055056,
+      "q25": 0.7005266357788373,
+      "q75": 0.9490420409006128
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.10667447092089885,
+      "q25": 0.03517188889108527,
+      "q75": 0.16919024066662752
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6934658166335921,
+      "q25": 0.5415667315219659,
+      "q75": 0.764567362433801
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 3.066559711843729,
+      "q25": 2.928454319573939,
+      "q75": 3.200325842946768
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 17.89002537197537,
+      "q25": 14.678223543247547,
+      "q75": 22.239847708624758
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.3108632476977364,
+      "q25": 0.9649843553744766,
+      "q75": 3.728679161845961
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.8669847715741777,
+      "q25": 0.7241021499061217,
+      "q75": 0.9569926601663513
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.10424766265354268,
+      "q25": 0.029984395575570665,
+      "q75": 0.17836912936498805
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6771692034320818,
+      "q25": 0.5394085652406929,
+      "q75": 0.7592845164117641
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 3.073286174982786,
+      "q25": 2.90093637406826,
+      "q75": 3.189805230312049
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 17.18592355766812,
+      "q25": 13.844492179498683,
+      "q75": 21.054670080790203
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 2.6219255250433218,
+      "q25": 1.063491830632716,
+      "q75": 4.406795013795248
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.7878351427439203,
+      "q25": 0.6719155093025639,
+      "q75": 0.9288110301146785
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.11847596052929818,
+      "q25": 0.053326924636720605,
+      "q75": 0.20344559393660527
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.715706037251012,
+      "q25": 0.5948749940708695,
+      "q75": 0.7660711327316294
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 3.0451115507632496,
+      "q25": 2.934098600037396,
+      "q75": 3.212330814264715
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "imagenet",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 75,
+    "insertion_auc": {
+      "count": 75,
+      "median": 15.79536546729077,
+      "q25": 12.914707490881106,
+      "q75": 20.29320393197696
+    },
+    "deletion_auc": {
+      "count": 75,
+      "median": 3.229845928851469,
+      "q25": 1.8381878555726048,
+      "q75": 5.681464886041081
+    },
+    "normalized_insertion_auc": {
+      "count": 75,
+      "median": 0.7676519754669233,
+      "q25": 0.6275986259403621,
+      "q75": 0.8523467686568323
+    },
+    "normalized_deletion_auc": {
+      "count": 75,
+      "median": 0.14222977230444428,
+      "q25": 0.07521816307545082,
+      "q75": 0.23396661917044087
+    },
+    "localization_energy": {
+      "count": 75,
+      "median": 0.6463391390841595,
+      "q25": 0.4898987766798546,
+      "q75": 0.730922936102093
+    },
+    "pointing_game": {
+      "count": 75,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "attribution_seconds": {
+      "count": 75,
+      "median": 3.094415380060673,
+      "q25": 2.9375233329832553,
+      "q75": 3.200610017217696
+    },
+    "forward_samples": {
+      "count": 75,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 6.677837524170213,
+      "q25": 5.307327653678773,
+      "q75": 8.415647384396225
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -4.836316961470206,
+      "q25": -6.542898882060283,
+      "q75": -2.7532600585915397
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.3798549268228388,
+      "q25": 0.937366315294,
+      "q75": 2.492425722467117
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.9773295106893217,
+      "q25": -2.097987248768752,
+      "q75": -0.5119790735939715
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.01165870830254484,
+      "q25": 0.0013167072374644885,
+      "q75": 0.04289549007848981
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.20609659235924482,
+      "q25": 0.183763493783772,
+      "q75": 0.2311779921874404
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.504600963773246,
+      "q25": 2.344901509559902,
+      "q75": 6.6308686589569295
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -2.4976453588825036,
+      "q25": -4.61394146612744,
+      "q75": -0.8833467986242036
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.995057855405036,
+      "q25": 0.5630020873129169,
+      "q75": 1.806509858754239
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.4902976658849253,
+      "q25": -1.204843770803694,
+      "q75": -0.12019329269081275
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.012351758033880915,
+      "q25": 0.002356142426354234,
+      "q75": 0.03874722290860459
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.20316983293741941,
+      "q25": 0.18153089890256524,
+      "q75": 0.22780058905482292
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 5.503261604781954,
+      "q25": 4.102504913566365,
+      "q75": 7.09884697170033
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.589892826180537,
+      "q25": -5.674607446823996,
+      "q75": -1.3242996656313373
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.1659641445219477,
+      "q25": 0.7912836484705887,
+      "q75": 1.9576106576640515
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.6872617549976214,
+      "q25": -1.6148489044040466,
+      "q75": -0.272341546908909
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.009998218451776121,
+      "q25": 0.0016399547907629305,
+      "q75": 0.029208583467071565
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.20282525103539228,
+      "q25": 0.1824512043967843,
+      "q75": 0.23381170025095344
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.543228042749706,
+      "q25": 2.660518295196742,
+      "q75": 6.173681970471623
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -2.7775157438814677,
+      "q25": -4.588066152799312,
+      "q75": -0.06156220754886853
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.9124817217201446,
+      "q25": 0.553111775701906,
+      "q75": 1.7539300452767683
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.430445734923361,
+      "q25": -1.001026890953113,
+      "q75": -0.07577845004117716
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.01261687681904795,
+      "q25": 0.0027836937397969367,
+      "q75": 0.03227557690312163
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.2066280972212553,
+      "q25": 0.1851999070495367,
+      "q75": 0.2335244552232325
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "ablation",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 5.358434454644923,
+      "q25": 3.273430727158696,
+      "q75": 6.9936892190243425
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.1069783851566886,
+      "q25": -4.926628978336652,
+      "q75": -0.6972594485800391
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.1099710028117653,
+      "q25": 0.6654766339596556,
+      "q75": 1.947875227457199
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.547762485045508,
+      "q25": -1.326447348124152,
+      "q75": -0.1819361903621777
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.016137748200558334,
+      "q25": 0.003357410871245569,
+      "q75": 0.03638913813461881
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.1938035450875759,
+      "q25": 0.1818841602653265,
+      "q75": 0.22716022050008178
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 8.374146421004788,
+      "q25": 6.388403671100512,
+      "q75": 10.293161706781003
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -7.0563467387884575,
+      "q25": -9.13057125638817,
+      "q75": -4.390914928478415
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.7410233690790757,
+      "q25": 1.2013943010473844,
+      "q75": 3.118407352753228
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -1.5802257706877714,
+      "q25": -3.1641254202830993,
+      "q75": -0.7624609912819542
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.00943532019440901,
+      "q25": 0.0019370642930245506,
+      "q75": 0.02885909801048727
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.9044687716290354,
+      "q25": 2.767339065205306,
+      "q75": 3.0772466544061903
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.764066588375744,
+      "q25": 2.662526196702807,
+      "q75": 6.764069499311333
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.964624586201638,
+      "q25": -5.5251542794769914,
+      "q75": -0.7951161136626685
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.9641279702234091,
+      "q25": 0.596905103046334,
+      "q75": 1.9456162497740694
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.6506147900924528,
+      "q25": -1.3150086292409866,
+      "q75": -0.21341562121364968
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.015202828836566434,
+      "q25": 0.00230260156743814,
+      "q75": 0.040563871193504124
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.880298326909542,
+      "q25": 2.7384701219387355,
+      "q75": 3.084706774353981
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 7.34266934507724,
+      "q25": 5.525140711699959,
+      "q75": 8.876158250524742
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -5.786468035245145,
+      "q25": -7.69712227814478,
+      "q75": -3.048140351842129
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.4904979792382513,
+      "q25": 1.0350500876196598,
+      "q75": 2.4301271036279317
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -1.175967356752357,
+      "q25": -2.5039674014597253,
+      "q75": -0.5853926056167734
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.011674552031205763,
+      "q25": 0.0028753298905079706,
+      "q75": 0.025757864368816632
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.917908285185695,
+      "q25": 2.736571117118001,
+      "q75": 3.0929500672966244
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.875407730626023,
+      "q25": 2.8545827780706334,
+      "q75": 6.616854806691138
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.660179249008241,
+      "q25": -5.771122057868793,
+      "q75": 0.06454779677143649
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.030963693460005,
+      "q25": 0.6548953661162668,
+      "q75": 1.9480521413091423
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.6159451030297967,
+      "q25": -1.1108501038637342,
+      "q75": -0.19349125710599965
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.012660817454279494,
+      "q25": 0.003470632602393214,
+      "q75": 0.03775608670506862
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.9345518443733454,
+      "q25": 2.745565054845065,
+      "q75": 3.0614910178817807
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "lime",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 5.600970543198416,
+      "q25": 3.8392002078809835,
+      "q75": 7.021378714243792
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.4062330250074795,
+      "q25": -5.805661092105623,
+      "q75": -1.0025436986078182
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.1449042781409444,
+      "q25": 0.804512453609831,
+      "q75": 1.8339730988247778
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.6400664450927458,
+      "q25": -1.4928526466226206,
+      "q75": -0.1775980144555414
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.013762741325687212,
+      "q25": 0.0031004786051603748,
+      "q75": 0.02656479932486317
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.8631601493805645,
+      "q25": 2.77053975854069,
+      "q75": 3.118399996124208
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 0.3768496511487224,
+      "q25": -1.3132736937375578,
+      "q75": 3.227597736889104
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 1.3406596362668757,
+      "q25": -0.514536214103141,
+      "q75": 3.0688388515092395
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.17449240980842726,
+      "q25": -0.10009878336454778,
+      "q75": 0.6859147088586965
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.24064214506886134,
+      "q25": 0.05343838507579424,
+      "q75": 0.537795586214604
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.127105175890028,
+      "q25": 4.7864364345557995,
+      "q75": 5.338776678219437
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 2.063715309493573,
+      "q25": -0.5524997552116335,
+      "q75": 3.789628274348538
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 0.38695390498523274,
+      "q25": -1.319068498157984,
+      "q75": 2.782609451878816
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.38013727876152126,
+      "q25": -0.056263919287651926,
+      "q75": 0.7244576212693791
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.1899508768360571,
+      "q25": -0.07077118268505865,
+      "q75": 0.5022080418325116
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.122807866334915,
+      "q25": 4.843432197533548,
+      "q75": 5.3846057837829
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 0.2965368626651642,
+      "q25": -1.4735153400110776,
+      "q75": 3.017285404172209
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 1.419490833719071,
+      "q25": -0.3137159401126224,
+      "q75": 3.017603763615674
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.15056281515140013,
+      "q25": -0.12938815875055823,
+      "q75": 0.6725960067796823
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.2933013364781122,
+      "q25": 0.07843727664266961,
+      "q75": 0.5595902604346956
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.131940881721675,
+      "q25": 4.902399578876794,
+      "q75": 5.366974971164018
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 1.6948596835136414,
+      "q25": -0.40129407334127937,
+      "q75": 3.7655746594785526
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 0.2456885895346094,
+      "q25": -1.1516262440853406,
+      "q75": 2.7086962799648653
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.36374708411785944,
+      "q25": 0.008040746613623327,
+      "q75": 0.704623877252081
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.16518691452768172,
+      "q25": -0.0633548114435534,
+      "q75": 0.5281222175798426
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.114143660478295,
+      "q25": 4.809485827945173,
+      "q75": 5.390628619585186
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "rise",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 0.2018620143634619,
+      "q25": -1.4448357774243883,
+      "q75": 3.07722710613778
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 1.4657162906152865,
+      "q25": -0.3749705694858759,
+      "q75": 3.1391834484600083
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.13884720910378093,
+      "q25": -0.11597186252381354,
+      "q75": 0.6506201774007132
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.29657589335921064,
+      "q25": 0.10721009476935137,
+      "q75": 0.6132971042285538
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.093050525523722,
+      "q25": 4.839279141929,
+      "q75": 5.371028158441186
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 7.966605782389966,
+      "q25": 6.024880610196595,
+      "q75": 9.554958443865988
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -6.8560041734943775,
+      "q25": -8.792126300443819,
+      "q75": -4.034710429935281
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.701363076306112,
+      "q25": 1.1346118307504245,
+      "q75": 2.928233240094327
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -1.4166749310366136,
+      "q25": -2.9815546099394377,
+      "q75": -0.7077380665772941
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.011510012247514512,
+      "q25": 0.003807579758023504,
+      "q75": 0.02701230745442163
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.8282823944464326,
+      "q25": 2.6590097660198806,
+      "q75": 3.0107964627444743
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.735959457046938,
+      "q25": 2.7455618867152927,
+      "q75": 6.7289263416589655
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.75639439969751,
+      "q25": -5.290543187033471,
+      "q75": -0.643741437507416
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.9171971903348859,
+      "q25": 0.6164622571128755,
+      "q75": 1.9720635041329542
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.656719196354199,
+      "q25": -1.3683490674462868,
+      "q75": -0.20279622006019382
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.01567707402748022,
+      "q25": 0.0024893783519227006,
+      "q75": 0.038896419697733914
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.8610665624961253,
+      "q25": 2.6940974333323537,
+      "q75": 3.0103817259892818
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 6.9997764498637185,
+      "q25": 4.974586991115326,
+      "q75": 8.70331860060504
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -5.8870356292918355,
+      "q25": -7.531344805690962,
+      "q75": -2.6479067091872013
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.4633531960299637,
+      "q25": 0.9958019399591949,
+      "q75": 2.3056816401655813
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -1.1311855828508661,
+      "q25": -2.4452653109438343,
+      "q75": -0.5651672217580921
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.012310724399915644,
+      "q25": 0.003207241172392593,
+      "q75": 0.021365280906698828
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.860339118540287,
+      "q25": 2.7000006387941538,
+      "q75": 3.0084125075489285
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.748150929849295,
+      "q25": 2.6620536927952965,
+      "q75": 6.705729930025984
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.7080234080687235,
+      "q25": -5.767983217265965,
+      "q75": 0.06309690712931768
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.066171418843458,
+      "q25": 0.6403873100285365,
+      "q75": 1.8629177818533722
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.6499575935421498,
+      "q25": -1.0885128940326614,
+      "q75": -0.14345241343146936
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.012337493741214492,
+      "q25": 0.002976145491075528,
+      "q75": 0.03598734422162306
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.8669870803132653,
+      "q25": 2.6674078587442636,
+      "q75": 3.0241659426130356
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "resnet50",
+    "method": "kernel_shap",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 5.695277720533778,
+      "q25": 4.0203711251199135,
+      "q75": 6.950112329770736
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.4166481408509974,
+      "q25": -5.8363745282641775,
+      "q75": -0.9982025572389975
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.1314869070019444,
+      "q25": 0.7909363735383292,
+      "q75": 1.8604425513263045
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.6143706326218463,
+      "q25": -1.5031425220830414,
+      "q75": -0.19114390498847478
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.014510202821990129,
+      "q25": 0.003272146510187135,
+      "q75": 0.028050808824862175
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.8414896547794344,
+      "q25": 2.6874954426661137,
+      "q75": 3.0119176966138186
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 11.006227394022748,
+      "q25": 4.936272478016054,
+      "q75": 13.371447433657616
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -2.5175039351762316,
+      "q25": -4.132354843299327,
+      "q75": -1.6381397374544007
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 3.607453225096332,
+      "q25": 1.686784771822433,
+      "q75": 6.59848419785194
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -1.044759216361753,
+      "q25": -3.2885806057754015,
+      "q75": -0.5718509755222719
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.002914989010922809,
+      "q25": 0.00016278453681339063,
+      "q75": 0.017154916845970092
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.20535413455218077,
+      "q25": 0.1923154555261135,
+      "q75": 0.23896110197529197
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.582525110511975,
+      "q25": 1.991721428809324,
+      "q75": 5.74702616686073
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 0.024422487847364286,
+      "q25": -1.55214813055178,
+      "q75": 1.8452910529053002
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.3299767684778887,
+      "q25": 0.8537956465815282,
+      "q75": 2.375947511535566
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.03995323838979734,
+      "q25": -0.6710256829029869,
+      "q75": 0.4594836485818587
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.014092991528992349,
+      "q25": 0.0042264740247499625,
+      "q75": 0.04184545795136446
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.20327944587916136,
+      "q25": 0.19147193571552634,
+      "q75": 0.24852839997038245
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 8.292098645585286,
+      "q25": 2.906200994702308,
+      "q75": 10.194458760964972
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -0.8584187361857002,
+      "q25": -2.062678130846612,
+      "q75": -0.14640277827711679
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 2.384180959767217,
+      "q25": 0.9193689889807564,
+      "q75": 4.594176397931905
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.44302813650728046,
+      "q25": -1.1556640806877916,
+      "q75": -0.11866376494640536
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.005383624783623752,
+      "q25": 0.0009509379935692181,
+      "q75": 0.011371839655010102
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.20751373376697302,
+      "q25": 0.19443928357213736,
+      "q75": 0.24225526442751288
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.386116565249555,
+      "q25": 1.0814031885212494,
+      "q75": 6.5267626016936635
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 0.21593769010449232,
+      "q25": -1.051530863695494,
+      "q75": 1.5390159187719838
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.4151978904925566,
+      "q25": 0.4425155082779508,
+      "q75": 2.2375345353155507
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.01532683267313063,
+      "q25": -0.5574128748185512,
+      "q75": 0.3718519783098306
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.012172513403862755,
+      "q25": 0.003761895264496438,
+      "q75": 0.03788087564502535
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.2027444103732705,
+      "q25": 0.1923142927698791,
+      "q75": 0.24041156005114317
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "ablation",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 9.038810927444883,
+      "q25": 3.6530121398876196,
+      "q75": 11.989868226580747
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -1.2400850512871617,
+      "q25": -2.7362740648816533,
+      "q75": -0.5415830806715065
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 2.717184312682366,
+      "q25": 1.0755692126789562,
+      "q75": 5.495414907274358
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.5899280563909028,
+      "q25": -1.7704941383559116,
+      "q75": -0.3111084212040084
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.006610731058841371,
+      "q25": 0.0007949641546272664,
+      "q75": 0.01795156693678418
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 0.21042475197464228,
+      "q25": 0.1938548288308084,
+      "q75": 0.23676195461302996
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 92.0,
+      "q25": 89.0,
+      "q75": 94.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 16.302367464004927,
+      "q25": 7.55514849579727,
+      "q75": 21.781185133914352
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.4900294995496144,
+      "q25": -19.219675836671204,
+      "q75": -2.0656166624440546
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 4.541441648666382,
+      "q25": 2.033244481458533,
+      "q75": 10.254530154788528
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -2.760244701260479,
+      "q25": -9.044297415796743,
+      "q75": -0.7596745568997086
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.007673293850725782,
+      "q25": 0.002292410144592719,
+      "q75": 0.016608168398704454
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 3.042378867045045,
+      "q25": 2.8164435951970517,
+      "q75": 3.227159396559
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 5.11338957498765,
+      "q25": 2.4823820619890675,
+      "q75": 6.9717272878603325
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -0.361391558637298,
+      "q25": -2.5441698330593727,
+      "q75": 0.9636403014388013
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.4469870997366907,
+      "q25": 0.8182002997683363,
+      "q75": 2.7377108138026682
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.2919829574716153,
+      "q25": -1.5151657850809856,
+      "q75": 0.2442735288451552
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.015069750023741993,
+      "q25": 0.00677552651622545,
+      "q75": 0.04654335214323597
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 3.031652694195509,
+      "q25": 2.798373372200876,
+      "q75": 3.240094653982669
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 7.179077811879701,
+      "q25": 3.745650240202131,
+      "q75": 9.164090619170434
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -2.5259092086543786,
+      "q25": -5.418523391447573,
+      "q75": -1.1951592591510956
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 2.3910981743976425,
+      "q25": 1.279387875089199,
+      "q75": 3.928748654339512
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.9341199469234507,
+      "q25": -4.324843950849084,
+      "q75": -0.4998925463382218
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.01002560210175,
+      "q25": 0.004967557063084419,
+      "q75": 0.023755991646464664
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 3.057443930581212,
+      "q25": 2.841700079012662,
+      "q75": 3.2375158053822815
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.4407598776920665,
+      "q25": 1.0423921349083523,
+      "q75": 5.9022417544482755
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 0.08567835774684884,
+      "q25": -0.9121250944130058,
+      "q75": 1.497445612900386
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.1636323594161,
+      "q25": 0.34114171312537117,
+      "q75": 2.061137304838492
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.004920752579336789,
+      "q25": -0.5789869874556756,
+      "q75": 0.46242188424913144
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.012723479291698318,
+      "q25": 0.0052311917816547995,
+      "q75": 0.027910387218151766
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 3.0379939567297694,
+      "q25": 2.8284709512256088,
+      "q75": 3.2058356143534184
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "lime",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 10.100358385790193,
+      "q25": 6.2074970854653255,
+      "q75": 12.890843502537892
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.022596855601414,
+      "q25": -8.67248266859151,
+      "q75": -1.728982359561192
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 3.1643515998432443,
+      "q25": 1.9759003164172748,
+      "q75": 6.316324778099861
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -1.5002038496354797,
+      "q25": -5.423065932047446,
+      "q75": -0.7535993529524161
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.012996047809710065,
+      "q25": 0.004763245529502582,
+      "q75": 0.026232757041111696
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 3.0115247808396814,
+      "q25": 2.8096700184978545,
+      "q75": 3.2341755642555654
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 3.642036356464647,
+      "q25": 1.8077836017423998,
+      "q75": 5.251732353587727
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 0.15355120667952696,
+      "q25": -2.1957508507914283,
+      "q75": 1.784262273073844
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.066333090876918,
+      "q25": 0.6380981657741744,
+      "q75": 2.438911837948224
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.08356152400887937,
+      "q25": -1.0468361604601562,
+      "q75": 0.740531489282343
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.015608478424981323,
+      "q25": 0.007898118313935686,
+      "q75": 0.033425889212917836
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.296675594709813,
+      "q25": 4.900250519067049,
+      "q75": 5.460511572565884
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 2.8960478952655224,
+      "q25": 0.8897155702379372,
+      "q75": 4.1243961682389765
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 1.1596861732827455,
+      "q25": -1.0532812741160094,
+      "q75": 2.582124669256767
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.9156756182259944,
+      "q25": 0.32629807553256585,
+      "q75": 1.8438423192427946
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.2368509357441262,
+      "q25": -0.4973450435435609,
+      "q75": 0.9383209937577411
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.016183578915484123,
+      "q25": 0.0026835092809870563,
+      "q75": 0.0334914741736532
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.283430487290024,
+      "q25": 4.901864637620747,
+      "q75": 5.4355247425846756
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 3.015936185378755,
+      "q25": 0.12217955331876212,
+      "q75": 4.307958055599208
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 0.8318576232466677,
+      "q25": -0.8777073313103221,
+      "q75": 2.358695988878895
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.7457745950585453,
+      "q25": 0.024732888926632376,
+      "q75": 1.5684091748734441
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.29780329817665196,
+      "q25": -0.24488707749895622,
+      "q75": 0.9726522725080269
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.015961467150125308,
+      "q25": 0.007818634807386059,
+      "q75": 0.033571377452981915
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.270363342016935,
+      "q25": 4.810153330862522,
+      "q75": 5.484200780652463
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 3.0798026884983605,
+      "q25": 0.2301861280073574,
+      "q75": 4.568852713708625
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 1.1511467880903825,
+      "q25": -0.5033613416675378,
+      "q75": 2.367001748794767
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 0.8168028913112846,
+      "q25": 0.06789898883675653,
+      "q75": 1.8151774600695572
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.27154103842347677,
+      "q25": -0.30805827326185387,
+      "q75": 0.9068929629107667
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.014051812257558582,
+      "q25": 0.006421624364115863,
+      "q75": 0.033256260444648994
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.256485672295094,
+      "q25": 4.898830206226557,
+      "q75": 5.495148138701915
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "rise",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.302682287079023,
+      "q25": 1.9421244337987513,
+      "q75": 5.81408322898627
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 0.28213924481951735,
+      "q25": -2.336099249845069,
+      "q75": 1.8704785544519866
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.2624454804715046,
+      "q25": 0.6988681927789724,
+      "q75": 2.4533576168235838
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.02331566247819118,
+      "q25": -1.0956365346406698,
+      "q75": 0.7060812408821129
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.015524649702723317,
+      "q25": 0.007956181359023914,
+      "q75": 0.03268714500982964
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 5.264801767468453,
+      "q25": 4.771330130007118,
+      "q75": 5.5134175115264945
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "normalized_zero",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 16.073412071859956,
+      "q25": 6.509149176974034,
+      "q75": 21.262774478483635
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.4053828302458706,
+      "q25": -17.299968205661187,
+      "q75": -2.117252092488992
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 4.416436746729577,
+      "q25": 1.72113916193537,
+      "q75": 10.197018493365851
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -2.7571174084300036,
+      "q25": -8.726193685432959,
+      "q75": -0.8190853246836435
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.007838924251121333,
+      "q25": 0.002253914692715616,
+      "q75": 0.0203072887886537
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.9445545971393585,
+      "q25": 2.8047889078967274,
+      "q75": 3.1169876425527034
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "dataset_mean_image",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.962218764833697,
+      "q25": 2.533445534737312,
+      "q75": 7.218317685086919
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -0.569160429636874,
+      "q25": -2.6747605481445054,
+      "q75": 1.2169120301828262
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.555291124518463,
+      "q25": 0.9494123307805175,
+      "q75": 2.6352469483017114
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.29439597595542255,
+      "q25": -1.64941287217902,
+      "q75": 0.18979171063176908
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.014208261399598382,
+      "q25": 0.006321706745989074,
+      "q75": 0.04723524510482745
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.9807745523750784,
+      "q25": 2.8515130263753234,
+      "q75": 3.1486882117576895
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "dataset_mean_color",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 6.832328069036134,
+      "q25": 2.421646024226864,
+      "q75": 8.679546226588172
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -2.0055144369259645,
+      "q25": -4.25423644498461,
+      "q75": -0.44650508231103403
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 2.077756123214889,
+      "q25": 1.1571371931649441,
+      "q75": 3.679942844694703
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -0.8035820057199895,
+      "q25": -3.4186716096666747,
+      "q75": -0.31145801306191434
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.009316758600614955,
+      "q25": 0.0031844577616847594,
+      "q75": 0.020060473677411768
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.9763805024325847,
+      "q25": 2.823518542293459,
+      "q75": 3.113816021289676
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "gaussian_blur_sigma10",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 4.358839270557981,
+      "q25": 0.9995888536979857,
+      "q75": 6.171943224669341
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": 0.09169385582337482,
+      "q25": -0.849231352457995,
+      "q75": 1.2222029889933765
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 1.1754760965272002,
+      "q25": -0.07281591561084338,
+      "q75": 2.322508428384986
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": 0.03012750386042439,
+      "q25": -0.6144582645541067,
+      "q75": 0.41738832471243276
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.012885037586992882,
+      "q25": 0.004642831628253559,
+      "q75": 0.030233081721724106
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.999473230168223,
+      "q25": 2.8255142557434736,
+      "q75": 3.118633926939219
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  },
+  {
+    "domain": "chncxr",
+    "model": "vgg13",
+    "method": "kernel_shap",
+    "explanation_baseline": "gaussian_noise_dataset_stats",
+    "evaluation_baseline": "normalized_zero",
+    "images": 86,
+    "insertion_auc": {
+      "count": 86,
+      "median": 10.743487729834902,
+      "q25": 6.145870275411835,
+      "q75": 13.548773811636606
+    },
+    "deletion_auc": {
+      "count": 86,
+      "median": -3.0645921281097497,
+      "q25": -8.83181751215524,
+      "q75": -2.023195652494528
+    },
+    "normalized_insertion_auc": {
+      "count": 86,
+      "median": 3.24958928614358,
+      "q25": 2.045765205395454,
+      "q75": 6.5043267818215735
+    },
+    "normalized_deletion_auc": {
+      "count": 86,
+      "median": -1.52240212031539,
+      "q25": -6.1020436212276445,
+      "q75": -0.7358913441064459
+    },
+    "localization_energy": {
+      "count": 51,
+      "median": 0.010499936459878595,
+      "q25": 0.004126941343940896,
+      "q75": 0.021457152341972135
+    },
+    "pointing_game": {
+      "count": 51,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "attribution_seconds": {
+      "count": 86,
+      "median": 2.9796403124928474,
+      "q25": 2.82385187484324,
+      "q75": 3.1373488856479526
+    },
+    "forward_samples": {
+      "count": 86,
+      "median": 1024.0,
+      "q25": 1024.0,
+      "q75": 1024.0
+    }
+  }
+]

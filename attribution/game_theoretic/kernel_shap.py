@@ -17,6 +17,7 @@ from numbers import Integral
 from typing import Callable
 
 import numpy as np
+from attribution.baseline import prepare_baseline
 
 
 @dataclass(frozen=True)
@@ -228,6 +229,8 @@ def fit_kernel_shap(
     predict_logits: Callable[[np.ndarray], np.ndarray],
     target: int,
     config: KernelShapConfig | None = None,
+    *,
+    baseline: np.ndarray | None = None,
 ) -> KernelShapResult:
     """Fit KernelSHAP region values without saving a pixel attribution map.
 
@@ -251,6 +254,7 @@ def fit_kernel_shap(
         raise ValueError("segments must be an integer HW array aligned with image")
     if isinstance(target, bool) or not isinstance(target, Integral) or target < 0:
         raise ValueError("target must be a nonnegative integer class index")
+    reference = prepare_baseline(image, baseline)
 
     region_ids, inverse = np.unique(segments, return_inverse=True)
     inverse = inverse.reshape(segments.shape)
@@ -262,7 +266,8 @@ def fit_kernel_shap(
     for start in range(0, len(masks), config.batch_size):
         stop = min(start + config.batch_size, len(masks))
         keep = masks[start:stop, inverse]
-        perturbed = image[None, ...] * keep[..., None]
+        perturbed = (image[None, ...] * keep[..., None]
+                     + reference[None, ...] * (~keep)[..., None])
         logits = np.asarray(predict_logits(perturbed))
         if (
             logits.ndim != 2

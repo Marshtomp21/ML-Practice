@@ -17,6 +17,7 @@ from numbers import Integral
 from typing import Callable
 
 import numpy as np
+from attribution.baseline import prepare_baseline
 from skimage.transform import resize
 
 
@@ -162,6 +163,8 @@ def explain_rise(
     predict_logits: Callable[[np.ndarray], np.ndarray],
     target: int,
     config: RiseConfig | None = None,
+    *,
+    baseline: np.ndarray | None = None,
 ) -> RiseResult:
     """Explain one image with RISE while evaluating exactly ``num_masks`` inputs.
 
@@ -187,6 +190,7 @@ def explain_rise(
         raise ValueError("image must be a finite floating-point HWC array")
     if isinstance(target, bool) or not isinstance(target, Integral) or target < 0:
         raise ValueError("target must be a nonnegative integer class index")
+    reference = prepare_baseline(image, baseline)
 
     image_shape = (image.shape[0], image.shape[1])
     grids, shifts, cell_size = _sample_mask_parameters(image_shape, config)
@@ -201,7 +205,8 @@ def explain_rise(
         masks = _render_mask_batch(
             grids[start:stop], shifts[start:stop], image_shape, cell_size
         )
-        perturbed = image[None, ...] * masks[..., None]
+        perturbed = (image[None, ...] * masks[..., None]
+                     + reference[None, ...] * (1.0 - masks[..., None]))
         logits = np.asarray(predict_logits(perturbed))
         try:
             finite_logits = bool(np.isfinite(logits).all())
